@@ -28,8 +28,8 @@ jobs:
       
       - name: push markdown file
         run: |
-          git config user.name wwd29
-          git config user.email tj.29@qq.com
+          git config user.name LJ-Zhang
+          git config user.email zlj1992127@163.com
           git add .
           git commit -m "update"
           git push --force origin main
