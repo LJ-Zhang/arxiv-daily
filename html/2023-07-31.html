@@ -1,0 +1,351 @@
+<h2>diffusion</h2>
+<h3>Title: Recovering high-quality FODs from a reduced number of diffusion-weighted images using a model-driven deep learning architecture. (arXiv:2307.15273v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15273">http://arxiv.org/abs/2307.15273</a></li>
+<li>Code URL: <a href="https://github.com/jbartlett6/sdnet">https://github.com/jbartlett6/sdnet</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15273] Recovering high-quality FODs from a reduced number of diffusion-weighted images using a model-driven deep learning architecture](http://arxiv.org/abs/2307.15273) #diffusion</code></li>
+<li>Summary: <p>Fibre orientation distribution (FOD) reconstruction using deep learning has
+the potential to produce accurate FODs from a reduced number of
+diffusion-weighted images (DWIs), decreasing total imaging time. Diffusion
+acquisition invariant representations of the DWI signals are typically used as
+input to these methods to ensure that they can be applied flexibly to data with
+different b-vectors and b-values; however, this means the network cannot
+condition its output directly on the DWI signal. In this work, we propose a
+spherical deconvolution network, a model-driven deep learning FOD
+reconstruction architecture, that ensures intermediate and output FODs produced
+by the network are consistent with the input DWI signals. Furthermore, we
+implement a fixel classification penalty within our loss function, encouraging
+the network to produce FODs that can subsequently be segmented into the correct
+number of fixels and improve downstream fixel-based analysis. Our results show
+that the model-based deep learning architecture achieves competitive
+performance compared to a state-of-the-art FOD super-resolution network,
+FOD-Net. Moreover, we show that the fixel classification penalty can be tuned
+to offer improved performance with respect to metrics that rely on accurately
+segmented of FODs. Our code is publicly available at
+https://github.com/Jbartlett6/SDNet .
+</p></li>
+</ul>
+<h2>self-supervised</h2>
+<h3>Title: Self-Supervised Learning for Improved Synthetic Aperture Sonar Target Recognition. (arXiv:2307.15098v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15098">http://arxiv.org/abs/2307.15098</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15098] Self-Supervised Learning for Improved Synthetic Aperture Sonar Target Recognition](http://arxiv.org/abs/2307.15098) #self-supervised</code></li>
+<li>Summary: <p>This study explores the application of self-supervised learning (SSL) for
+improved target recognition in synthetic aperture sonar (SAS) imagery. The
+unique challenges of underwater environments make traditional computer vision
+techniques, which rely heavily on optical camera imagery, less effective. SAS,
+with its ability to generate high-resolution imagery, emerges as a preferred
+choice for underwater imaging. However, the voluminous high-resolution SAS data
+presents a significant challenge for labeling; a crucial step for training deep
+neural networks (DNNs).
+</p></li>
+</ul>
+<p>SSL, which enables models to learn features in data without the need for
+labels, is proposed as a potential solution to the data labeling challenge in
+SAS. The study evaluates the performance of two prominent SSL algorithms,
+MoCov2 and BYOL, against the well-regarded supervised learning model, ResNet18,
+for binary image classification tasks. The findings suggest that while both SSL
+models can outperform a fully supervised model with access to a small number of
+labels in a few-shot scenario, they do not exceed it when all the labels are
+used.
+</p>
+<p>The results underscore the potential of SSL as a viable alternative to
+traditional supervised learning, capable of maintaining task performance while
+reducing the time and costs associated with data labeling. The study also
+contributes to the growing body of evidence supporting the use of SSL in remote
+sensing and could stimulate further research in this area.
+</p>
+
+<h3>Title: AC-Norm: Effective Tuning for Medical Image Analysis via Affine Collaborative Normalization. (arXiv:2307.15282v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15282">http://arxiv.org/abs/2307.15282</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15282] AC-Norm: Effective Tuning for Medical Image Analysis via Affine Collaborative Normalization](http://arxiv.org/abs/2307.15282) #self-supervised</code></li>
+<li>Summary: <p>Driven by the latest trend towards self-supervised learning (SSL), the
+paradigm of "pretraining-then-finetuning" has been extensively explored to
+enhance the performance of clinical applications with limited annotations.
+Previous literature on model finetuning has mainly focused on regularization
+terms and specific policy models, while the misalignment of channels between
+source and target models has not received sufficient attention. In this work,
+we revisited the dynamics of batch normalization (BN) layers and observed that
+the trainable affine parameters of BN serve as sensitive indicators of domain
+information. Therefore, Affine Collaborative Normalization (AC-Norm) is
+proposed for finetuning, which dynamically recalibrates the channels in the
+target model according to the cross-domain channel-wise correlations without
+adding extra parameters. Based on a single-step backpropagation, AC-Norm can
+also be utilized to measure the transferability of pretrained models. We
+evaluated AC-Norm against the vanilla finetuning and state-of-the-art
+fine-tuning methods on transferring diverse pretrained models to the diabetic
+retinopathy grade classification, retinal vessel segmentation, CT lung nodule
+segmentation/classification, CT liver-tumor segmentation and MRI cardiac
+segmentation tasks. Extensive experiments demonstrate that AC-Norm unanimously
+outperforms the vanilla finetuning by up to 4% improvement, even under
+significant domain shifts where the state-of-the-art methods bring no gains. We
+also prove the capability of AC-Norm in fast transferability estimation. Our
+code is available at https://github.com/EndoluminalSurgicalVision-IMR/ACNorm.
+</p></li>
+</ul>
+<h3>Title: Uncertainty-aware Unsupervised Multi-Object Tracking. (arXiv:2307.15409v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15409">http://arxiv.org/abs/2307.15409</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15409] Uncertainty-aware Unsupervised Multi-Object Tracking](http://arxiv.org/abs/2307.15409) #self-supervised</code></li>
+<li>Summary: <p>Without manually annotated identities, unsupervised multi-object trackers are
+inferior to learning reliable feature embeddings. It causes the
+similarity-based inter-frame association stage also be error-prone, where an
+uncertainty problem arises. The frame-by-frame accumulated uncertainty prevents
+trackers from learning the consistent feature embedding against time variation.
+To avoid this uncertainty problem, recent self-supervised techniques are
+adopted, whereas they failed to capture temporal relations. The interframe
+uncertainty still exists. In fact, this paper argues that though the
+uncertainty problem is inevitable, it is possible to leverage the uncertainty
+itself to improve the learned consistency in turn. Specifically, an
+uncertainty-based metric is developed to verify and rectify the risky
+associations. The resulting accurate pseudo-tracklets boost learning the
+feature consistency. And accurate tracklets can incorporate temporal
+information into spatial transformation. This paper proposes a tracklet-guided
+augmentation strategy to simulate tracklets' motion, which adopts a
+hierarchical uncertainty-based sampling mechanism for hard sample mining. The
+ultimate unsupervised MOT framework, namely U2MOT, is proven effective on
+MOT-Challenges and VisDrone-MOT benchmark. U2MOT achieves a SOTA performance
+among the published supervised and unsupervised trackers.
+</p></li>
+</ul>
+<h3>Title: Point Clouds Are Specialized Images: A Knowledge Transfer Approach for 3D Understanding. (arXiv:2307.15569v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15569">http://arxiv.org/abs/2307.15569</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15569] Point Clouds Are Specialized Images: A Knowledge Transfer Approach for 3D Understanding](http://arxiv.org/abs/2307.15569) #self-supervised</code></li>
+<li>Summary: <p>Self-supervised representation learning (SSRL) has gained increasing
+attention in point cloud understanding, in addressing the challenges posed by
+3D data scarcity and high annotation costs. This paper presents PCExpert, a
+novel SSRL approach that reinterprets point clouds as "specialized images".
+This conceptual shift allows PCExpert to leverage knowledge derived from
+large-scale image modality in a more direct and deeper manner, via extensively
+sharing the parameters with a pre-trained image encoder in a multi-way
+Transformer architecture. The parameter sharing strategy, combined with a novel
+pretext task for pre-training, i.e., transformation estimation, empowers
+PCExpert to outperform the state of the arts in a variety of tasks, with a
+remarkable reduction in the number of trainable parameters. Notably, PCExpert's
+performance under LINEAR fine-tuning (e.g., yielding a 90.02% overall accuracy
+on ScanObjectNN) has already approached the results obtained with FULL model
+fine-tuning (92.66%), demonstrating its effective and robust representation
+capability.
+</p></li>
+</ul>
+<h3>Title: SimDETR: Simplifying self-supervised pretraining for DETR. (arXiv:2307.15697v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15697">http://arxiv.org/abs/2307.15697</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15697] SimDETR: Simplifying self-supervised pretraining for DETR](http://arxiv.org/abs/2307.15697) #self-supervised</code></li>
+<li>Summary: <p>DETR-based object detectors have achieved remarkable performance but are
+sample-inefficient and exhibit slow convergence. Unsupervised pretraining has
+been found to be helpful to alleviate these impediments, allowing training with
+large amounts of unlabeled data to improve the detector's performance. However,
+existing methods have their own limitations, like keeping the detector's
+backbone frozen in order to avoid performance degradation and utilizing
+pretraining objectives misaligned with the downstream task. To overcome these
+limitations, we propose a simple pretraining framework for DETR-based detectors
+that consists of three simple yet key ingredients: (i) richer, semantics-based
+initial proposals derived from high-level feature maps, (ii) discriminative
+training using object pseudo-labels produced via clustering, (iii)
+self-training to take advantage of the improved object proposals learned by the
+detector. We report two main findings: (1) Our pretraining outperforms prior
+DETR pretraining works on both the full and low data regimes by significant
+margins. (2) We show we can pretrain DETR from scratch (including the backbone)
+directly on complex image datasets like COCO, paving the path for unsupervised
+representation learning directly using DETR.
+</p></li>
+</ul>
+<h2>foundation model</h2>
+<h2>generative</h2>
+<h3>Title: Set-Membership Inference Attacks using Data Watermarking. (arXiv:2307.15067v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15067">http://arxiv.org/abs/2307.15067</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15067] Set-Membership Inference Attacks using Data Watermarking](http://arxiv.org/abs/2307.15067) #generative</code></li>
+<li>Summary: <p>In this work, we propose a set-membership inference attack for generative
+models using deep image watermarking techniques. In particular, we demonstrate
+how conditional sampling from a generative model can reveal the watermark that
+was injected into parts of the training data. Our empirical results demonstrate
+that the proposed watermarking technique is a principled approach for detecting
+the non-consensual use of image data in training generative models.
+</p></li>
+</ul>
+<h3>Title: Med-Flamingo: a Multimodal Medical Few-shot Learner. (arXiv:2307.15189v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15189">http://arxiv.org/abs/2307.15189</a></li>
+<li>Code URL: <a href="https://github.com/snap-stanford/med-flamingo">https://github.com/snap-stanford/med-flamingo</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15189] Med-Flamingo: a Multimodal Medical Few-shot Learner](http://arxiv.org/abs/2307.15189) #generative</code></li>
+<li>Summary: <p>Medicine, by its nature, is a multifaceted domain that requires the synthesis
+of information across various modalities. Medical generative vision-language
+models (VLMs) make a first step in this direction and promise many exciting
+clinical applications. However, existing models typically have to be fine-tuned
+on sizeable down-stream datasets, which poses a significant limitation as in
+many medical applications data is scarce, necessitating models that are capable
+of learning from few examples in real-time. Here we propose Med-Flamingo, a
+multimodal few-shot learner adapted to the medical domain. Based on
+OpenFlamingo-9B, we continue pre-training on paired and interleaved medical
+image-text data from publications and textbooks. Med-Flamingo unlocks few-shot
+generative medical visual question answering (VQA) abilities, which we evaluate
+on several datasets including a novel challenging open-ended VQA dataset of
+visual USMLE-style problems. Furthermore, we conduct the first human evaluation
+for generative medical VQA where physicians review the problems and blinded
+generations in an interactive app. Med-Flamingo improves performance in
+generative medical VQA by up to 20\% in clinician's rating and firstly enables
+multimodal medical few-shot adaptations, such as rationale generation. We
+release our model, code, and evaluation app under
+https://github.com/snap-stanford/med-flamingo.
+</p></li>
+</ul>
+<h3>Title: Learning with Constraint Learning: New Perspective, Solution Strategy and Various Applications. (arXiv:2307.15257v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15257">http://arxiv.org/abs/2307.15257</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15257] Learning with Constraint Learning: New Perspective, Solution Strategy and Various Applications](http://arxiv.org/abs/2307.15257) #generative</code></li>
+<li>Summary: <p>The complexity of learning problems, such as Generative Adversarial Network
+(GAN) and its variants, multi-task and meta-learning, hyper-parameter learning,
+and a variety of real-world vision applications, demands a deeper understanding
+of their underlying coupling mechanisms. Existing approaches often address
+these problems in isolation, lacking a unified perspective that can reveal
+commonalities and enable effective solutions. Therefore, in this work, we
+proposed a new framework, named Learning with Constraint Learning (LwCL), that
+can holistically examine challenges and provide a unified methodology to tackle
+all the above-mentioned complex learning and vision problems. Specifically,
+LwCL is designed as a general hierarchical optimization model that captures the
+essence of these diverse learning and vision problems. Furthermore, we develop
+a gradient-response based fast solution strategy to overcome optimization
+challenges of the LwCL framework. Our proposed framework efficiently addresses
+a wide range of applications in learning and vision, encompassing three
+categories and nine different problem types. Extensive experiments on synthetic
+tasks and real-world applications verify the effectiveness of our approach. The
+LwCL framework offers a comprehensive solution for tackling complex machine
+learning and computer vision problems, bridging the gap between theory and
+practice.
+</p></li>
+</ul>
+<h3>Title: Staging E-Commerce Products for Online Advertising using Retrieval Assisted Image Generation. (arXiv:2307.15326v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15326">http://arxiv.org/abs/2307.15326</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15326] Staging E-Commerce Products for Online Advertising using Retrieval Assisted Image Generation](http://arxiv.org/abs/2307.15326) #generative</code></li>
+<li>Summary: <p>Online ads showing e-commerce products typically rely on the product images
+in a catalog sent to the advertising platform by an e-commerce platform. In the
+broader ads industry such ads are called dynamic product ads (DPA). It is
+common for DPA catalogs to be in the scale of millions (corresponding to the
+scale of products which can be bought from the e-commerce platform). However,
+not all product images in the catalog may be appealing when directly
+re-purposed as an ad image, and this may lead to lower click-through rates
+(CTRs). In particular, products just placed against a solid background may not
+be as enticing and realistic as a product staged in a natural environment. To
+address such shortcomings of DPA images at scale, we propose a generative
+adversarial network (GAN) based approach to generate staged backgrounds for
+un-staged product images. Generating the entire staged background is a
+challenging task susceptible to hallucinations. To get around this, we
+introduce a simpler approach called copy-paste staging using retrieval assisted
+GANs. In copy paste staging, we first retrieve (from the catalog) staged
+products similar to the un-staged input product, and then copy-paste the
+background of the retrieved product in the input image. A GAN based in-painting
+model is used to fill the holes left after this copy-paste operation. We show
+the efficacy of our copy-paste staging method via offline metrics, and human
+evaluation. In addition, we show how our staging approach can enable animations
+of moving products leading to a video ad from a product image.
+</p></li>
+</ul>
+<h3>Title: Deep Generative Models, Synthetic Tabular Data, and Differential Privacy: An Overview and Synthesis. (arXiv:2307.15424v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15424">http://arxiv.org/abs/2307.15424</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15424] Deep Generative Models, Synthetic Tabular Data, and Differential Privacy: An Overview and Synthesis](http://arxiv.org/abs/2307.15424) #generative</code></li>
+<li>Summary: <p>This article provides a comprehensive synthesis of the recent developments in
+synthetic data generation via deep generative models, focusing on tabular
+datasets. We specifically outline the importance of synthetic data generation
+in the context of privacy-sensitive data. Additionally, we highlight the
+advantages of using deep generative models over other methods and provide a
+detailed explanation of the underlying concepts, including unsupervised
+learning, neural networks, and generative models. The paper covers the
+challenges and considerations involved in using deep generative models for
+tabular datasets, such as data normalization, privacy concerns, and model
+evaluation. This review provides a valuable resource for researchers and
+practitioners interested in synthetic data generation and its applications.
+</p></li>
+</ul>
+<h3>Title: LUCID-GAN: Conditional Generative Models to Locate Unfairness. (arXiv:2307.15466v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15466">http://arxiv.org/abs/2307.15466</a></li>
+<li>Code URL: <a href="https://github.com/integrated-intelligence-lab/canonical_sets">https://github.com/integrated-intelligence-lab/canonical_sets</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15466] LUCID-GAN: Conditional Generative Models to Locate Unfairness](http://arxiv.org/abs/2307.15466) #generative</code></li>
+<li>Summary: <p>Most group fairness notions detect unethical biases by computing statistical
+parity metrics on a model's output. However, this approach suffers from several
+shortcomings, such as philosophical disagreement, mutual incompatibility, and
+lack of interpretability. These shortcomings have spurred the research on
+complementary bias detection methods that offer additional transparency into
+the sources of discrimination and are agnostic towards an a priori decision on
+the definition of fairness and choice of protected features. A recent proposal
+in this direction is LUCID (Locating Unfairness through Canonical Inverse
+Design), where canonical sets are generated by performing gradient descent on
+the input space, revealing a model's desired input given a preferred output.
+This information about the model's mechanisms, i.e., which feature values are
+essential to obtain specific outputs, allows exposing potential unethical
+biases in its internal logic. Here, we present LUCID-GAN, which generates
+canonical inputs via a conditional generative model instead of gradient-based
+inverse design. LUCID-GAN has several benefits, including that it applies to
+non-differentiable models, ensures that canonical sets consist of realistic
+inputs, and allows to assess proxy and intersectional discrimination. We
+empirically evaluate LUCID-GAN on the UCI Adult and COMPAS data sets and show
+that it allows for detecting unethical biases in black-box models without
+requiring access to the training data.
+</p></li>
+</ul>
+<h2>anomaly</h2>
+<h3>Title: Multi-layer Aggregation as a key to feature-based OOD detection. (arXiv:2307.15647v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15647">http://arxiv.org/abs/2307.15647</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15647] Multi-layer Aggregation as a key to feature-based OOD detection](http://arxiv.org/abs/2307.15647) #anomaly</code></li>
+<li>Summary: <p>Deep Learning models are easily disturbed by variations in the input images
+that were not observed during the training stage, resulting in unpredictable
+predictions. Detecting such Out-of-Distribution (OOD) images is particularly
+crucial in the context of medical image analysis, where the range of possible
+abnormalities is extremely wide. Recently, a new category of methods has
+emerged, based on the analysis of the intermediate features of a trained model.
+These methods can be divided into 2 groups: single-layer methods that consider
+the feature map obtained at a fixed, carefully chosen layer, and multi-layer
+methods that consider the ensemble of the feature maps generated by the model.
+While promising, a proper comparison of these algorithms is still lacking. In
+this work, we compared various feature-based OOD detection methods on a large
+spectra of OOD (20 types), representing approximately 7800 3D MRIs. Our
+experiments shed the light on two phenomenons. First, multi-layer methods
+consistently outperform single-layer approaches, which tend to have
+inconsistent behaviour depending on the type of anomaly. Second, the OOD
+detection performance highly depends on the architecture of the underlying
+neural network.
+</p></li>
+</ul>
+<h2>in-context</h2>
+<h3>Title: Investigating the Learning Behaviour of In-context Learning: A Comparison with Supervised Learning. (arXiv:2307.15411v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2307.15411">http://arxiv.org/abs/2307.15411</a></li>
+<li>Code URL: <a href="https://github.com/xdwang0726/icl_ll">https://github.com/xdwang0726/icl_ll</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2307.15411] Investigating the Learning Behaviour of In-context Learning: A Comparison with Supervised Learning](http://arxiv.org/abs/2307.15411) #in-context</code></li>
+<li>Summary: <p>Large language models (LLMs) have shown remarkable capacity for in-context
+learning (ICL), where learning a new task from just a few training examples is
+done without being explicitly pre-trained. However, despite the success of
+LLMs, there has been little understanding of how ICL learns the knowledge from
+the given prompts. In this paper, to make progress toward understanding the
+learning behaviour of ICL, we train the same LLMs with the same demonstration
+examples via ICL and supervised learning (SL), respectively, and investigate
+their performance under label perturbations (i.e., noisy labels and label
+imbalance) on a range of classification tasks. First, via extensive
+experiments, we find that gold labels have significant impacts on the
+downstream in-context performance, especially for large language models;
+however, imbalanced labels matter little to ICL across all model sizes. Second,
+when comparing with SL, we show empirically that ICL is less sensitive to label
+perturbations than SL, and ICL gradually attains comparable performance to SL
+as the model size increases.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-07-31]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
