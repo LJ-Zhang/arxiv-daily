@@ -15,10 +15,8 @@ headers = {
 }
 
 keywords = [
-    'secure', 'security', 'privacy', 'protect', 'defense', 'attack', 'robust',
-    'biometric', 'steal', 'extraction', 'membership infer', 'federate', 'fair',
-    'interpretability', 'explainability', 'watermark', 'diffusion', 'noise learning',
-    'data-free', 'transformer', 'generative', 'large language model', 'segmentation'
+    'diffusion', 'self-supervised',
+    'foundation model', 'generative', 'anomaly', 'in-context'
 ]
 categories = ['cs.CV', 'cs.CL', 'cs.CR', 'cs.LG']
 
