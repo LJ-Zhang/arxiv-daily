@@ -16,7 +16,8 @@ headers = {
 
 keywords = [
     'diffusion', 'self-supervised',
-    'foundation model', 'generative', 'anomaly', 'in-context'
+    'foundation model', 'generative', 'anomaly', 'in-context',
+    'memory', 'few-shot'
 ]
 categories = ['cs.CV', 'cs.CL', 'cs.CR', 'cs.LG']
 
