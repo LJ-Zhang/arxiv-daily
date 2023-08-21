@@ -1,0 +1,549 @@
+<h2>diffusion</h2>
+<h3>Title: Learning A Coarse-to-Fine Diffusion Transformer for Image Restoration. (arXiv:2308.08730v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08730">http://arxiv.org/abs/2308.08730</a></li>
+<li>Code URL: <a href="https://github.com/wlydlut/c2f-dft">https://github.com/wlydlut/c2f-dft</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08730] Learning A Coarse-to-Fine Diffusion Transformer for Image Restoration](http://arxiv.org/abs/2308.08730) #diffusion</code></li>
+<li>Summary: <p>Recent years have witnessed the remarkable performance of diffusion models in
+various vision tasks. However, for image restoration that aims to recover clear
+images with sharper details from given degraded observations, diffusion-based
+methods may fail to recover promising results due to inaccurate noise
+estimation. Moreover, simple constraining noises cannot effectively learn
+complex degradation information, which subsequently hinders the model capacity.
+To solve the above problems, we propose a coarse-to-fine diffusion Transformer
+(C2F-DFT) for image restoration. Specifically, our C2F-DFT contains diffusion
+self-attention (DFSA) and diffusion feed-forward network (DFN) within a new
+coarse-to-fine training scheme. The DFSA and DFN respectively capture the
+long-range diffusion dependencies and learn hierarchy diffusion representation
+to facilitate better restoration. In the coarse training stage, our C2F-DFT
+estimates noises and then generates the final clean image by a sampling
+algorithm. To further improve the restoration quality, we propose a simple yet
+effective fine training scheme. It first exploits the coarse-trained diffusion
+model with fixed steps to generate restoration results, which then would be
+constrained with corresponding ground-truth ones to optimize the models to
+remedy the unsatisfactory results affected by inaccurate noise estimation.
+Extensive experiments show that C2F-DFT significantly outperforms
+diffusion-based restoration method IR-SDE and achieves competitive performance
+compared with Transformer-based state-of-the-art methods on $3$ tasks,
+including deraining, deblurring, and real denoising.
+</p></li>
+</ul>
+<h3>Title: Watch Your Steps: Local Image and Scene Editing by Text Instructions. (arXiv:2308.08947v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08947">http://arxiv.org/abs/2308.08947</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08947] Watch Your Steps: Local Image and Scene Editing by Text Instructions](http://arxiv.org/abs/2308.08947) #diffusion</code></li>
+<li>Summary: <p>Denoising diffusion models have enabled high-quality image generation and
+editing. We present a method to localize the desired edit region implicit in a
+text instruction. We leverage InstructPix2Pix (IP2P) and identify the
+discrepancy between IP2P predictions with and without the instruction. This
+discrepancy is referred to as the relevance map. The relevance map conveys the
+importance of changing each pixel to achieve the edits, and is used to to guide
+the modifications. This guidance ensures that the irrelevant pixels remain
+unchanged. Relevance maps are further used to enhance the quality of
+text-guided editing of 3D scenes in the form of neural radiance fields. A field
+is trained on relevance maps of training views, denoted as the relevance field,
+defining the 3D region within which modifications should be made. We perform
+iterative updates on the training views guided by rendered relevance maps from
+the relevance field. Our method achieves state-of-the-art performance on both
+image and NeRF editing tasks. Project page:
+https://ashmrz.github.io/WatchYourSteps/
+</p></li>
+</ul>
+<h3>Title: Enhancing Phrase Representation by Information Bottleneck Guided Text Diffusion Process for Keyphrase Extraction. (arXiv:2308.08739v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08739">http://arxiv.org/abs/2308.08739</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08739] Enhancing Phrase Representation by Information Bottleneck Guided Text Diffusion Process for Keyphrase Extraction](http://arxiv.org/abs/2308.08739) #diffusion</code></li>
+<li>Summary: <p>Keyphrase extraction (KPE) is an important task in Natural Language
+Processing for many scenarios, which aims to extract keyphrases that are
+present in a given document. Many existing supervised methods treat KPE as
+sequential labeling, span-level classification, or generative tasks. However,
+these methods lack the ability to utilize keyphrase information, which may
+result in biased results. In this study, we propose Diff-KPE, which leverages
+the supervised Variational Information Bottleneck (VIB) to guide the text
+diffusion process for generating enhanced keyphrase representations. Diff-KPE
+first generates the desired keyphrase embeddings conditioned on the entire
+document and then injects the generated keyphrase embeddings into each phrase
+representation. A ranking network and VIB are then optimized together with rank
+loss and classification loss, respectively. This design of Diff-KPE allows us
+to rank each candidate phrase by utilizing both the information of keyphrases
+and the document. Experiments show that Diff-KPE outperforms existing KPE
+methods on a large open domain keyphrase extraction benchmark, OpenKP, and a
+scientific domain dataset, KP20K.
+</p></li>
+</ul>
+<h2>self-supervised</h2>
+<h3>Title: A Survey on Deep Multi-modal Learning for Body Language Recognition and Generation. (arXiv:2308.08849v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08849">http://arxiv.org/abs/2308.08849</a></li>
+<li>Code URL: <a href="https://github.com/wentaol86/awesome-body-language">https://github.com/wentaol86/awesome-body-language</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08849] A Survey on Deep Multi-modal Learning for Body Language Recognition and Generation](http://arxiv.org/abs/2308.08849) #self-supervised</code></li>
+<li>Summary: <p>Body language (BL) refers to the non-verbal communication expressed through
+physical movements, gestures, facial expressions, and postures. It is a form of
+communication that conveys information, emotions, attitudes, and intentions
+without the use of spoken or written words. It plays a crucial role in
+interpersonal interactions and can complement or even override verbal
+communication. Deep multi-modal learning techniques have shown promise in
+understanding and analyzing these diverse aspects of BL. The survey emphasizes
+their applications to BL generation and recognition. Several common BLs are
+considered i.e., Sign Language (SL), Cued Speech (CS), Co-speech (CoS), and
+Talking Head (TH), and we have conducted an analysis and established the
+connections among these four BL for the first time. Their generation and
+recognition often involve multi-modal approaches. Benchmark datasets for BL
+research are well collected and organized, along with the evaluation of SOTA
+methods on these datasets. The survey highlights challenges such as limited
+labeled data, multi-modal learning, and the need for domain adaptation to
+generalize models to unseen speakers or languages. Future research directions
+are presented, including exploring self-supervised learning techniques,
+integrating contextual information from other modalities, and exploiting
+large-scale pre-trained multi-modal models. In summary, this survey paper
+provides a comprehensive understanding of deep multi-modal learning for various
+BL generations and recognitions for the first time. By analyzing advancements,
+challenges, and future directions, it serves as a valuable resource for
+researchers and practitioners in advancing this field. n addition, we maintain
+a continuously updated paper list for deep multi-modal learning for BL
+recognition and generation: https://github.com/wentaoL86/awesome-body-language.
+</p></li>
+</ul>
+<h3>Title: SRMAE: Masked Image Modeling for Scale-Invariant Deep Representations. (arXiv:2308.08884v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08884">http://arxiv.org/abs/2308.08884</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08884] SRMAE: Masked Image Modeling for Scale-Invariant Deep Representations](http://arxiv.org/abs/2308.08884) #self-supervised</code></li>
+<li>Summary: <p>Due to the prevalence of scale variance in nature images, we propose to use
+image scale as a self-supervised signal for Masked Image Modeling (MIM). Our
+method involves selecting random patches from the input image and downsampling
+them to a low-resolution format. Our framework utilizes the latest advances in
+super-resolution (SR) to design the prediction head, which reconstructs the
+input from low-resolution clues and other patches. After 400 epochs of
+pre-training, our Super Resolution Masked Autoencoders (SRMAE) get an accuracy
+of 82.1% on the ImageNet-1K task. Image scale signal also allows our SRMAE to
+capture scale invariance representation. For the very low resolution (VLR)
+recognition task, our model achieves the best performance, surpassing DeriveNet
+by 1.3%. Our method also achieves an accuracy of 74.84% on the task of
+recognizing low-resolution facial expressions, surpassing the current
+state-of-the-art FMD by 9.48%.
+</p></li>
+</ul>
+<h3>Title: Identity-Seeking Self-Supervised Representation Learning for Generalizable Person Re-identification. (arXiv:2308.08887v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08887">http://arxiv.org/abs/2308.08887</a></li>
+<li>Code URL: <a href="https://github.com/dcp15/isr_iccv2023_oral">https://github.com/dcp15/isr_iccv2023_oral</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08887] Identity-Seeking Self-Supervised Representation Learning for Generalizable Person Re-identification](http://arxiv.org/abs/2308.08887) #self-supervised</code></li>
+<li>Summary: <p>This paper aims to learn a domain-generalizable (DG) person re-identification
+(ReID) representation from large-scale videos \textbf{without any annotation}.
+Prior DG ReID methods employ limited labeled data for training due to the high
+cost of annotation, which restricts further advances. To overcome the barriers
+of data and annotation, we propose to utilize large-scale unsupervised data for
+training. The key issue lies in how to mine identity information. To this end,
+we propose an Identity-seeking Self-supervised Representation learning (ISR)
+method. ISR constructs positive pairs from inter-frame images by modeling the
+instance association as a maximum-weight bipartite matching problem. A
+reliability-guided contrastive loss is further presented to suppress the
+adverse impact of noisy positive pairs, ensuring that reliable positive pairs
+dominate the learning process. The training cost of ISR scales approximately
+linearly with the data size, making it feasible to utilize large-scale data for
+training. The learned representation exhibits superior generalization ability.
+\textbf{Without human annotation and fine-tuning, ISR achieves 87.0\% Rank-1 on
+Market-1501 and 56.4\% Rank-1 on MSMT17}, outperforming the best supervised
+domain-generalizable method by 5.0\% and 19.5\%, respectively. In the
+pre-training$\rightarrow$fine-tuning scenario, ISR achieves state-of-the-art
+performance, with 88.4\% Rank-1 on MSMT17. The code is at
+\url{https://github.com/dcp15/ISR_ICCV2023_Oral}.
+</p></li>
+</ul>
+<h3>Title: BIOptimus: Pre-training an Optimal Biomedical Language Model with Curriculum Learning for Named Entity Recognition. (arXiv:2308.08625v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08625">http://arxiv.org/abs/2308.08625</a></li>
+<li>Code URL: <a href="https://github.com/rttl-ai/bioptimus">https://github.com/rttl-ai/bioptimus</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08625] BIOptimus: Pre-training an Optimal Biomedical Language Model with Curriculum Learning for Named Entity Recognition](http://arxiv.org/abs/2308.08625) #self-supervised</code></li>
+<li>Summary: <p>Using language models (LMs) pre-trained in a self-supervised setting on large
+corpora and then fine-tuning for a downstream task has helped to deal with the
+problem of limited label data for supervised learning tasks such as Named
+Entity Recognition (NER). Recent research in biomedical language processing has
+offered a number of biomedical LMs pre-trained using different methods and
+techniques that advance results on many BioNLP tasks, including NER. However,
+there is still a lack of a comprehensive comparison of pre-training approaches
+that would work more optimally in the biomedical domain. This paper aims to
+investigate different pre-training methods, such as pre-training the biomedical
+LM from scratch and pre-training it in a continued fashion. We compare existing
+methods with our proposed pre-training method of initializing weights for new
+tokens by distilling existing weights from the BERT model inside the context
+where the tokens were found. The method helps to speed up the pre-training
+stage and improve performance on NER. In addition, we compare how masking rate,
+corruption strategy, and masking strategies impact the performance of the
+biomedical LM. Finally, using the insights from our experiments, we introduce a
+new biomedical LM (BIOptimus), which is pre-trained using Curriculum Learning
+(CL) and contextualized weight distillation method. Our model sets new states
+of the art on several biomedical Named Entity Recognition (NER) tasks. We
+release our code and all pre-trained models
+</p></li>
+</ul>
+<h2>foundation model</h2>
+<h3>Title: SurgicalSAM: Efficient Class Promptable Surgical Instrument Segmentation. (arXiv:2308.08746v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08746">http://arxiv.org/abs/2308.08746</a></li>
+<li>Code URL: <a href="https://github.com/wenxi-yue/surgicalsam">https://github.com/wenxi-yue/surgicalsam</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08746] SurgicalSAM: Efficient Class Promptable Surgical Instrument Segmentation](http://arxiv.org/abs/2308.08746) #foundation model</code></li>
+<li>Summary: <p>The Segment Anything Model (SAM) is a powerful foundation model that has
+revolutionised image segmentation. To apply SAM to surgical instrument
+segmentation, a common approach is to locate precise points or boxes of
+instruments and then use them as prompts for SAM in a zero-shot manner.
+However, we observe two problems with this naive pipeline: (1) the domain gap
+between natural objects and surgical instruments leads to poor generalisation
+of SAM; and (2) SAM relies on precise point or box locations for accurate
+segmentation, requiring either extensive manual guidance or a well-performing
+specialist detector for prompt preparation, which leads to a complex
+multi-stage pipeline. To address these problems, we introduce SurgicalSAM, a
+novel end-to-end efficient-tuning approach for SAM to effectively integrate
+surgical-specific information with SAM's pre-trained knowledge for improved
+generalisation. Specifically, we propose a lightweight prototype-based class
+prompt encoder for tuning, which directly generates prompt embeddings from
+class prototypes and eliminates the use of explicit prompts for improved
+robustness and a simpler pipeline. In addition, to address the low inter-class
+variance among surgical instrument categories, we propose contrastive prototype
+learning, further enhancing the discrimination of the class prototypes for more
+accurate class prompting. The results of extensive experiments on both
+EndoVis2018 and EndoVis2017 datasets demonstrate that SurgicalSAM achieves
+state-of-the-art performance while only requiring a small number of tunable
+parameters. The source code will be released at
+https://github.com/wenxi-yue/SurgicalSAM.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: Fair GANs through model rebalancing with synthetic data. (arXiv:2308.08638v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08638">http://arxiv.org/abs/2308.08638</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08638] Fair GANs through model rebalancing with synthetic data](http://arxiv.org/abs/2308.08638) #generative</code></li>
+<li>Summary: <p>Deep generative models require large amounts of training data. This often
+poses a problem as the collection of datasets can be expensive and difficult,
+in particular datasets that are representative of the appropriate underlying
+distribution (e.g. demographic). This introduces biases in datasets which are
+further propagated in the models. We present an approach to mitigate biases in
+an existing generative adversarial network by rebalancing the model
+distribution. We do so by generating balanced data from an existing unbalanced
+deep generative model using latent space exploration and using this data to
+train a balanced generative model. Further, we propose a bias mitigation loss
+function that shows improvements in the fairness metric even when trained with
+unbalanced datasets. We show results for the Stylegan2 models while training on
+the FFHQ dataset for racial fairness and see that the proposed approach
+improves on the fairness metric by almost 5 times, whilst maintaining image
+quality. We further validate our approach by applying it to an imbalanced
+Cifar-10 dataset. Lastly, we argue that the traditionally used image quality
+metrics such as Frechet inception distance (FID) are unsuitable for bias
+mitigation problems.
+</p></li>
+</ul>
+<h3>Title: Fast Inference and Update of Probabilistic Density Estimation on Trajectory Prediction. (arXiv:2308.08824v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08824">http://arxiv.org/abs/2308.08824</a></li>
+<li>Code URL: <a href="https://github.com/meaten/flowchain-iccv2023">https://github.com/meaten/flowchain-iccv2023</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08824] Fast Inference and Update of Probabilistic Density Estimation on Trajectory Prediction](http://arxiv.org/abs/2308.08824) #generative</code></li>
+<li>Summary: <p>Safety-critical applications such as autonomous vehicles and social robots
+require fast computation and accurate probability density estimation on
+trajectory prediction. To address both requirements, this paper presents a new
+normalizing flow-based trajectory prediction model named FlowChain. FlowChain
+is a stack of conditional continuously-indexed flows (CIFs) that are expressive
+and allow analytical probability density computation. This analytical
+computation is faster than the generative models that need additional
+approximations such as kernel density estimation. Moreover, FlowChain is more
+accurate than the Gaussian mixture-based models due to fewer assumptions on the
+estimated density. FlowChain also allows a rapid update of estimated
+probability densities. This update is achieved by adopting the \textit{newest
+observed position} and reusing the flow transformations and its
+log-det-jacobians that represent the \textit{motion trend}. This update is
+completed in less than one millisecond because this reuse greatly omits the
+computational cost. Experimental results showed our FlowChain achieved
+state-of-the-art trajectory prediction accuracy compared to previous methods.
+Furthermore, our FlowChain demonstrated superiority in the accuracy and speed
+of density estimation. Our code is available at
+\url{https://github.com/meaten/FlowChain-ICCV2023}
+</p></li>
+</ul>
+<h3>Title: Reinforced Self-Training (ReST) for Language Modeling. (arXiv:2308.08998v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08998">http://arxiv.org/abs/2308.08998</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08998] Reinforced Self-Training (ReST) for Language Modeling](http://arxiv.org/abs/2308.08998) #generative</code></li>
+<li>Summary: <p>Reinforcement learning from human feedback (RLHF) can improve the quality of
+large language model's (LLM) outputs by aligning them with human preferences.
+We propose a simple algorithm for aligning LLMs with human preferences inspired
+by growing batch reinforcement learning (RL), which we call Reinforced
+Self-Training (ReST). Given an initial LLM policy, ReST produces a dataset by
+generating samples from the policy, which are then used to improve the LLM
+policy using offline RL algorithms. ReST is more efficient than typical online
+RLHF methods because the training dataset is produced offline, which allows
+data reuse. While ReST is a general approach applicable to all generative
+learning settings, we focus on its application to machine translation. Our
+results show that ReST can substantially improve translation quality, as
+measured by automated metrics and human evaluation on machine translation
+benchmarks in a compute and sample-efficient manner.
+</p></li>
+</ul>
+<h3>Title: An Effective Deep Learning Based Multi-Class Classification of DoS and DDoS Attack Detection. (arXiv:2308.08803v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08803">http://arxiv.org/abs/2308.08803</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08803] An Effective Deep Learning Based Multi-Class Classification of DoS and DDoS Attack Detection](http://arxiv.org/abs/2308.08803) #generative</code></li>
+<li>Summary: <p>In the past few years, cybersecurity is becoming very important due to the
+rise in internet users. The internet attacks such as Denial of service (DoS)
+and Distributed Denial of Service (DDoS) attacks severely harm a website or
+server and make them unavailable to other users. Network Monitoring and control
+systems have found it challenging to identify the many classes of DoS and DDoS
+attacks since each operates uniquely. Hence a powerful technique is required
+for attack detection. Traditional machine learning techniques are inefficient
+in handling extensive network data and cannot extract high-level features for
+attack detection. Therefore, an effective deep learning-based intrusion
+detection system is developed in this paper for DoS and DDoS attack
+classification. This model includes various phases and starts with the Deep
+Convolutional Generative Adversarial Networks (DCGAN) based technique to
+address the class imbalance issue in the dataset. Then a deep learning
+algorithm based on ResNet-50 extracts the critical features for each class in
+the dataset. After that, an optimized AlexNet-based classifier is implemented
+for detecting the attacks separately, and the essential parameters of the
+classifier are optimized using the Atom search optimization algorithm. The
+proposed approach was evaluated on benchmark datasets, CCIDS2019 and UNSW-NB15,
+using key classification metrics and achieved 99.37% accuracy for the UNSW-NB15
+dataset and 99.33% for the CICIDS2019 dataset. The investigational results
+demonstrate that the suggested approach performs superior to other competitive
+techniques in identifying DoS and DDoS attacks.
+</p></li>
+</ul>
+<h2>anomaly</h2>
+<h3>Title: Improving Anomaly Segmentation with Multi-Granularity Cross-Domain Alignment. (arXiv:2308.08696v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08696">http://arxiv.org/abs/2308.08696</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08696] Improving Anomaly Segmentation with Multi-Granularity Cross-Domain Alignment](http://arxiv.org/abs/2308.08696) #anomaly</code></li>
+<li>Summary: <p>Anomaly segmentation plays a crucial role in identifying anomalous objects
+within images, which facilitates the detection of road anomalies for autonomous
+driving. Although existing methods have shown impressive results in anomaly
+segmentation using synthetic training data, the domain discrepancies between
+synthetic training data and real test data are often neglected. To address this
+issue, the Multi-Granularity Cross-Domain Alignment (MGCDA) framework is
+proposed for anomaly segmentation in complex driving environments. It uniquely
+combines a new Multi-source Domain Adversarial Training (MDAT) module and a
+novel Cross-domain Anomaly-aware Contrastive Learning (CACL) method to boost
+the generality of the model, seamlessly integrating multi-domain data at both
+scene and sample levels. Multi-source domain adversarial loss and a dynamic
+label smoothing strategy are integrated into the MDAT module to facilitate the
+acquisition of domain-invariant features at the scene level, through
+adversarial training across multiple stages. CACL aligns sample-level
+representations with contrastive loss on cross-domain data, which utilizes an
+anomaly-aware sampling strategy to efficiently sample hard samples and anchors.
+The proposed framework has decent properties of parameter-free during the
+inference stage and is compatible with other anomaly segmentation networks.
+Experimental conducted on Fishyscapes and RoadAnomaly datasets demonstrate that
+the proposed framework achieves state-of-the-art performance.
+</p></li>
+</ul>
+<h3>Title: Beyond Sharing: Conflict-Aware Multivariate Time Series Anomaly Detection. (arXiv:2308.08915v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08915">http://arxiv.org/abs/2308.08915</a></li>
+<li>Code URL: <a href="https://github.com/dawnvince/mts_cad">https://github.com/dawnvince/mts_cad</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08915] Beyond Sharing: Conflict-Aware Multivariate Time Series Anomaly Detection](http://arxiv.org/abs/2308.08915) #anomaly</code></li>
+<li>Summary: <p>Massive key performance indicators (KPIs) are monitored as multivariate time
+series data (MTS) to ensure the reliability of the software applications and
+service system. Accurately detecting the abnormality of MTS is very critical
+for subsequent fault elimination. The scarcity of anomalies and manual labeling
+has led to the development of various self-supervised MTS anomaly detection
+(AD) methods, which optimize an overall objective/loss encompassing all
+metrics' regression objectives/losses. However, our empirical study uncovers
+the prevalence of conflicts among metrics' regression objectives, causing MTS
+models to grapple with different losses. This critical aspect significantly
+impacts detection performance but has been overlooked in existing approaches.
+To address this problem, by mimicking the design of multi-gate
+mixture-of-experts (MMoE), we introduce CAD, a Conflict-aware multivariate KPI
+Anomaly Detection algorithm. CAD offers an exclusive structure for each metric
+to mitigate potential conflicts while fostering inter-metric promotions. Upon
+thorough investigation, we find that the poor performance of vanilla MMoE
+mainly comes from the input-output misalignment settings of MTS formulation and
+convergence issues arising from expansive tasks. To address these challenges,
+we propose a straightforward yet effective task-oriented metric selection and
+p&amp;s (personalized and shared) gating mechanism, which establishes CAD as the
+first practicable multi-task learning (MTL) based MTS AD model. Evaluations on
+multiple public datasets reveal that CAD obtains an average F1-score of 0.943
+across three public datasets, notably outperforming state-of-the-art methods.
+Our code is accessible at https://github.com/dawnvince/MTS_CAD.
+</p></li>
+</ul>
+<h2>in-context</h2>
+<h3>Title: Exploring Demonstration Ensembling for In-context Learning. (arXiv:2308.08780v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08780">http://arxiv.org/abs/2308.08780</a></li>
+<li>Code URL: <a href="https://github.com/mukhal/icl-ensembling">https://github.com/mukhal/icl-ensembling</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08780] Exploring Demonstration Ensembling for In-context Learning](http://arxiv.org/abs/2308.08780) #in-context</code></li>
+<li>Summary: <p>In-context learning (ICL) operates by showing language models (LMs) examples
+of input-output pairs for a given task, i.e., demonstrations. The standard
+approach for ICL is to prompt the LM with concatenated demonstrations followed
+by the test input. This approach suffers from some issues. First, concatenation
+offers almost no control over the contribution of each demo to the model
+prediction. This can be sub-optimal when some demonstrations are irrelevant to
+the test example. Second, due to the input length limit of some transformer
+models, it might be infeasible to fit many examples into the context,
+especially when dealing with long-input tasks. In this work, we explore
+Demonstration Ensembling (DENSE) as an alternative to simple concatenation.
+\model predicts outputs using subsets (i.e., buckets) of the demonstrations and
+then combines the output probabilities resulting from each subset to produce
+the final prediction. We study different ensembling methods using GPT-j and
+experiment on 12 language tasks. Our experiments show weighted max ensembling
+to outperform vanilla concatenation by as large as 2.4 average points. Code
+available at \url{https://github.com/mukhal/icl-ensembling}.
+</p></li>
+</ul>
+<h2>memory</h2>
+<h3>Title: SkinDistilViT: Lightweight Vision Transformer for Skin Lesion Classification. (arXiv:2308.08669v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08669">http://arxiv.org/abs/2308.08669</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08669] SkinDistilViT: Lightweight Vision Transformer for Skin Lesion Classification](http://arxiv.org/abs/2308.08669) #memory</code></li>
+<li>Summary: <p>Skin cancer is a treatable disease if discovered early. We provide a
+production-specific solution to the skin cancer classification problem that
+matches human performance in melanoma identification by training a vision
+transformer on melanoma medical images annotated by experts. Since inference
+cost, both time and memory wise is important in practice, we employ knowledge
+distillation to obtain a model that retains 98.33% of the teacher's balanced
+multi-class accuracy, at a fraction of the cost. Memory-wise, our model is
+49.60% smaller than the teacher. Time-wise, our solution is 69.25% faster on
+GPU and 97.96% faster on CPU. By adding classification heads at each level of
+the transformer and employing a cascading distillation process, we improve the
+balanced multi-class accuracy of the base model by 2.1%, while creating a range
+of models of various sizes but comparable performance. We provide the code at
+https://github.com/Longman-Stan/SkinDistilVit.
+</p></li>
+</ul>
+<h3>Title: URL: Combating Label Noise for Lung Nodule Malignancy Grading. (arXiv:2308.08772v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08772">http://arxiv.org/abs/2308.08772</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08772] URL: Combating Label Noise for Lung Nodule Malignancy Grading](http://arxiv.org/abs/2308.08772) #memory</code></li>
+<li>Summary: <p>Due to the complexity of annotation and inter-annotator variability, most
+lung nodule malignancy grading datasets contain label noise, which inevitably
+degrades the performance and generalizability of models. Although researchers
+adopt the label-noise-robust methods to handle label noise for lung nodule
+malignancy grading, they do not consider the inherent ordinal relation among
+classes of this task. To model the ordinal relation among classes to facilitate
+tackling label noise in this task, we propose a Unimodal-Regularized
+Label-noise-tolerant (URL) framework. Our URL contains two stages, the
+Supervised Contrastive Learning (SCL) stage and the Memory pseudo-labels
+generation and Unimodal regularization (MU) stage. In the SCL stage, we select
+reliable samples and adopt supervised contrastive learning to learn better
+representations. In the MU stage, we split samples with multiple annotations
+into multiple samples with a single annotation and shuffle them into different
+batches. To handle label noise, pseudo-labels are generated using the
+similarity between each sample and the central feature of each class, and
+temporal ensembling is used to obtain memory pseudo-labels that supervise the
+model training. To model the ordinal relation, we introduce unimodal
+regularization to keep the ordinal relation among classes in the predictions.
+Moreover, each lung nodule is characterized by three orthographic views.
+Experiments conducted on the LIDC-IDRI dataset indicate the superiority of our
+URL over other competing methods. Code is available at
+https://github.com/axz520/UR.
+</p></li>
+</ul>
+<h3>Title: A Fusion of Variational Distribution Priors and Saliency Map Replay for Continual 3D Reconstruction. (arXiv:2308.08812v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08812">http://arxiv.org/abs/2308.08812</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08812] A Fusion of Variational Distribution Priors and Saliency Map Replay for Continual 3D Reconstruction](http://arxiv.org/abs/2308.08812) #memory</code></li>
+<li>Summary: <p>Single-image 3D reconstruction is a research challenge focused on predicting
+3D object shapes from single-view images. This task requires significant data
+acquisition to predict both visible and occluded portions of the shape.
+Furthermore, learning-based methods face the difficulty of creating a
+comprehensive training dataset for all possible classes. To this end, we
+propose a continual learning-based 3D reconstruction method where our goal is
+to design a model using Variational Priors that can still reconstruct the
+previously seen classes reasonably even after training on new classes.
+Variational Priors represent abstract shapes and combat forgetting, whereas
+saliency maps preserve object attributes with less memory usage. This is vital
+due to resource constraints in storing extensive training data. Additionally,
+we introduce saliency map-based experience replay to capture global and
+distinct object features. Thorough experiments show competitive results
+compared to established methods, both quantitatively and qualitatively.
+</p></li>
+</ul>
+<h3>Title: Lightweight Adaptation of Neural Language Models via Subspace Embedding. (arXiv:2308.08688v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08688">http://arxiv.org/abs/2308.08688</a></li>
+<li>Code URL: <a href="https://github.com/amitkumarj441/cikm2023_subspaceembedding">https://github.com/amitkumarj441/cikm2023_subspaceembedding</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08688] Lightweight Adaptation of Neural Language Models via Subspace Embedding](http://arxiv.org/abs/2308.08688) #memory</code></li>
+<li>Summary: <p>Traditional neural word embeddings are usually dependent on a richer
+diversity of vocabulary. However, the language models recline to cover major
+vocabularies via the word embedding parameters, in particular, for multilingual
+language models that generally cover a significant part of their overall
+learning parameters. In this work, we present a new compact embedding structure
+to reduce the memory footprint of the pre-trained language models with a
+sacrifice of up to 4% absolute accuracy. The embeddings vectors reconstruction
+follows a set of subspace embeddings and an assignment procedure via the
+contextual relationship among tokens from pre-trained language models. The
+subspace embedding structure calibrates to masked language models, to evaluate
+our compact embedding structure on similarity and textual entailment tasks,
+sentence and paraphrase tasks. Our experimental evaluation shows that the
+subspace embeddings achieve compression rates beyond 99.8% in comparison with
+the original embeddings for the language models on XNLI and GLUE benchmark
+suites.
+</p></li>
+</ul>
+<h3>Title: LSTM-Based Forecasting Model for GRACE Accelerometer Data. (arXiv:2308.08621v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08621">http://arxiv.org/abs/2308.08621</a></li>
+<li>Code URL: <a href="https://github.com/darbeheshti/lstm-based-analysis-for-grace-accelerometers">https://github.com/darbeheshti/lstm-based-analysis-for-grace-accelerometers</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08621] LSTM-Based Forecasting Model for GRACE Accelerometer Data](http://arxiv.org/abs/2308.08621) #memory</code></li>
+<li>Summary: <p>The Gravity Recovery and Climate Experiment (GRACE) satellite mission,
+spanning from 2002 to 2017, has provided a valuable dataset for monitoring
+variations in Earth's gravity field, enabling diverse applications in
+geophysics and hydrology. The mission was followed by GRACE Follow-On in 2018,
+continuing data collection efforts. The monthly Earth gravity field, derived
+from the integration different instruments onboard satellites, has shown
+inconsistencies due to various factors, including gaps in observations for
+certain instruments since the beginning of the GRACE mission.
+</p></li>
+</ul>
+<p>With over two decades of GRACE and GRACE Follow-On data now available, this
+paper proposes an approach to fill the data gaps and forecast GRACE
+accelerometer data. Specifically, we focus on accelerometer data and employ
+Long Short-Term Memory (LSTM) networks to train a model capable of predicting
+accelerometer data for all three axes.
+</p>
+<p>In this study, we describe the methodology used to preprocess the
+accelerometer data, prepare it for LSTM training, and evaluate the model's
+performance. Through experimentation and validation, we assess the model's
+accuracy and its ability to predict accelerometer data for the three axes. Our
+results demonstrate the effectiveness of the LSTM forecasting model in filling
+gaps and forecasting GRACE accelerometer data.
+</p>
+
+<h2>few-shot</h2>
+<h3>Title: Evaluation of really good grammatical error correction. (arXiv:2308.08982v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.08982">http://arxiv.org/abs/2308.08982</a></li>
+<li>Code URL: <a href="https://github.com/robertostling/gec-evaluation">https://github.com/robertostling/gec-evaluation</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.08982] Evaluation of really good grammatical error correction](http://arxiv.org/abs/2308.08982) #few-shot</code></li>
+<li>Summary: <p>Although rarely stated, in practice, Grammatical Error Correction (GEC)
+encompasses various models with distinct objectives, ranging from grammatical
+error detection to improving fluency. Traditional evaluation methods fail to
+fully capture the full range of system capabilities and objectives.
+Reference-based evaluations suffer from limitations in capturing the wide
+variety of possible correction and the biases introduced during reference
+creation and is prone to favor fixing local errors over overall text
+improvement. The emergence of large language models (LLMs) has further
+highlighted the shortcomings of these evaluation strategies, emphasizing the
+need for a paradigm shift in evaluation methodology. In the current study, we
+perform a comprehensive evaluation of various GEC systems using a recently
+published dataset of Swedish learner texts. The evaluation is performed using
+established evaluation metrics as well as human judges. We find that GPT-3 in a
+few-shot setting by far outperforms previous grammatical error correction
+systems for Swedish, a language comprising only 0.11% of its training data. We
+also found that current evaluation methods contain undesirable biases that a
+human evaluation is able to reveal. We suggest using human post-editing of GEC
+system outputs to analyze the amount of change required to reach native-level
+human performance on the task, and provide a dataset annotated with human
+post-edits and assessments of grammaticality, fluency and meaning preservation
+of GEC system outputs.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-08-21]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
