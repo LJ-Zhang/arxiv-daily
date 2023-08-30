@@ -1,0 +1,1039 @@
+<h2>diffusion</h2>
+<h3>Title: Unified Concept Editing in Diffusion Models. (arXiv:2308.14761v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14761">http://arxiv.org/abs/2308.14761</a></li>
+<li>Code URL: <a href="https://github.com/rohitgandikota/unified-concept-editing">https://github.com/rohitgandikota/unified-concept-editing</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14761] Unified Concept Editing in Diffusion Models](http://arxiv.org/abs/2308.14761) #diffusion</code></li>
+<li>Summary: <p>Text-to-image models suffer from various safety issues that may limit their
+suitability for deployment. Previous methods have separately addressed
+individual issues of bias, copyright, and offensive content in text-to-image
+models. However, in the real world, all of these issues appear simultaneously
+in the same model. We present a method that tackles all issues with a single
+approach. Our method, Unified Concept Editing (UCE), edits the model without
+training using a closed-form solution, and scales seamlessly to concurrent
+edits on text-conditional diffusion models. We demonstrate scalable
+simultaneous debiasing, style erasure, and content moderation by editing
+text-to-image projections, and we present extensive experiments demonstrating
+improved efficacy and scalability over prior work. Our code is available at
+https://unified.baulab.info
+</p></li>
+</ul>
+<h3>Title: C2G2: Controllable Co-speech Gesture Generation with Latent Diffusion Model. (arXiv:2308.15016v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15016">http://arxiv.org/abs/2308.15016</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15016] C2G2: Controllable Co-speech Gesture Generation with Latent Diffusion Model](http://arxiv.org/abs/2308.15016) #diffusion</code></li>
+<li>Summary: <p>Co-speech gesture generation is crucial for automatic digital avatar
+animation. However, existing methods suffer from issues such as unstable
+training and temporal inconsistency, particularly in generating high-fidelity
+and comprehensive gestures. Additionally, these methods lack effective control
+over speaker identity and temporal editing of the generated gestures. Focusing
+on capturing temporal latent information and applying practical controlling, we
+propose a Controllable Co-speech Gesture Generation framework, named C2G2.
+Specifically, we propose a two-stage temporal dependency enhancement strategy
+motivated by latent diffusion models. We further introduce two key features to
+C2G2, namely a speaker-specific decoder to generate speaker-related real-length
+skeletons and a repainting strategy for flexible gesture generation/editing.
+Extensive experiments on benchmark gesture datasets verify the effectiveness of
+our proposed C2G2 compared with several state-of-the-art baselines. The link of
+the project demo page can be found at https://c2g2-gesture.github.io/c2_gesture
+</p></li>
+</ul>
+<h3>Title: DiffBIR: Towards Blind Image Restoration with Generative Diffusion Prior. (arXiv:2308.15070v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15070">http://arxiv.org/abs/2308.15070</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15070] DiffBIR: Towards Blind Image Restoration with Generative Diffusion Prior](http://arxiv.org/abs/2308.15070) #diffusion</code></li>
+<li>Summary: <p>We present DiffBIR, which leverages pretrained text-to-image diffusion models
+for blind image restoration problem. Our framework adopts a two-stage pipeline.
+In the first stage, we pretrain a restoration module across diversified
+degradations to improve generalization capability in real-world scenarios. The
+second stage leverages the generative ability of latent diffusion models, to
+achieve realistic image restoration. Specifically, we introduce an injective
+modulation sub-network -- LAControlNet for finetuning, while the pre-trained
+Stable Diffusion is to maintain its generative ability. Finally, we introduce a
+controllable module that allows users to balance quality and fidelity by
+introducing the latent image guidance in the denoising process during
+inference. Extensive experiments have demonstrated its superiority over
+state-of-the-art approaches for both blind image super-resolution and blind
+face restoration tasks on synthetic and real-world datasets. The code is
+available at https://github.com/XPixelGroup/DiffBIR.
+</p></li>
+</ul>
+<h3>Title: DiffusionVMR: Diffusion Model for Video Moment Retrieval. (arXiv:2308.15109v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15109">http://arxiv.org/abs/2308.15109</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15109] DiffusionVMR: Diffusion Model for Video Moment Retrieval](http://arxiv.org/abs/2308.15109) #diffusion</code></li>
+<li>Summary: <p>Video moment retrieval is a fundamental visual-language task that aims to
+retrieve target moments from an untrimmed video based on a language query.
+Existing methods typically generate numerous proposals manually or via
+generative networks in advance as the support set for retrieval, which is not
+only inflexible but also time-consuming. Inspired by the success of diffusion
+models on object detection, this work aims at reformulating video moment
+retrieval as a denoising generation process to get rid of the inflexible and
+time-consuming proposal generation. To this end, we propose a novel
+proposal-free framework, namely DiffusionVMR, which directly samples random
+spans from noise as candidates and introduces denoising learning to ground
+target moments. During training, Gaussian noise is added to the real moments,
+and the model is trained to learn how to reverse this process. In inference, a
+set of time spans is progressively refined from the initial noise to the final
+output. Notably, the training and inference of DiffusionVMR are decoupled, and
+an arbitrary number of random spans can be used in inference without being
+consistent with the training phase. Extensive experiments conducted on three
+widely-used benchmarks (i.e., QVHighlight, Charades-STA, and TACoS) demonstrate
+the effectiveness of the proposed DiffusionVMR by comparing it with
+state-of-the-art methods.
+</p></li>
+</ul>
+<h3>Title: Elucidating the Exposure Bias in Diffusion Models. (arXiv:2308.15321v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15321">http://arxiv.org/abs/2308.15321</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15321] Elucidating the Exposure Bias in Diffusion Models](http://arxiv.org/abs/2308.15321) #diffusion</code></li>
+<li>Summary: <p>Diffusion models have demonstrated impressive generative capabilities, but
+their 'exposure bias' problem, described as the input mismatch between training
+and sampling, lacks in-depth exploration. In this paper, we systematically
+investigate the exposure bias problem in diffusion models by first analytically
+modelling the sampling distribution, based on which we then attribute the
+prediction error at each sampling step as the root cause of the exposure bias
+issue. Furthermore, we discuss potential solutions to this issue and propose an
+intuitive metric for it. Along with the elucidation of exposure bias, we
+propose a simple, yet effective, training-free method called Epsilon Scaling to
+alleviate the exposure bias. We show that Epsilon Scaling explicitly moves the
+sampling trajectory closer to the vector field learned in the training phase by
+scaling down the network output (Epsilon), mitigating the input mismatch
+between training and sampling. Experiments on various diffusion frameworks
+(ADM, DDPM/DDIM, LDM), unconditional and conditional settings, and
+deterministic vs. stochastic sampling verify the effectiveness of our method.
+</p></li>
+</ul>
+<h3>Title: ParaGuide: Guided Diffusion Paraphrasers for Plug-and-Play Textual Style Transfer. (arXiv:2308.15459v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15459">http://arxiv.org/abs/2308.15459</a></li>
+<li>Code URL: <a href="https://github.com/zacharyhorvitz/ParaGuide">https://github.com/zacharyhorvitz/ParaGuide</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15459] ParaGuide: Guided Diffusion Paraphrasers for Plug-and-Play Textual Style Transfer](http://arxiv.org/abs/2308.15459) #diffusion</code></li>
+<li>Summary: <p>Textual style transfer is the task of transforming stylistic properties of
+text while preserving meaning. Target "styles" can be defined in numerous ways,
+ranging from single attributes (e.g, formality) to authorship (e.g,
+Shakespeare). Previous unsupervised style-transfer approaches generally rely on
+significant amounts of labeled data for only a fixed set of styles or require
+large language models. In contrast, we introduce a novel diffusion-based
+framework for general-purpose style transfer that can be flexibly adapted to
+arbitrary target styles at inference time. Our parameter-efficient approach,
+ParaGuide, leverages paraphrase-conditioned diffusion models alongside
+gradient-based guidance from both off-the-shelf classifiers and strong existing
+style embedders to transform the style of text while preserving semantic
+information. We validate the method on the Enron Email Corpus, with both human
+and automatic evaluations, and find that it outperforms strong baselines on
+formality, sentiment, and even authorship style transfer.
+</p></li>
+</ul>
+<h3>Title: Generating tabular datasets under differential privacy. (arXiv:2308.14784v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14784">http://arxiv.org/abs/2308.14784</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14784] Generating tabular datasets under differential privacy](http://arxiv.org/abs/2308.14784) #diffusion</code></li>
+<li>Summary: <p>Machine Learning (ML) is accelerating progress across fields and industries,
+but relies on accessible and high-quality training data. Some of the most
+important datasets are found in biomedical and financial domains in the form of
+spreadsheets and relational databases. But this tabular data is often sensitive
+in nature. Synthetic data generation offers the potential to unlock sensitive
+data, but generative models tend to memorise and regurgitate training data,
+which undermines the privacy goal. To remedy this, researchers have
+incorporated the mathematical framework of Differential Privacy (DP) into the
+training process of deep neural networks. But this creates a trade-off between
+the quality and privacy of the resulting data. Generative Adversarial Networks
+(GANs) are the dominant paradigm for synthesising tabular data under DP, but
+suffer from unstable adversarial training and mode collapse, which are
+exacerbated by the privacy constraints and challenging tabular data modality.
+This work optimises the quality-privacy trade-off of generative models,
+producing higher quality tabular datasets with the same privacy guarantees. We
+implement novel end-to-end models that leverage attention mechanisms to learn
+reversible tabular representations. We also introduce TableDiffusion, the first
+differentially-private diffusion model for tabular data synthesis. Our
+experiments show that TableDiffusion produces higher-fidelity synthetic
+datasets, avoids the mode collapse problem, and achieves state-of-the-art
+performance on privatised tabular data synthesis. By implementing
+TableDiffusion to predict the added noise, we enabled it to bypass the
+challenges of reconstructing mixed-type tabular data. Overall, the diffusion
+paradigm proves vastly more data and privacy efficient than the adversarial
+paradigm, due to augmented re-use of each data batch and a smoother iterative
+training process.
+</p></li>
+</ul>
+<h2>self-supervised</h2>
+<h3>Title: Exploring Model Transferability through the Lens of Potential Energy. (arXiv:2308.15074v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15074">http://arxiv.org/abs/2308.15074</a></li>
+<li>Code URL: <a href="https://github.com/lixiaotong97/ped">https://github.com/lixiaotong97/ped</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15074] Exploring Model Transferability through the Lens of Potential Energy](http://arxiv.org/abs/2308.15074) #self-supervised</code></li>
+<li>Summary: <p>Transfer learning has become crucial in computer vision tasks due to the vast
+availability of pre-trained deep learning models. However, selecting the
+optimal pre-trained model from a diverse pool for a specific downstream task
+remains a challenge. Existing methods for measuring the transferability of
+pre-trained models rely on statistical correlations between encoded static
+features and task labels, but they overlook the impact of underlying
+representation dynamics during fine-tuning, leading to unreliable results,
+especially for self-supervised models. In this paper, we present an insightful
+physics-inspired approach named PED to address these challenges. We reframe the
+challenge of model selection through the lens of potential energy and directly
+model the interaction forces that influence fine-tuning dynamics. By capturing
+the motion of dynamic representations to decline the potential energy within a
+force-driven physical model, we can acquire an enhanced and more stable
+observation for estimating transferability. The experimental results on 10
+downstream tasks and 12 self-supervised models demonstrate that our approach
+can seamlessly integrate into existing ranking techniques and enhance their
+performances, revealing its effectiveness for the model selection task and its
+potential for understanding the mechanism in transfer learning. Code will be
+available at https://github.com/lixiaotong97/PED.
+</p></li>
+</ul>
+<h3>Title: Detect, Augment, Compose, and Adapt: Four Steps for Unsupervised Domain Adaptation in Object Detection. (arXiv:2308.15353v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15353">http://arxiv.org/abs/2308.15353</a></li>
+<li>Code URL: <a href="https://github.com/mohamedtev/daca">https://github.com/mohamedtev/daca</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15353] Detect, Augment, Compose, and Adapt: Four Steps for Unsupervised Domain Adaptation in Object Detection](http://arxiv.org/abs/2308.15353) #self-supervised</code></li>
+<li>Summary: <p>Unsupervised domain adaptation (UDA) plays a crucial role in object detection
+when adapting a source-trained detector to a target domain without annotated
+data. In this paper, we propose a novel and effective four-step UDA approach
+that leverages self-supervision and trains source and target data concurrently.
+We harness self-supervised learning to mitigate the lack of ground truth in the
+target domain. Our method consists of the following steps: (1) identify the
+region with the highest-confidence set of detections in each target image,
+which serve as our pseudo-labels; (2) crop the identified region and generate a
+collection of its augmented versions; (3) combine these latter into a composite
+image; (4) adapt the network to the target domain using the composed image.
+Through extensive experiments under cross-camera, cross-weather, and
+synthetic-to-real scenarios, our approach achieves state-of-the-art
+performance, improving upon the nearest competitor by more than 2% in terms of
+mean Average Precision (mAP). The code is available at
+https://github.com/MohamedTEV/DACA.
+</p></li>
+</ul>
+<h3>Title: A General-Purpose Self-Supervised Model for Computational Pathology. (arXiv:2308.15474v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15474">http://arxiv.org/abs/2308.15474</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15474] A General-Purpose Self-Supervised Model for Computational Pathology](http://arxiv.org/abs/2308.15474) #self-supervised</code></li>
+<li>Summary: <p>Tissue phenotyping is a fundamental computational pathology (CPath) task in
+learning objective characterizations of histopathologic biomarkers in anatomic
+pathology. However, whole-slide imaging (WSI) poses a complex computer vision
+problem in which the large-scale image resolutions of WSIs and the enormous
+diversity of morphological phenotypes preclude large-scale data annotation.
+Current efforts have proposed using pretrained image encoders with either
+transfer learning from natural image datasets or self-supervised pretraining on
+publicly-available histopathology datasets, but have not been extensively
+developed and evaluated across diverse tissue types at scale. We introduce UNI,
+a general-purpose self-supervised model for pathology, pretrained using over
+100 million tissue patches from over 100,000 diagnostic haematoxylin and
+eosin-stained WSIs across 20 major tissue types, and evaluated on 33
+representative CPath clinical tasks in CPath of varying diagnostic
+difficulties. In addition to outperforming previous state-of-the-art models, we
+demonstrate new modeling capabilities in CPath such as resolution-agnostic
+tissue classification, slide classification using few-shot class prototypes,
+and disease subtyping generalization in classifying up to 108 cancer types in
+the OncoTree code classification system. UNI advances unsupervised
+representation learning at scale in CPath in terms of both pretraining data and
+downstream evaluation, enabling data-efficient AI models that can generalize
+and transfer to a gamut of diagnostically-challenging tasks and clinical
+workflows in anatomic pathology.
+</p></li>
+</ul>
+<h3>Title: Neural approaches to spoken content embedding. (arXiv:2308.14905v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14905">http://arxiv.org/abs/2308.14905</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14905] Neural approaches to spoken content embedding](http://arxiv.org/abs/2308.14905) #self-supervised</code></li>
+<li>Summary: <p>Comparing spoken segments is a central operation to speech processing.
+Traditional approaches in this area have favored frame-level dynamic
+programming algorithms, such as dynamic time warping, because they require no
+supervision, but they are limited in performance and efficiency. As an
+alternative, acoustic word embeddings -- fixed-dimensional vector
+representations of variable-length spoken word segments -- have begun to be
+considered for such tasks as well. However, the current space of such
+discriminative embedding models, training approaches, and their application to
+real-world downstream tasks is limited. We start by considering <code>single-view"
+training losses where the goal is to learn an acoustic word embedding model
+that separates same-word and different-word spoken segment pairs. Then, we
+consider</code>multi-view" contrastive losses. In this setting, acoustic word
+embeddings are learned jointly with embeddings of character sequences to
+generate acoustically grounded embeddings of written words, or acoustically
+grounded word embeddings.
+</p></li>
+</ul>
+<p>In this thesis, we contribute new discriminative acoustic word embedding
+(AWE) and acoustically grounded word embedding (AGWE) approaches based on
+recurrent neural networks (RNNs). We improve model training in terms of both
+efficiency and performance. We take these developments beyond English to
+several low-resource languages and show that multilingual training improves
+performance when labeled data is limited. We apply our embedding models, both
+monolingual and multilingual, to the downstream tasks of query-by-example
+speech search and automatic speech recognition. Finally, we show how our
+embedding approaches compare with and complement more recent self-supervised
+speech models.
+</p>
+
+<h2>foundation model</h2>
+<h3>Title: Auto-Prompting SAM for Mobile Friendly 3D Medical Image Segmentation. (arXiv:2308.14936v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14936">http://arxiv.org/abs/2308.14936</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14936] Auto-Prompting SAM for Mobile Friendly 3D Medical Image Segmentation](http://arxiv.org/abs/2308.14936) #foundation model</code></li>
+<li>Summary: <p>The Segment Anything Model (SAM) has rapidly been adopted for segmenting a
+wide range of natural images. However, recent studies have indicated that SAM
+exhibits subpar performance on 3D medical image segmentation tasks. In addition
+to the domain gaps between natural and medical images, disparities in the
+spatial arrangement between 2D and 3D images, the substantial computational
+burden imposed by powerful GPU servers, and the time-consuming manual prompt
+generation impede the extension of SAM to a broader spectrum of medical image
+segmentation applications. To address these challenges, in this work, we
+introduce a novel method, AutoSAM Adapter, designed specifically for 3D
+multi-organ CT-based segmentation. We employ parameter-efficient adaptation
+techniques in developing an automatic prompt learning paradigm to facilitate
+the transformation of the SAM model's capabilities to 3D medical image
+segmentation, eliminating the need for manually generated prompts. Furthermore,
+we effectively transfer the acquired knowledge of the AutoSAM Adapter to other
+lightweight models specifically tailored for 3D medical image analysis,
+achieving state-of-the-art (SOTA) performance on medical image segmentation
+tasks. Through extensive experimental evaluation, we demonstrate the AutoSAM
+Adapter as a critical foundation for effectively leveraging the emerging
+ability of foundation models in 2D natural image segmentation for 3D medical
+image segmentation.
+</p></li>
+</ul>
+<h3>Title: Reprogramming under constraints: Revisiting efficient and reliable transferability of lottery tickets. (arXiv:2308.14969v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14969">http://arxiv.org/abs/2308.14969</a></li>
+<li>Code URL: <a href="https://github.com/landskape-ai/reprogram_lt">https://github.com/landskape-ai/reprogram_lt</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14969] Reprogramming under constraints: Revisiting efficient and reliable transferability of lottery tickets](http://arxiv.org/abs/2308.14969) #foundation model</code></li>
+<li>Summary: <p>In the era of foundation models with huge pre-training budgets, the
+downstream tasks have been shifted to the narrative of efficient and fast
+adaptation. For classification-based tasks in the domain of computer vision,
+the two most efficient approaches have been linear probing (LP) and visual
+prompting/reprogramming (VP); the former aims to learn a classifier in the form
+of a linear head on the features extracted by the pre-trained model, while the
+latter maps the input data to the domain of the source data on which the model
+was originally pre-trained on. Although extensive studies have demonstrated the
+differences between LP and VP in terms of downstream performance, we explore
+the capabilities of the two aforementioned methods via the sparsity axis: (a)
+Data sparsity: the impact of few-shot adaptation and (b) Model sparsity: the
+impact of lottery tickets (LT). We demonstrate that LT are not universal
+reprogrammers, i.e., for certain target datasets, reprogramming an LT yields
+significantly lower performance than the reprogrammed dense model although
+their corresponding upstream performance is similar. Further, we demonstrate
+that the calibration of dense models is always superior to that of their
+lottery ticket counterparts under both LP and VP regimes. Our empirical study
+opens a new avenue of research into VP for sparse models and encourages further
+understanding of the performance beyond the accuracy achieved by VP under
+constraints of sparsity. Code and logs can be accessed at
+\url{https://github.com/landskape-ai/Reprogram_LT}.
+</p></li>
+</ul>
+<h3>Title: Efficient Model Personalization in Federated Learning via Client-Specific Prompt Generation. (arXiv:2308.15367v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15367">http://arxiv.org/abs/2308.15367</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15367] Efficient Model Personalization in Federated Learning via Client-Specific Prompt Generation](http://arxiv.org/abs/2308.15367) #foundation model</code></li>
+<li>Summary: <p>Federated learning (FL) emerges as a decentralized learning framework which
+trains models from multiple distributed clients without sharing their data to
+preserve privacy. Recently, large-scale pre-trained models (e.g., Vision
+Transformer) have shown a strong capability of deriving robust representations.
+However, the data heterogeneity among clients, the limited computation
+resources, and the communication bandwidth restrict the deployment of
+large-scale models in FL frameworks. To leverage robust representations from
+large-scale models while enabling efficient model personalization for
+heterogeneous clients, we propose a novel personalized FL framework of
+client-specific Prompt Generation (pFedPG), which learns to deploy a
+personalized prompt generator at the server for producing client-specific
+visual prompts that efficiently adapts frozen backbones to local data
+distributions. Our proposed framework jointly optimizes the stages of
+personalized prompt adaptation locally and personalized prompt generation
+globally. The former aims to train visual prompts that adapt foundation models
+to each client, while the latter observes local optimization directions to
+generate personalized prompts for all clients. Through extensive experiments on
+benchmark datasets, we show that our pFedPG is favorable against
+state-of-the-art personalized FL methods under various types of data
+heterogeneity, allowing computation and communication efficient model
+personalization.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: CLNeRF: Continual Learning Meets NeRF. (arXiv:2308.14816v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14816">http://arxiv.org/abs/2308.14816</a></li>
+<li>Code URL: <a href="https://github.com/intellabs/clnerf">https://github.com/intellabs/clnerf</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14816] CLNeRF: Continual Learning Meets NeRF](http://arxiv.org/abs/2308.14816) #generative</code></li>
+<li>Summary: <p>Novel view synthesis aims to render unseen views given a set of calibrated
+images. In practical applications, the coverage, appearance or geometry of the
+scene may change over time, with new images continuously being captured.
+Efficiently incorporating such continuous change is an open challenge. Standard
+NeRF benchmarks only involve scene coverage expansion. To study other practical
+scene changes, we propose a new dataset, World Across Time (WAT), consisting of
+scenes that change in appearance and geometry over time. We also propose a
+simple yet effective method, CLNeRF, which introduces continual learning (CL)
+to Neural Radiance Fields (NeRFs). CLNeRF combines generative replay and the
+Instant Neural Graphics Primitives (NGP) architecture to effectively prevent
+catastrophic forgetting and efficiently update the model when new data arrives.
+We also add trainable appearance and geometry embeddings to NGP, allowing a
+single compact model to handle complex scene changes. Without the need to store
+historical images, CLNeRF trained sequentially over multiple scans of a
+changing scene performs on-par with the upper bound model trained on all scans
+at once. Compared to other CL baselines CLNeRF performs much better across
+standard benchmarks and WAT. The source code, and the WAT dataset are available
+at https://github.com/IntelLabs/CLNeRF. Video presentation is available at:
+https://youtu.be/nLRt6OoDGq0?si=8yD6k-8MMBJInQPs
+</p></li>
+</ul>
+<h3>Title: CLIPTrans: Transferring Visual Knowledge with Pre-trained Models for Multimodal Machine Translation. (arXiv:2308.15226v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15226">http://arxiv.org/abs/2308.15226</a></li>
+<li>Code URL: <a href="https://github.com/devaansh100/cliptrans">https://github.com/devaansh100/cliptrans</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15226] CLIPTrans: Transferring Visual Knowledge with Pre-trained Models for Multimodal Machine Translation](http://arxiv.org/abs/2308.15226) #generative</code></li>
+<li>Summary: <p>There has been a growing interest in developing multimodal machine
+translation (MMT) systems that enhance neural machine translation (NMT) with
+visual knowledge. This problem setup involves using images as auxiliary
+information during training, and more recently, eliminating their use during
+inference. Towards this end, previous works face a challenge in training
+powerful MMT models from scratch due to the scarcity of annotated multilingual
+vision-language data, especially for low-resource languages. Simultaneously,
+there has been an influx of multilingual pre-trained models for NMT and
+multimodal pre-trained models for vision-language tasks, primarily in English,
+which have shown exceptional generalisation ability. However, these are not
+directly applicable to MMT since they do not provide aligned multimodal
+multilingual features for generative tasks. To alleviate this issue, instead of
+designing complex modules for MMT, we propose CLIPTrans, which simply adapts
+the independently pre-trained multimodal M-CLIP and the multilingual mBART. In
+order to align their embedding spaces, mBART is conditioned on the M-CLIP
+features by a prefix sequence generated through a lightweight mapping network.
+We train this in a two-stage pipeline which warms up the model with image
+captioning before the actual translation task. Through experiments, we
+demonstrate the merits of this framework and consequently push forward the
+state-of-the-art across standard benchmarks by an average of +2.67 BLEU. The
+code can be found at www.github.com/devaansh100/CLIPTrans.
+</p></li>
+</ul>
+<h3>Title: Learning Modulated Transformation in GANs. (arXiv:2308.15472v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15472">http://arxiv.org/abs/2308.15472</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15472] Learning Modulated Transformation in GANs](http://arxiv.org/abs/2308.15472) #generative</code></li>
+<li>Summary: <p>The success of style-based generators largely benefits from style modulation,
+which helps take care of the cross-instance variation within data. However, the
+instance-wise stochasticity is typically introduced via regular convolution,
+where kernels interact with features at some fixed locations, limiting its
+capacity for modeling geometric variation. To alleviate this problem, we equip
+the generator in generative adversarial networks (GANs) with a plug-and-play
+module, termed as modulated transformation module (MTM). This module predicts
+spatial offsets under the control of latent codes, based on which the
+convolution operation can be applied at variable locations for different
+instances, and hence offers the model an additional degree of freedom to handle
+geometry deformation. Extensive experiments suggest that our approach can be
+faithfully generalized to various generative tasks, including image generation,
+3D-aware image synthesis, and video generation, and get compatible with
+state-of-the-art frameworks without any hyper-parameter tuning. It is
+noteworthy that, towards human generation on the challenging TaiChi dataset, we
+improve the FID of StyleGAN3 from 21.36 to 13.60, demonstrating the efficacy of
+learning modulated geometry transformation.
+</p></li>
+</ul>
+<h3>Title: MadSGM: Multivariate Anomaly Detection with Score-based Generative Models. (arXiv:2308.15069v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15069">http://arxiv.org/abs/2308.15069</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15069] MadSGM: Multivariate Anomaly Detection with Score-based Generative Models](http://arxiv.org/abs/2308.15069) #generative</code></li>
+<li>Summary: <p>The time-series anomaly detection is one of the most fundamental tasks for
+time-series. Unlike the time-series forecasting and classification, the
+time-series anomaly detection typically requires unsupervised (or
+self-supervised) training since collecting and labeling anomalous observations
+are difficult. In addition, most existing methods resort to limited forms of
+anomaly measurements and therefore, it is not clear whether they are optimal in
+all circumstances. To this end, we present a multivariate time-series anomaly
+detector based on score-based generative models, called MadSGM, which considers
+the broadest ever set of anomaly measurement factors: i) reconstruction-based,
+ii) density-based, and iii) gradient-based anomaly measurements. We also design
+a conditional score network and its denoising score matching loss for the
+time-series anomaly detection. Experiments on five real-world benchmark
+datasets illustrate that MadSGM achieves the most robust and accurate
+predictions.
+</p></li>
+</ul>
+<h2>anomaly</h2>
+<h3>Title: Evaluation of Key Spatiotemporal Learners for Print Track Anomaly Classification Using Melt Pool Image Streams. (arXiv:2308.14861v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14861">http://arxiv.org/abs/2308.14861</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14861] Evaluation of Key Spatiotemporal Learners for Print Track Anomaly Classification Using Melt Pool Image Streams](http://arxiv.org/abs/2308.14861) #anomaly</code></li>
+<li>Summary: <p>Recent applications of machine learning in metal additive manufacturing (MAM)
+have demonstrated significant potential in addressing critical barriers to the
+widespread adoption of MAM technology. Recent research in this field emphasizes
+the importance of utilizing melt pool signatures for real-time defect
+prediction. While high-quality melt pool image data holds the promise of
+enabling precise predictions, there has been limited exploration into the
+utilization of cutting-edge spatiotemporal models that can harness the inherent
+transient and sequential characteristics of the additive manufacturing process.
+This research introduces and puts into practice some of the leading deep
+spatiotemporal learning models that can be adapted for the classification of
+melt pool image streams originating from various materials, systems, and
+applications. Specifically, it investigates two-stream networks comprising
+spatial and temporal streams, a recurrent spatial network, and a factorized 3D
+convolutional neural network. The capacity of these models to generalize when
+exposed to perturbations in melt pool image data is examined using data
+perturbation techniques grounded in real-world process scenarios. The
+implemented architectures demonstrate the ability to capture the spatiotemporal
+features of melt pool image sequences. However, among these models, only the
+Kinetics400 pre-trained SlowFast network, categorized as a two-stream network,
+exhibits robust generalization capabilities in the presence of data
+perturbations.
+</p></li>
+</ul>
+<h3>Title: ADFA: Attention-augmented Differentiable top-k Feature Adaptation for Unsupervised Medical Anomaly Detection. (arXiv:2308.15280v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15280">http://arxiv.org/abs/2308.15280</a></li>
+<li>Code URL: <a href="https://github.com/cbmi-group/adfa">https://github.com/cbmi-group/adfa</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15280] ADFA: Attention-augmented Differentiable top-k Feature Adaptation for Unsupervised Medical Anomaly Detection](http://arxiv.org/abs/2308.15280) #anomaly</code></li>
+<li>Summary: <p>The scarcity of annotated data, particularly for rare diseases, limits the
+variability of training data and the range of detectable lesions, presenting a
+significant challenge for supervised anomaly detection in medical imaging. To
+solve this problem, we propose a novel unsupervised method for medical image
+anomaly detection: Attention-Augmented Differentiable top-k Feature Adaptation
+(ADFA). The method utilizes Wide-ResNet50-2 (WR50) network pre-trained on
+ImageNet to extract initial feature representations. To reduce the channel
+dimensionality while preserving relevant channel information, we employ an
+attention-augmented patch descriptor on the extracted features. We then apply
+differentiable top-k feature adaptation to train the patch descriptor, mapping
+the extracted feature representations to a new vector space, enabling effective
+detection of anomalies. Experiments show that ADFA outperforms state-of-the-art
+(SOTA) methods on multiple challenging medical image datasets, confirming its
+effectiveness in medical anomaly detection.
+</p></li>
+</ul>
+<h3>Title: MSFlow: Multi-Scale Flow-based Framework for Unsupervised Anomaly Detection. (arXiv:2308.15300v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15300">http://arxiv.org/abs/2308.15300</a></li>
+<li>Code URL: <a href="https://github.com/cool-xuan/msflow">https://github.com/cool-xuan/msflow</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15300] MSFlow: Multi-Scale Flow-based Framework for Unsupervised Anomaly Detection](http://arxiv.org/abs/2308.15300) #anomaly</code></li>
+<li>Summary: <p>Unsupervised anomaly detection (UAD) attracts a lot of research interest and
+drives widespread applications, where only anomaly-free samples are available
+for training. Some UAD applications intend to further locate the anomalous
+regions without any anomaly information.
+</p></li>
+</ul>
+<p>Although the absence of anomalous samples and annotations deteriorates the
+UAD performance, an inconspicuous yet powerful statistics model, the
+normalizing flows, is appropriate for anomaly detection and localization in an
+unsupervised fashion. The flow-based probabilistic models, only trained on
+anomaly-free data, can efficiently distinguish unpredictable anomalies by
+assigning them much lower likelihoods than normal data.
+</p>
+<p>Nevertheless, the size variation of unpredictable anomalies introduces
+another inconvenience to the flow-based methods for high-precision anomaly
+detection and localization. To generalize the anomaly size variation, we
+propose a novel Multi-Scale Flow-based framework dubbed MSFlow composed of
+asymmetrical parallel flows followed by a fusion flow to exchange multi-scale
+perceptions. Moreover, different multi-scale aggregation strategies are adopted
+for image-wise anomaly detection and pixel-wise anomaly localization according
+to the discrepancy between them. The proposed MSFlow is evaluated on three
+anomaly detection datasets, significantly outperforming existing methods.
+Notably, on the challenging MVTec AD benchmark, our MSFlow achieves a new
+state-of-the-art with a detection AUORC score of up to 99.7%, localization
+AUCROC score of 98.8%, and PRO score of 97.1%. The reproducible code is
+available at https://github.com/cool-xuan/msflow.
+</p>
+
+<h3>Title: AnomalyGPT: Detecting Industrial Anomalies using Large Vision-Language Models. (arXiv:2308.15366v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15366">http://arxiv.org/abs/2308.15366</a></li>
+<li>Code URL: <a href="https://github.com/casia-iva-lab/anomalygpt">https://github.com/casia-iva-lab/anomalygpt</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15366] AnomalyGPT: Detecting Industrial Anomalies using Large Vision-Language Models](http://arxiv.org/abs/2308.15366) #anomaly</code></li>
+<li>Summary: <p>Large Vision-Language Models (LVLMs) such as MiniGPT-4 and LLaVA have
+demonstrated the capability of understanding images and achieved remarkable
+performance in various visual tasks. Despite their strong abilities in
+recognizing common objects due to extensive training datasets, they lack
+specific domain knowledge and have a weaker understanding of localized details
+within objects, which hinders their effectiveness in the Industrial Anomaly
+Detection (IAD) task. On the other hand, most existing IAD methods only provide
+anomaly scores and necessitate the manual setting of thresholds to distinguish
+between normal and abnormal samples, which restricts their practical
+implementation. In this paper, we explore the utilization of LVLM to address
+the IAD problem and propose AnomalyGPT, a novel IAD approach based on LVLM. We
+generate training data by simulating anomalous images and producing
+corresponding textual descriptions for each image. We also employ an image
+decoder to provide fine-grained semantic and design a prompt learner to
+fine-tune the LVLM using prompt embeddings. Our AnomalyGPT eliminates the need
+for manual threshold adjustments, thus directly assesses the presence and
+locations of anomalies. Additionally, AnomalyGPT supports multi-turn dialogues
+and exhibits impressive few-shot in-context learning capabilities. With only
+one normal shot, AnomalyGPT achieves the state-of-the-art performance with an
+accuracy of 86.1%, an image-level AUC of 94.1%, and a pixel-level AUC of 95.3%
+on the MVTec-AD dataset. Code is available at
+https://github.com/CASIA-IVA-Lab/AnomalyGPT.
+</p></li>
+</ul>
+<h3>Title: Assessing Cyclostationary Malware Detection via Feature Selection and Classification. (arXiv:2308.15237v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15237">http://arxiv.org/abs/2308.15237</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15237] Assessing Cyclostationary Malware Detection via Feature Selection and Classification](http://arxiv.org/abs/2308.15237) #anomaly</code></li>
+<li>Summary: <p>Cyclostationarity involves periodic statistical variations in signals and
+processes, commonly used in signal analysis and network security. In the
+context of attacks, cyclostationarity helps detect malicious behaviors within
+network traffic, such as traffic patterns in Distributed Denial of Service
+(DDoS) attacks or hidden communication channels in malware. This approach
+enhances security by identifying abnormal patterns and informing Network
+Intrusion Detection Systems (NIDSs) to recognize potential attacks, enhancing
+protection against both known and novel threats. This research focuses on
+identifying cyclostationary malware behavior and its detection. The main goal
+is to pinpoint essential cyclostationary features used in NIDSs. These features
+are extracted using algorithms such as Boruta and Principal Component Analysis
+(PCA), and then categorized to find the most significant cyclostationary
+patterns. The aim of this article is to reveal periodically changing malware
+behaviors through cyclostationarity. The study highlights the importance of
+spotting cyclostationary malware in NIDSs by using established datasets like
+KDD99, NSL-KDD, and the UGRansome dataset. The UGRansome dataset is designed
+for anomaly detection research and includes both normal and abnormal network
+threat categories of zero-day attacks. A comparison is made using the Random
+Forest (RF) and Support Vector Machine (SVM) algorithms, while also evaluating
+the effectiveness of Boruta and PCA. The findings show that PCA is more
+promising than using Boruta alone for extracting cyclostationary network
+feature patterns. Additionally, the analysis identifies the internet protocol
+as the most noticeable cyclostationary feature pattern used by malware.
+Notably, the UGRansome dataset outperforms the KDD99 and NSL-KDD, achieving 99%
+accuracy in signature malware detection using the RF algorithm and 98% with the
+SVM.
+</p></li>
+</ul>
+<h3>Title: Tackling Diverse Minorities in Imbalanced Classification. (arXiv:2308.14838v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14838">http://arxiv.org/abs/2308.14838</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14838] Tackling Diverse Minorities in Imbalanced Classification](http://arxiv.org/abs/2308.14838) #anomaly</code></li>
+<li>Summary: <p>Imbalanced datasets are commonly observed in various real-world applications,
+presenting significant challenges in training classifiers. When working with
+large datasets, the imbalanced issue can be further exacerbated, making it
+exceptionally difficult to train classifiers effectively. To address the
+problem, over-sampling techniques have been developed to linearly interpolating
+data instances between minorities and their neighbors. However, in many
+real-world scenarios such as anomaly detection, minority instances are often
+dispersed diversely in the feature space rather than clustered together.
+Inspired by domain-agnostic data mix-up, we propose generating synthetic
+samples iteratively by mixing data samples from both minority and majority
+classes. It is non-trivial to develop such a framework, the challenges include
+source sample selection, mix-up strategy selection, and the coordination
+between the underlying model and mix-up strategies. To tackle these challenges,
+we formulate the problem of iterative data mix-up as a Markov decision process
+(MDP) that maps data attributes onto an augmentation strategy. To solve the
+MDP, we employ an actor-critic framework to adapt the discrete-continuous
+decision space. This framework is utilized to train a data augmentation policy
+and design a reward signal that explores classifier uncertainty and encourages
+performance improvement, irrespective of the classifier's convergence. We
+demonstrate the effectiveness of our proposed framework through extensive
+experiments conducted on seven publicly available benchmark datasets using
+three different types of classifiers. The results of these experiments showcase
+the potential and promise of our framework in addressing imbalanced datasets
+with diverse minorities.
+</p></li>
+</ul>
+<h2>in-context</h2>
+<h2>memory</h2>
+<h3>Title: Learning to Upsample by Learning to Sample. (arXiv:2308.15085v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15085">http://arxiv.org/abs/2308.15085</a></li>
+<li>Code URL: <a href="https://github.com/tiny-smart/dysample">https://github.com/tiny-smart/dysample</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15085] Learning to Upsample by Learning to Sample](http://arxiv.org/abs/2308.15085) #memory</code></li>
+<li>Summary: <p>We present DySample, an ultra-lightweight and effective dynamic upsampler.
+While impressive performance gains have been witnessed from recent kernel-based
+dynamic upsamplers such as CARAFE, FADE, and SAPA, they introduce much
+workload, mostly due to the time-consuming dynamic convolution and the
+additional sub-network used to generate dynamic kernels. Further, the need for
+high-res feature guidance of FADE and SAPA somehow limits their application
+scenarios. To address these concerns, we bypass dynamic convolution and
+formulate upsampling from the perspective of point sampling, which is more
+resource-efficient and can be easily implemented with the standard built-in
+function in PyTorch. We first showcase a naive design, and then demonstrate how
+to strengthen its upsampling behavior step by step towards our new upsampler,
+DySample. Compared with former kernel-based dynamic upsamplers, DySample
+requires no customized CUDA package and has much fewer parameters, FLOPs, GPU
+memory, and latency. Besides the light-weight characteristics, DySample
+outperforms other upsamplers across five dense prediction tasks, including
+semantic segmentation, object detection, instance segmentation, panoptic
+segmentation, and monocular depth estimation. Code is available at
+https://github.com/tiny-smart/dysample.
+</p></li>
+</ul>
+<h3>Title: MEMORY-VQ: Compression for Tractable Internet-Scale Memory. (arXiv:2308.14903v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14903">http://arxiv.org/abs/2308.14903</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14903] MEMORY-VQ: Compression for Tractable Internet-Scale Memory](http://arxiv.org/abs/2308.14903) #memory</code></li>
+<li>Summary: <p>Retrieval augmentation is a powerful but expensive method to make language
+models more knowledgeable about the world. Memory-based methods like LUMEN
+pre-compute token representations for retrieved passages to drastically speed
+up inference. However, memory also leads to much greater storage requirements
+from storing pre-computed representations.
+</p></li>
+</ul>
+<p>We propose MEMORY-VQ, a new method to reduce storage requirements of
+memory-augmented models without sacrificing performance. Our method uses a
+vector quantization variational autoencoder (VQ-VAE) to compress token
+representations. We apply MEMORY-VQ to the LUMEN model to obtain LUMEN-VQ, a
+memory model that achieves a 16x compression rate with comparable performance
+on the KILT benchmark. LUMEN-VQ enables practical retrieval augmentation even
+for extremely large retrieval corpora.
+</p>
+
+<h3>Title: Recursively Summarizing Enables Long-Term Dialogue Memory in Large Language Models. (arXiv:2308.15022v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15022">http://arxiv.org/abs/2308.15022</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15022] Recursively Summarizing Enables Long-Term Dialogue Memory in Large Language Models](http://arxiv.org/abs/2308.15022) #memory</code></li>
+<li>Summary: <p>Most open-domain dialogue systems suffer from forgetting important
+information, especially in a long-term conversation. Existing works usually
+train the specific retriever or summarizer to obtain key information from the
+past, which is time-consuming and highly depends on the quality of labeled
+data. To alleviate this problem, we propose to recursively generate summaries/
+memory using large language models (LLMs) to enhance long-term memory ability.
+Specifically, our method first stimulates LLMs to memorize small dialogue
+contexts and then recursively produce new memory using previous memory and
+following contexts. Finally, the LLM can easily generate a highly consistent
+response with the help of the latest memory. We evaluate our method using
+ChatGPT and text-davinci-003, and the experiments on the widely-used public
+dataset show that our method can generate more consistent responses in a
+long-context conversation. Notably, our method is a potential solution to
+enable the LLM to model the extremely long context. Code and scripts will be
+released later.
+</p></li>
+</ul>
+<h3>Title: Scalable and Configurable Tracking for Any Rowhammer Threshold. (arXiv:2308.14889v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14889">http://arxiv.org/abs/2308.14889</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14889] Scalable and Configurable Tracking for Any Rowhammer Threshold](http://arxiv.org/abs/2308.14889) #memory</code></li>
+<li>Summary: <p>The Rowhammer vulnerability continues to get worse, with the Rowhammer
+Threshold (TRH) reducing from 139K activations to 4.8K activations over the
+last decade. Typical Rowhammer mitigations rely on tracking aggressor rows. The
+number of possible aggressors increases with lowering thresholds, making it
+difficult to reliably track such rows in a storage-efficient manner. At lower
+thresholds, academic trackers such as Graphene require prohibitive SRAM
+overheads (hundreds of KBs to MB). Recent in-DRAM trackers from industry, such
+as DSAC-TRR, perform approximate tracking, sacrificing guaranteed protection
+for reduced storage overheads, leaving DRAM vulnerable to Rowhammer attacks.
+Ideally, we seek a scalable tracker that tracks securely and precisely, and
+incurs negligible dedicated SRAM and performance overheads, while still being
+able to track arbitrarily low thresholds.
+</p></li>
+</ul>
+<p>To that end, we propose START - a Scalable Tracker for Any Rowhammer
+Threshold. Rather than relying on dedicated SRAM structures, START dynamically
+repurposes a small fraction the Last-Level Cache (LLC) to store tracking
+metadata. START is based on the observation that while the memory contains
+millions of rows, typical workloads touch only a small subset of rows within a
+refresh period of 64ms, so allocating tracking entries on demand significantly
+reduces storage. If the application does not access many rows in memory, START
+does not reserve any LLC capacity. Otherwise, START dynamically uses 1-way,
+2-way, or 8-way of the cache set based on demand. START consumes, on average,
+9.4% of the LLC capacity to store metadata, which is 5X lower compared to
+dedicating a counter in LLC for each row in memory. We also propose START-M, a
+memory-mapped START for large-memory systems. Our designs require only 4KB SRAM
+for newly added structures and perform within 1% of idealized tracking even at
+TRH of less than 100.
+</p>
+
+<h3>Title: Randomized Line-to-Row Mapping for Low-Overhead Rowhammer Mitigations. (arXiv:2308.14907v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14907">http://arxiv.org/abs/2308.14907</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14907] Randomized Line-to-Row Mapping for Low-Overhead Rowhammer Mitigations](http://arxiv.org/abs/2308.14907) #memory</code></li>
+<li>Summary: <p>Modern systems mitigate Rowhammer using victim refresh, which refreshes the
+two neighbours of an aggressor row when it encounters a specified number of
+activations. Unfortunately, complex attack patterns like Half-Double break
+victim-refresh, rendering current systems vulnerable. Instead, recently
+proposed secure Rowhammer mitigations rely on performing mitigative action on
+the aggressor rather than the victims. Such schemes employ mitigative actions
+such as row-migration or access-control and include AQUA, SRS, and Blockhammer.
+While these schemes incur only modest slowdowns at Rowhammer thresholds of few
+thousand, they incur prohibitive slowdowns (15%-600%) for lower thresholds that
+are likely in the near future. The goal of our paper is to make secure
+Rowhammer mitigations practical at such low thresholds.
+</p></li>
+</ul>
+<p>Our paper provides the key insights that benign application encounter
+thousands of hot rows (receiving more activations than the threshold) due to
+the memory mapping, which places spatially proximate lines in the same row to
+maximize row-buffer hitrate. Unfortunately, this causes row to receive
+activations for many frequently used lines. We propose Rubix, which breaks the
+spatial correlation in the line-to-row mapping by using an encrypted address to
+access the memory, reducing the likelihood of hot rows by 2 to 3 orders of
+magnitude. To aid row-buffer hits, Rubix randomizes a group of 1-4 lines. We
+also propose Rubix-D, which dynamically changes the line-to-row mapping.
+Rubix-D minimizes hot-rows and makes it much harder for an adversary to learn
+the spatial neighbourhood of a row. Rubix reduces the slowdown of AQUA (from
+15% to 1%), SRS (from 60% to 2%), and Blockhammer (from 600% to 3%) while
+incurring a storage of less than 1 Kilobyte.
+</p>
+
+<h3>Title: A Closer Look at the Security Risks in the Rust Ecosystem. (arXiv:2308.15046v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15046">http://arxiv.org/abs/2308.15046</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15046] A Closer Look at the Security Risks in the Rust Ecosystem](http://arxiv.org/abs/2308.15046) #memory</code></li>
+<li>Summary: <p>Rust is an emerging programming language designed for the development of
+systems software. To facilitate the reuse of Rust code, crates.io, as a central
+package registry of the Rust ecosystem, hosts thousands of third-party Rust
+packages. The openness of crates.io enables the growth of the Rust ecosystem
+but comes with security risks by severe security advisories. Although Rust
+guarantees a software program to be safe via programming language features and
+strict compile-time checking, the unsafe keyword in Rust allows developers to
+bypass compiler safety checks for certain regions of code. Prior studies
+empirically investigate the memory safety and concurrency bugs in the Rust
+ecosystem, as well as the usage of unsafe keywords in practice. Nonetheless,
+the literature lacks a systematic investigation of the security risks in the
+Rust ecosystem.
+</p></li>
+</ul>
+<p>In this paper, we perform a comprehensive investigation into the security
+risks present in the Rust ecosystem, asking ``what are the characteristics of
+the vulnerabilities, what are the characteristics of the vulnerable packages,
+and how are the vulnerabilities fixed in practice?''. To facilitate the study,
+we first compile a dataset of 433 vulnerabilities, 300 vulnerable code
+repositories, and 218 vulnerability fix commits in the Rust ecosystem, spanning
+over 7 years. With the dataset, we characterize the types, life spans, and
+evolution of the disclosed vulnerabilities. We then characterize the
+popularity, categorization, and vulnerability density of the vulnerable Rust
+packages, as well as their versions and code regions affected by the disclosed
+vulnerabilities. Finally, we characterize the complexity of vulnerability fixes
+and localities of corresponding code changes, and inspect how practitioners fix
+vulnerabilities in Rust packages with various localities.
+</p>
+
+<h3>Title: SMOClust: Synthetic Minority Oversampling based on Stream Clustering for Evolving Data Streams. (arXiv:2308.14845v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14845">http://arxiv.org/abs/2308.14845</a></li>
+<li>Code URL: <a href="https://github.com/michaelchiucw/smoclust">https://github.com/michaelchiucw/smoclust</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14845] SMOClust: Synthetic Minority Oversampling based on Stream Clustering for Evolving Data Streams](http://arxiv.org/abs/2308.14845) #memory</code></li>
+<li>Summary: <p>Many real-world data stream applications not only suffer from concept drift
+but also class imbalance. Yet, very few existing studies investigated this
+joint challenge. Data difficulty factors, which have been shown to be key
+challenges in class imbalanced data streams, are not taken into account by
+existing approaches when learning class imbalanced data streams. In this work,
+we propose a drift adaptable oversampling strategy to synthesise minority class
+examples based on stream clustering. The motivation is that stream clustering
+methods continuously update themselves to reflect the characteristics of the
+current underlying concept, including data difficulty factors. This nature can
+potentially be used to compress past information without caching data in the
+memory explicitly. Based on the compressed information, synthetic examples can
+be created within the region that recently generated new minority class
+examples. Experiments with artificial and real-world data streams show that the
+proposed approach can handle concept drift involving different minority class
+decomposition better than existing approaches, especially when the data stream
+is severely class imbalanced and presenting high proportions of safe and
+borderline minority class examples.
+</p></li>
+</ul>
+<h3>Title: Streaming Compression of Scientific Data via weak-SINDy. (arXiv:2308.14962v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14962">http://arxiv.org/abs/2308.14962</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14962] Streaming Compression of Scientific Data via weak-SINDy](http://arxiv.org/abs/2308.14962) #memory</code></li>
+<li>Summary: <p>In this paper a streaming weak-SINDy algorithm is developed specifically for
+compressing streaming scientific data. The production of scientific data,
+either via simulation or experiments, is undergoing an stage of exponential
+growth, which makes data compression important and often necessary for storing
+and utilizing large scientific data sets. As opposed to classical <code>offline"
+compression algorithms that perform compression on a readily available data
+set, streaming compression algorithms compress data</code>online" while the data
+generated from simulation or experiments is still flowing through the system.
+This feature makes streaming compression algorithms well-suited for scientific
+data compression, where storing the full data set offline is often infeasible.
+This work proposes a new streaming compression algorithm, streaming weak-SINDy,
+which takes advantage of the underlying data characteristics during
+compression. The streaming weak-SINDy algorithm constructs feature matrices and
+target vectors in the online stage via a streaming integration method in a
+memory efficient manner. The feature matrices and target vectors are then used
+in the offline stage to build a model through a regression process that aims to
+recover equations that govern the evolution of the data. For compressing
+high-dimensional streaming data, we adopt a streaming proper orthogonal
+decomposition (POD) process to reduce the data dimension and then use the
+streaming weak-SINDy algorithm to compress the temporal data of the POD
+expansion. We propose modifications to the streaming weak-SINDy algorithm to
+accommodate the dynamically updated POD basis. By combining the built model
+from the streaming weak-SINDy algorithm and a small amount of data samples, the
+full data flow could be reconstructed accurately at a low memory cost, as shown
+in the numerical tests.
+</p></li>
+</ul>
+<h3>Title: Incorporating Neuro-Inspired Adaptability for Continual Learning in Artificial Intelligence. (arXiv:2308.14991v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14991">http://arxiv.org/abs/2308.14991</a></li>
+<li>Code URL: <a href="https://github.com/lywang3081/caf">https://github.com/lywang3081/caf</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14991] Incorporating Neuro-Inspired Adaptability for Continual Learning in Artificial Intelligence](http://arxiv.org/abs/2308.14991) #memory</code></li>
+<li>Summary: <p>Continual learning aims to empower artificial intelligence (AI) with strong
+adaptability to the real world. For this purpose, a desirable solution should
+properly balance memory stability with learning plasticity, and acquire
+sufficient compatibility to capture the observed distributions. Existing
+advances mainly focus on preserving memory stability to overcome catastrophic
+forgetting, but remain difficult to flexibly accommodate incremental changes as
+biological intelligence (BI) does. By modeling a robust Drosophila learning
+system that actively regulates forgetting with multiple learning modules, here
+we propose a generic approach that appropriately attenuates old memories in
+parameter distributions to improve learning plasticity, and accordingly
+coordinates a multi-learner architecture to ensure solution compatibility.
+Through extensive theoretical and empirical validation, our approach not only
+clearly enhances the performance of continual learning, especially over
+synaptic regularization methods in task-incremental settings, but also
+potentially advances the understanding of neurological adaptive mechanisms,
+serving as a novel paradigm to progress AI and BI together.
+</p></li>
+</ul>
+<h3>Title: On-Device Learning with Binary Neural Networks. (arXiv:2308.15308v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15308">http://arxiv.org/abs/2308.15308</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15308] On-Device Learning with Binary Neural Networks](http://arxiv.org/abs/2308.15308) #memory</code></li>
+<li>Summary: <p>Existing Continual Learning (CL) solutions only partially address the
+constraints on power, memory and computation of the deep learning models when
+deployed on low-power embedded CPUs. In this paper, we propose a CL solution
+that embraces the recent advancements in CL field and the efficiency of the
+Binary Neural Networks (BNN), that use 1-bit for weights and activations to
+efficiently execute deep learning models. We propose a hybrid quantization of
+CWR* (an effective CL approach) that considers differently forward and backward
+pass in order to retain more precision during gradient update step and at the
+same time minimizing the latency overhead. The choice of a binary network as
+backbone is essential to meet the constraints of low power devices and, to the
+best of authors' knowledge, this is the first attempt to prove on-device
+learning with BNN. The experimental validation carried out confirms the
+validity and the suitability of the proposed method.
+</p></li>
+</ul>
+<h2>few-shot</h2>
+<h3>Title: When hard negative sampling meets supervised contrastive learning. (arXiv:2308.14893v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14893">http://arxiv.org/abs/2308.14893</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14893] When hard negative sampling meets supervised contrastive learning](http://arxiv.org/abs/2308.14893) #few-shot</code></li>
+<li>Summary: <p>State-of-the-art image models predominantly follow a two-stage strategy:
+pre-training on large datasets and fine-tuning with cross-entropy loss. Many
+studies have shown that using cross-entropy can result in sub-optimal
+generalisation and stability. While the supervised contrastive loss addresses
+some limitations of cross-entropy loss by focusing on intra-class similarities
+and inter-class differences, it neglects the importance of hard negative
+mining. We propose that models will benefit from performance improvement by
+weighting negative samples based on their dissimilarity to positive
+counterparts. In this paper, we introduce a new supervised contrastive learning
+objective, SCHaNe, which incorporates hard negative sampling during the
+fine-tuning phase. Without requiring specialized architectures, additional
+data, or extra computational resources, experimental results indicate that
+SCHaNe outperforms the strong baseline BEiT-3 in Top-1 accuracy across various
+benchmarks, with significant gains of up to $3.32\%$ in few-shot learning
+settings and $3.41\%$ in full dataset fine-tuning. Importantly, our proposed
+objective sets a new state-of-the-art for base models on ImageNet-1k, achieving
+an 86.14\% accuracy. Furthermore, we demonstrate that the proposed objective
+yields better embeddings and explains the improved effectiveness observed in
+our experiments.
+</p></li>
+</ul>
+<h3>Title: Read-only Prompt Optimization for Vision-Language Few-shot Learning. (arXiv:2308.14960v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.14960">http://arxiv.org/abs/2308.14960</a></li>
+<li>Code URL: <a href="https://github.com/mlvlab/rpo">https://github.com/mlvlab/rpo</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.14960] Read-only Prompt Optimization for Vision-Language Few-shot Learning](http://arxiv.org/abs/2308.14960) #few-shot</code></li>
+<li>Summary: <p>In recent years, prompt tuning has proven effective in adapting pre-trained
+vision-language models to downstream tasks. These methods aim to adapt the
+pre-trained models by introducing learnable prompts while keeping pre-trained
+weights frozen. However, learnable prompts can affect the internal
+representation within the self-attention module, which may negatively impact
+performance variance and generalization, especially in data-deficient settings.
+To address these issues, we propose a novel approach, Read-only Prompt
+Optimization (RPO). RPO leverages masked attention to prevent the internal
+representation shift in the pre-trained model. Further, to facilitate the
+optimization of RPO, the read-only prompts are initialized based on special
+tokens of the pre-trained model. Our extensive experiments demonstrate that RPO
+outperforms CLIP and CoCoOp in base-to-new generalization and domain
+generalization while displaying better robustness. Also, the proposed method
+achieves better generalization on extremely data-deficient settings, while
+improving parameter efficiency and computational overhead. Code is available at
+https://github.com/mlvlab/RPO.
+</p></li>
+</ul>
+<h3>Title: Few-Shot Object Detection via Synthetic Features with Optimal Transport. (arXiv:2308.15005v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15005">http://arxiv.org/abs/2308.15005</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15005] Few-Shot Object Detection via Synthetic Features with Optimal Transport](http://arxiv.org/abs/2308.15005) #few-shot</code></li>
+<li>Summary: <p>Few-shot object detection aims to simultaneously localize and classify the
+objects in an image with limited training samples. However, most existing
+few-shot object detection methods focus on extracting the features of a few
+samples of novel classes that lack diversity. Hence, they may not be sufficient
+to capture the data distribution. To address that limitation, in this paper, we
+propose a novel approach in which we train a generator to generate synthetic
+data for novel classes. Still, directly training a generator on the novel class
+is not effective due to the lack of novel data. To overcome that issue, we
+leverage the large-scale dataset of base classes. Our overarching goal is to
+train a generator that captures the data variations of the base dataset. We
+then transform the captured variations into novel classes by generating
+synthetic data with the trained generator. To encourage the generator to
+capture data variations on base classes, we propose to train the generator with
+an optimal transport loss that minimizes the optimal transport distance between
+the distributions of real and synthetic data. Extensive experiments on two
+benchmark datasets demonstrate that the proposed method outperforms the state
+of the art. Source code will be available.
+</p></li>
+</ul>
+<h3>Title: TransPrompt v2: A Transferable Prompting Framework for Cross-task Text Classification. (arXiv:2308.15010v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15010">http://arxiv.org/abs/2308.15010</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15010] TransPrompt v2: A Transferable Prompting Framework for Cross-task Text Classification](http://arxiv.org/abs/2308.15010) #few-shot</code></li>
+<li>Summary: <p>Text classification is one of the most imperative tasks in natural language
+processing (NLP). Recent advances with pre-trained language models (PLMs) have
+shown remarkable success on this task. However, the satisfying results obtained
+by PLMs heavily depend on the large amounts of task-specific labeled data,
+which may not be feasible in many application scenarios due to data access and
+privacy constraints. The recently-proposed prompt-based fine-tuning paradigm
+improves the performance of PLMs for few-shot text classification with
+task-specific templates. Yet, it is unclear how the prompting knowledge can be
+transferred across tasks, for the purpose of mutual reinforcement. We propose
+TransPrompt v2, a novel transferable prompting framework for few-shot learning
+across similar or distant text classification tasks. For learning across
+similar tasks, we employ a multi-task meta-knowledge acquisition (MMA)
+procedure to train a meta-learner that captures the cross-task transferable
+knowledge. For learning across distant tasks, we further inject the task type
+descriptions into the prompt, and capture the intra-type and inter-type prompt
+embeddings among multiple distant tasks. Additionally, two de-biasing
+techniques are further designed to make the trained meta-learner more
+task-agnostic and unbiased towards any tasks. After that, the meta-learner can
+be adapted to each specific task with better parameters initialization.
+Extensive experiments show that TransPrompt v2 outperforms single-task and
+cross-task strong baselines over multiple NLP tasks and datasets. We further
+show that the meta-learner can effectively improve the performance of PLMs on
+previously unseen tasks. In addition, TransPrompt v2 also outperforms strong
+fine-tuning baselines when learning with full training sets.
+</p></li>
+</ul>
+<h3>Title: Multi-party Goal Tracking with LLMs: Comparing Pre-training, Fine-tuning, and Prompt Engineering. (arXiv:2308.15231v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2308.15231">http://arxiv.org/abs/2308.15231</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2308.15231] Multi-party Goal Tracking with LLMs: Comparing Pre-training, Fine-tuning, and Prompt Engineering](http://arxiv.org/abs/2308.15231) #few-shot</code></li>
+<li>Summary: <p>This paper evaluates the extent to which current Large Language Models (LLMs)
+can capture task-oriented multi-party conversations (MPCs). We have recorded
+and transcribed 29 MPCs between patients, their companions, and a social robot
+in a hospital. We then annotated this corpus for multi-party goal-tracking and
+intent-slot recognition. People share goals, answer each other's goals, and
+provide other people's goals in MPCs - none of which occur in dyadic
+interactions. To understand user goals in MPCs, we compared three methods in
+zero-shot and few-shot settings: we fine-tuned T5, created pre-training tasks
+to train DialogLM using LED, and employed prompt engineering techniques with
+GPT-3.5-turbo, to determine which approach can complete this novel task with
+limited data. GPT-3.5-turbo significantly outperformed the others in a few-shot
+setting. The <code>reasoning' style prompt, when given 7% of the corpus as example
+annotated conversations, was the best performing method. It correctly annotated
+62.32% of the goal tracking MPCs, and 69.57% of the intent-slot recognition
+MPCs. A</code>story' style prompt increased model hallucination, which could be
+detrimental if deployed in safety-critical settings. We conclude that
+multi-party conversations still challenge state-of-the-art LLMs.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-08-30]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
