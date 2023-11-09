@@ -1,0 +1,619 @@
+<h2>diffusion</h2>
+<h3>Title: A Data Perspective on Enhanced Identity Preservation for Diffusion Personalization. (arXiv:2311.04315v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04315">http://arxiv.org/abs/2311.04315</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04315] A Data Perspective on Enhanced Identity Preservation for Diffusion Personalization](http://arxiv.org/abs/2311.04315) #diffusion</code></li>
+<li>Summary: <p>Large text-to-image models have revolutionized the ability to generate
+imagery using natural language. However, particularly unique or personal visual
+concepts, such as your pet, an object in your house, etc., will not be captured
+by the original model. This has led to interest in how to inject new visual
+concepts, bound to a new text token, using as few as 4-6 examples. Despite
+significant progress, this task remains a formidable challenge, particularly in
+preserving the subject's identity. While most researchers attempt to to address
+this issue by modifying model architectures, our approach takes a data-centric
+perspective, advocating the modification of data rather than the model itself.
+We introduce a novel regularization dataset generation strategy on both the
+text and image level; demonstrating the importance of a rich and structured
+regularization dataset (automatically generated) to prevent losing text
+coherence and better identity preservation. The better quality is enabled by
+allowing up to 5x more fine-tuning iterations without overfitting and
+degeneration. The generated renditions of the desired subject preserve even
+fine details such as text and logos; all while maintaining the ability to
+generate diverse samples that follow the input text prompt. Since our method
+focuses on data augmentation, rather than adjusting the model architecture, it
+is complementary and can be combined with prior work. We show on established
+benchmarks that our data-centric approach forms the new state of the art in
+terms of image quality, with the best trade-off between identity preservation,
+diversity, and text alignment.
+</p></li>
+</ul>
+<h3>Title: 3DiffTection: 3D Object Detection with Geometry-Aware Diffusion Features. (arXiv:2311.04391v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04391">http://arxiv.org/abs/2311.04391</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04391] 3DiffTection: 3D Object Detection with Geometry-Aware Diffusion Features](http://arxiv.org/abs/2311.04391) #diffusion</code></li>
+<li>Summary: <p>We present 3DiffTection, a state-of-the-art method for 3D object detection
+from single images, leveraging features from a 3D-aware diffusion model.
+Annotating large-scale image data for 3D detection is resource-intensive and
+time-consuming. Recently, pretrained large image diffusion models have become
+prominent as effective feature extractors for 2D perception tasks. However,
+these features are initially trained on paired text and image data, which are
+not optimized for 3D tasks, and often exhibit a domain gap when applied to the
+target data. Our approach bridges these gaps through two specialized tuning
+strategies: geometric and semantic. For geometric tuning, we fine-tune a
+diffusion model to perform novel view synthesis conditioned on a single image,
+by introducing a novel epipolar warp operator. This task meets two essential
+criteria: the necessity for 3D awareness and reliance solely on posed image
+data, which are readily available (e.g., from videos) and does not require
+manual annotation. For semantic refinement, we further train the model on
+target data with detection supervision. Both tuning phases employ ControlNet to
+preserve the integrity of the original feature capabilities. In the final step,
+we harness these enhanced capabilities to conduct a test-time prediction
+ensemble across multiple virtual viewpoints. Through our methodology, we obtain
+3D-aware features that are tailored for 3D detection and excel in identifying
+cross-view point correspondences. Consequently, our model emerges as a powerful
+3D detector, substantially surpassing previous benchmarks, e.g., Cube-RCNN, a
+precedent in single-view 3D detection by 9.43\% in AP3D on the
+Omni3D-ARkitscene dataset. Furthermore, 3DiffTection showcases robust data
+efficiency and generalization to cross-domain data.
+</p></li>
+</ul>
+<h3>Title: Weakly-supervised deepfake localization in diffusion-generated images. (arXiv:2311.04584v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04584">http://arxiv.org/abs/2311.04584</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04584] Weakly-supervised deepfake localization in diffusion-generated images](http://arxiv.org/abs/2311.04584) #diffusion</code></li>
+<li>Summary: <p>The remarkable generative capabilities of denoising diffusion models have
+raised new concerns regarding the authenticity of the images we see every day
+on the Internet. However, the vast majority of existing deepfake detection
+models are tested against previous generative approaches (e.g. GAN) and usually
+provide only a "fake" or "real" label per image. We believe a more informative
+output would be to augment the per-image label with a localization map
+indicating which regions of the input have been manipulated. To this end, we
+frame this task as a weakly-supervised localization problem and identify three
+main categories of methods (based on either explanations, local scores or
+attention), which we compare on an equal footing by using the Xception network
+as the common backbone architecture. We provide a careful analysis of all the
+main factors that parameterize the design space: choice of method, type of
+supervision, dataset and generator used in the creation of manipulated images;
+our study is enabled by constructing datasets in which only one of the
+components is varied. Our results show that weakly-supervised localization is
+attainable, with the best performing detection method (based on local scores)
+being less sensitive to the looser supervision than to the mismatch in terms of
+dataset or generator.
+</p></li>
+</ul>
+<h2>self-supervised</h2>
+<h3>Title: ADFactory: Automated Data Factory for Optical Flow Tasks. (arXiv:2311.04246v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04246">http://arxiv.org/abs/2311.04246</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04246] ADFactory: Automated Data Factory for Optical Flow Tasks](http://arxiv.org/abs/2311.04246) #self-supervised</code></li>
+<li>Summary: <p>A major challenge faced by current optical flow methods is the difficulty in
+generalizing them well into the real world, mainly due to the high production
+cost of datasets, which currently do not have a large real-world optical flow
+dataset. To address this challenge, we introduce a novel optical flow training
+framework that can efficiently train optical flow networks on the target data
+domain without manual annotation. Specifically, we use advanced Nerf technology
+to reconstruct scenes from photo groups collected by monocular cameras, and
+calculate the optical flow results between camera pose pairs from the rendered
+results. On this basis, we screen the generated training data from various
+aspects such as Nerf's reconstruction quality, visual consistency of optical
+flow labels, reconstruction depth consistency, etc. The filtered training data
+can be directly used for network supervision. Experimentally, the
+generalization ability of our scheme on KITTI surpasses existing
+self-supervised optical flow and monocular scene flow algorithms. Moreover, it
+can always surpass most supervised methods in real-world zero-point
+generalization evaluation.
+</p></li>
+</ul>
+<h3>Title: Self-Supervised Learning for Visual Relationship Detection through Masked Bounding Box Reconstruction. (arXiv:2311.04834v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04834">http://arxiv.org/abs/2311.04834</a></li>
+<li>Code URL: <a href="https://github.com/deeplab-ai/selfsupervisedvrd">https://github.com/deeplab-ai/selfsupervisedvrd</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04834] Self-Supervised Learning for Visual Relationship Detection through Masked Bounding Box Reconstruction](http://arxiv.org/abs/2311.04834) #self-supervised</code></li>
+<li>Summary: <p>We present a novel self-supervised approach for representation learning,
+particularly for the task of Visual Relationship Detection (VRD). Motivated by
+the effectiveness of Masked Image Modeling (MIM), we propose Masked Bounding
+Box Reconstruction (MBBR), a variation of MIM where a percentage of the
+entities/objects within a scene are masked and subsequently reconstructed based
+on the unmasked objects. The core idea is that, through object-level masked
+modeling, the network learns context-aware representations that capture the
+interaction of objects within a scene and thus are highly predictive of visual
+object relationships. We extensively evaluate learned representations, both
+qualitatively and quantitatively, in a few-shot setting and demonstrate the
+efficacy of MBBR for learning robust visual representations, particularly
+tailored for VRD. The proposed method is able to surpass state-of-the-art VRD
+methods on the Predicate Detection (PredDet) evaluation setting, using only a
+few annotated samples. We make our code available at
+https://github.com/deeplab-ai/SelfSupervisedVRD.
+</p></li>
+</ul>
+<h3>Title: MTGER: Multi-view Temporal Graph Enhanced Temporal Reasoning over Time-Involved Document. (arXiv:2311.04816v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04816">http://arxiv.org/abs/2311.04816</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04816] MTGER: Multi-view Temporal Graph Enhanced Temporal Reasoning over Time-Involved Document](http://arxiv.org/abs/2311.04816) #self-supervised</code></li>
+<li>Summary: <p>The facts and time in the document are intricately intertwined, making
+temporal reasoning over documents challenging. Previous work models time
+implicitly, making it difficult to handle such complex relationships. To
+address this issue, we propose MTGER, a novel Multi-view Temporal Graph
+Enhanced Temporal Reasoning framework for temporal reasoning over time-involved
+documents. Concretely, MTGER explicitly models the temporal relationships among
+facts by multi-view temporal graphs. On the one hand, the heterogeneous
+temporal graphs explicitly model the temporal and discourse relationships among
+facts; on the other hand, the multi-view mechanism captures both time-focused
+and fact-focused information, allowing the two views to complement each other
+through adaptive fusion. To further improve the implicit reasoning capability
+of the model, we design a self-supervised time-comparing objective. Extensive
+experimental results demonstrate the effectiveness of our method on the TimeQA
+and SituatedQA datasets. Furthermore, MTGER gives more consistent answers under
+question perturbations.
+</p></li>
+</ul>
+<h2>foundation model</h2>
+<h3>Title: mPLUG-Owl2: Revolutionizing Multi-modal Large Language Model with Modality Collaboration. (arXiv:2311.04257v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04257">http://arxiv.org/abs/2311.04257</a></li>
+<li>Code URL: <a href="https://github.com/x-plug/mplug-owl">https://github.com/x-plug/mplug-owl</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04257] mPLUG-Owl2: Revolutionizing Multi-modal Large Language Model with Modality Collaboration](http://arxiv.org/abs/2311.04257) #foundation model</code></li>
+<li>Summary: <p>Multi-modal Large Language Models (MLLMs) have demonstrated impressive
+instruction abilities across various open-ended tasks. However, previous
+methods primarily focus on enhancing multi-modal capabilities. In this work, we
+introduce a versatile multi-modal large language model, mPLUG-Owl2, which
+effectively leverages modality collaboration to improve performance in both
+text and multi-modal tasks. mPLUG-Owl2 utilizes a modularized network design,
+with the language decoder acting as a universal interface for managing
+different modalities. Specifically, mPLUG-Owl2 incorporates shared functional
+modules to facilitate modality collaboration and introduces a modality-adaptive
+module that preserves modality-specific features. Extensive experiments reveal
+that mPLUG-Owl2 is capable of generalizing both text tasks and multi-modal
+tasks and achieving state-of-the-art performances with a single generic model.
+Notably, mPLUG-Owl2 is the first MLLM model that demonstrates the modality
+collaboration phenomenon in both pure-text and multi-modal scenarios, setting a
+pioneering path in the development of future multi-modal foundation models.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: LRM: Large Reconstruction Model for Single Image to 3D. (arXiv:2311.04400v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04400">http://arxiv.org/abs/2311.04400</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04400] LRM: Large Reconstruction Model for Single Image to 3D](http://arxiv.org/abs/2311.04400) #generative</code></li>
+<li>Summary: <p>We propose the first Large Reconstruction Model (LRM) that predicts the 3D
+model of an object from a single input image within just 5 seconds. In contrast
+to many previous methods that are trained on small-scale datasets such as
+ShapeNet in a category-specific fashion, LRM adopts a highly scalable
+transformer-based architecture with 500 million learnable parameters to
+directly predict a neural radiance field (NeRF) from the input image. We train
+our model in an end-to-end manner on massive multi-view data containing around
+1 million objects, including both synthetic renderings from Objaverse and real
+captures from MVImgNet. This combination of a high-capacity model and
+large-scale training data empowers our model to be highly generalizable and
+produce high-quality 3D reconstructions from various testing inputs including
+real-world in-the-wild captures and images from generative models. Video demos
+and interactable 3D meshes can be found on this website:
+https://yiconghong.me/LRM/.
+</p></li>
+</ul>
+<h3>Title: Social Motion Prediction with Cognitive Hierarchies. (arXiv:2311.04726v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04726">http://arxiv.org/abs/2311.04726</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04726] Social Motion Prediction with Cognitive Hierarchies](http://arxiv.org/abs/2311.04726) #generative</code></li>
+<li>Summary: <p>Humans exhibit a remarkable capacity for anticipating the actions of others
+and planning their own actions accordingly. In this study, we strive to
+replicate this ability by addressing the social motion prediction problem. We
+introduce a new benchmark, a novel formulation, and a cognition-inspired
+framework. We present Wusi, a 3D multi-person motion dataset under the context
+of team sports, which features intense and strategic human interactions and
+diverse pose distributions. By reformulating the problem from a multi-agent
+reinforcement learning perspective, we incorporate behavioral cloning and
+generative adversarial imitation learning to boost learning efficiency and
+generalization. Furthermore, we take into account the cognitive aspects of the
+human social action planning process and develop a cognitive hierarchy
+framework to predict strategic human social interactions. We conduct
+comprehensive experiments to validate the effectiveness of our proposed dataset
+and approach. Code and data are available at
+https://walter0807.github.io/Social-CH/.
+</p></li>
+</ul>
+<h3>Title: GENOME: GenerativE Neuro-symbOlic visual reasoning by growing and reusing ModulEs. (arXiv:2311.04901v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04901">http://arxiv.org/abs/2311.04901</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04901] GENOME: GenerativE Neuro-symbOlic visual reasoning by growing and reusing ModulEs](http://arxiv.org/abs/2311.04901) #generative</code></li>
+<li>Summary: <p>Recent works have shown that Large Language Models (LLMs) could empower
+traditional neuro-symbolic models via programming capabilities to translate
+language into module descriptions, thus achieving strong visual reasoning
+results while maintaining the model's transparency and efficiency. However,
+these models usually exhaustively generate the entire code snippet given each
+new instance of a task, which is extremely ineffective. We propose generative
+neuro-symbolic visual reasoning by growing and reusing modules. Specifically,
+our model consists of three unique stages, module initialization, module
+generation, and module execution. First, given a vision-language task, we adopt
+LLMs to examine whether we could reuse and grow over established modules to
+handle this new task. If not, we initialize a new module needed by the task and
+specify the inputs and outputs of this new module. After that, the new module
+is created by querying LLMs to generate corresponding code snippets that match
+the requirements. In order to get a better sense of the new module's ability,
+we treat few-shot training examples as test cases to see if our new module
+could pass these cases. If yes, the new module is added to the module library
+for future reuse. Finally, we evaluate the performance of our model on the
+testing set by executing the parsed programs with the newly made visual modules
+to get the results. We find the proposed model possesses several advantages.
+First, it performs competitively on standard tasks like visual question
+answering and referring expression comprehension; Second, the modules learned
+from one task can be seamlessly transferred to new tasks; Last but not least,
+it is able to adapt to new visual reasoning tasks by observing a few training
+examples and reusing modules.
+</p></li>
+</ul>
+<h3>Title: Watermarks in the Sand: Impossibility of Strong Watermarking for Generative Models. (arXiv:2311.04378v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04378">http://arxiv.org/abs/2311.04378</a></li>
+<li>Code URL: <a href="https://github.com/hlzhang109/impossibility-watermark">https://github.com/hlzhang109/impossibility-watermark</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04378] Watermarks in the Sand: Impossibility of Strong Watermarking for Generative Models](http://arxiv.org/abs/2311.04378) #generative</code></li>
+<li>Summary: <p>Watermarking generative models consists of planting a statistical signal
+(watermark) in a model's output so that it can be later verified that the
+output was generated by the given model. A strong watermarking scheme satisfies
+the property that a computationally bounded attacker cannot erase the watermark
+without causing significant quality degradation. In this paper, we study the
+(im)possibility of strong watermarking schemes. We prove that, under
+well-specified and natural assumptions, strong watermarking is impossible to
+achieve. This holds even in the private detection algorithm setting, where the
+watermark insertion and detection algorithms share a secret key, unknown to the
+attacker. To prove this result, we introduce a generic efficient watermark
+attack; the attacker is not required to know the private key of the scheme or
+even which scheme is used. Our attack is based on two assumptions: (1) The
+attacker has access to a "quality oracle" that can evaluate whether a candidate
+output is a high-quality response to a prompt, and (2) The attacker has access
+to a "perturbation oracle" which can modify an output with a nontrivial
+probability of maintaining quality, and which induces an efficiently mixing
+random walk on high-quality outputs. We argue that both assumptions can be
+satisfied in practice by an attacker with weaker computational capabilities
+than the watermarked model itself, to which the attacker has only black-box
+access. Furthermore, our assumptions will likely only be easier to satisfy over
+time as models grow in capabilities and modalities. We demonstrate the
+feasibility of our attack by instantiating it to attack three existing
+watermarking schemes for large language models: Kirchenbauer et al. (2023),
+Kuditipudi et al. (2023), and Zhao et al. (2023). The same attack successfully
+removes the watermarks planted by all three schemes, with only minor quality
+degradation.
+</p></li>
+</ul>
+<h3>Title: Sandi: A System for Accountability and Applications in Direct Communication (Extended Abstract). (arXiv:2311.04861v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04861">http://arxiv.org/abs/2311.04861</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04861] Sandi: A System for Accountability and Applications in Direct Communication (Extended Abstract)](http://arxiv.org/abs/2311.04861) #generative</code></li>
+<li>Summary: <p>Reputation systems guide our decision making both in life and work: which
+restaurant to eat at, which vendor to buy from, which software dependencies to
+use, and who or what to trust. These systems are often based on old ideas and
+are failing in the face of modern threats. Fraudsters have found ways to
+manipulate them, undermining their integrity and utility. Generative AI adds to
+the problem by enabling the creation of real-looking fake narratives at scale,
+creating a false sense of consensus. Meanwhile, the need for reliable
+reputation concepts is more important than ever, as wrong decisions lead to
+increasingly severe outcomes: wasted time, poor service, and a feeling of
+injustice at best, fraud, identity theft, and ransomware at worst.
+</p></li>
+</ul>
+<p>In this extended abstract we introduce Sandi, a new kind of reputation system
+with a single well-defined purpose: to create trust through accountability in
+one-to-one transactions. Examples of such transactions include sending an email
+or making a purchase online. Sandi has strong security and privacy properties
+that make it suitable for use also in sensitive contexts. Furthermore, Sandi
+can guarantee reputation integrity and transparency for its registered users.
+</p>
+<p>As a primary application, we envision how Sandi could counter fraud and abuse
+in direct communication. Concretely, message senders request a cryptographic
+tag from Sandi that they send along with their message. If the receiver finds
+the message inappropriate, they can report the sender using this tag. Notably,
+only senders need registered accounts and do not need to manage long-term keys.
+The design of Sandi ensures compatibility with any communication system that
+allows for small binary data transmission.
+</p>
+
+<h3>Title: GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks. (arXiv:2311.04245v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04245">http://arxiv.org/abs/2311.04245</a></li>
+<li>Code URL: <a href="https://github.com/hkuds/gpt-st">https://github.com/hkuds/gpt-st</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04245] GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks](http://arxiv.org/abs/2311.04245) #generative</code></li>
+<li>Summary: <p>In recent years, there has been a rapid development of spatio-temporal
+prediction techniques in response to the increasing demands of traffic
+management and travel planning. While advanced end-to-end models have achieved
+notable success in improving predictive performance, their integration and
+expansion pose significant challenges. This work aims to address these
+challenges by introducing a spatio-temporal pre-training framework that
+seamlessly integrates with downstream baselines and enhances their performance.
+The framework is built upon two key designs: (i) We propose a spatio-temporal
+mask autoencoder as a pre-training model for learning spatio-temporal
+dependencies. The model incorporates customized parameter learners and
+hierarchical spatial pattern encoding networks. These modules are specifically
+designed to capture spatio-temporal customized representations and intra- and
+inter-cluster region semantic relationships, which have often been neglected in
+existing approaches. (ii) We introduce an adaptive mask strategy as part of the
+pre-training mechanism. This strategy guides the mask autoencoder in learning
+robust spatio-temporal representations and facilitates the modeling of
+different relationships, ranging from intra-cluster to inter-cluster, in an
+easy-to-hard training manner. Extensive experiments conducted on representative
+benchmarks demonstrate the effectiveness of our proposed method. We have made
+our model implementation publicly available at https://github.com/HKUDS/GPT-ST.
+</p></li>
+</ul>
+<h3>Title: Identifying Semantic Component for Robust Molecular Property Prediction. (arXiv:2311.04837v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04837">http://arxiv.org/abs/2311.04837</a></li>
+<li>Code URL: <a href="https://github.com/dmirlab-group/sci">https://github.com/dmirlab-group/sci</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04837] Identifying Semantic Component for Robust Molecular Property Prediction](http://arxiv.org/abs/2311.04837) #generative</code></li>
+<li>Summary: <p>Although graph neural networks have achieved great success in the task of
+molecular property prediction in recent years, their generalization ability
+under out-of-distribution (OOD) settings is still under-explored. Different
+from existing methods that learn discriminative representations for prediction,
+we propose a generative model with semantic-components identifiability, named
+SCI. We demonstrate that the latent variables in this generative model can be
+explicitly identified into semantic-relevant (SR) and semantic-irrelevant (SI)
+components, which contributes to better OOD generalization by involving minimal
+change properties of causal mechanisms. Specifically, we first formulate the
+data generation process from the atom level to the molecular level, where the
+latent space is split into SI substructures, SR substructures, and SR atom
+variables. Sequentially, to reduce misidentification, we restrict the minimal
+changes of the SR atom variables and add a semantic latent substructure
+regularization to mitigate the variance of the SR substructure under augmented
+domain changes. Under mild assumptions, we prove the block-wise identifiability
+of the SR substructure and the comment-wise identifiability of SR atom
+variables. Experimental studies achieve state-of-the-art performance and show
+general improvement on 21 datasets in 3 mainstream benchmarks. Moreover, the
+visualization results of the proposed SCI method provide insightful case
+studies and explanations for the prediction results. The code is available at:
+https://github.com/DMIRLAB-Group/SCI.
+</p></li>
+</ul>
+<h2>anomaly</h2>
+<h3>Title: A Deep Learning Approach to Video Anomaly Detection using Convolutional Autoencoders. (arXiv:2311.04351v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04351">http://arxiv.org/abs/2311.04351</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04351] A Deep Learning Approach to Video Anomaly Detection using Convolutional Autoencoders](http://arxiv.org/abs/2311.04351) #anomaly</code></li>
+<li>Summary: <p>In this research we propose a deep learning approach for detecting anomalies
+in videos using convolutional autoencoder and decoder neural networks on the
+UCSD dataset.Our method utilizes a convolutional autoencoder to learn the
+spatiotemporal patterns of normal videos and then compares each frame of a test
+video to this learned representation. We evaluated our approach on the UCSD
+dataset and achieved an overall accuracy of 99.35% on the Ped1 dataset and
+99.77% on the Ped2 dataset, demonstrating the effectiveness of our method for
+detecting anomalies in surveillance videos. The results show that our method
+outperforms other state-of-the-art methods, and it can be used in real-world
+applications for video anomaly detection.
+</p></li>
+</ul>
+<h2>in-context</h2>
+<h2>memory</h2>
+<h3>Title: Rethinking Event-based Human Pose Estimation with 3D Event Representations. (arXiv:2311.04591v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04591">http://arxiv.org/abs/2311.04591</a></li>
+<li>Code URL: <a href="https://github.com/masterhow/eventpointpose">https://github.com/masterhow/eventpointpose</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04591] Rethinking Event-based Human Pose Estimation with 3D Event Representations](http://arxiv.org/abs/2311.04591) #memory</code></li>
+<li>Summary: <p>Human pose estimation is a critical component in autonomous driving and
+parking, enhancing safety by predicting human actions. Traditional frame-based
+cameras and videos are commonly applied, yet, they become less reliable in
+scenarios under high dynamic range or heavy motion blur. In contrast, event
+cameras offer a robust solution for navigating these challenging contexts.
+Predominant methodologies incorporate event cameras into learning frameworks by
+accumulating events into event frames. However, such methods tend to
+marginalize the intrinsic asynchronous and high temporal resolution
+characteristics of events. This disregard leads to a loss in essential temporal
+dimension data, crucial for safety-critical tasks associated with dynamic human
+activities. To address this issue and to unlock the 3D potential of event
+information, we introduce two 3D event representations: the Rasterized Event
+Point Cloud (RasEPC) and the Decoupled Event Voxel (DEV). The RasEPC collates
+events within concise temporal slices at identical positions, preserving 3D
+attributes with statistical cues and markedly mitigating memory and
+computational demands. Meanwhile, the DEV representation discretizes events
+into voxels and projects them across three orthogonal planes, utilizing
+decoupled event attention to retrieve 3D cues from the 2D planes. Furthermore,
+we develop and release EV-3DPW, a synthetic event-based dataset crafted to
+facilitate training and quantitative analysis in outdoor scenes. On the public
+real-world DHP19 dataset, our event point cloud technique excels in real-time
+mobile predictions, while the decoupled event voxel method achieves the highest
+accuracy. Experiments reveal our proposed 3D representation methods' superior
+generalization capacities against traditional RGB images and event frame
+techniques. Our code and dataset are available at
+https://github.com/MasterHow/EventPointPose.
+</p></li>
+</ul>
+<h3>Title: Massive Editing for Large Language Models via Meta Learning. (arXiv:2311.04661v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04661">http://arxiv.org/abs/2311.04661</a></li>
+<li>Code URL: <a href="https://github.com/chenmientan/malmen">https://github.com/chenmientan/malmen</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04661] Massive Editing for Large Language Models via Meta Learning](http://arxiv.org/abs/2311.04661) #memory</code></li>
+<li>Summary: <p>While large language models (LLMs) have enabled learning knowledge from the
+pre-training corpora, the acquired knowledge may be fundamentally incorrect or
+outdated over time, which necessitates rectifying the knowledge of the language
+model (LM) after the training. A promising approach involves employing a
+hyper-network to generate parameter shift, whereas existing hyper-networks
+suffer from inferior scalability in synchronous editing operation amount. To
+mitigate the problem, we propose the MAssive Language Model Editing Network
+(MALMEN), which formulates the parameter shift aggregation as the least square
+problem, subsequently updating the LM parameters using the normal equation. To
+accommodate editing multiple facts simultaneously with limited memory budgets,
+we separate the computation on the hyper-network and LM, enabling arbitrary
+batch size on both neural networks. Our method is evaluated by editing up to
+thousands of facts on LMs with different architectures, i.e., BERT-base, GPT-2,
+T5-XL (2.8B), and GPT-J (6B), across various knowledge-intensive NLP tasks,
+i.e., closed book fact-checking and question answering. Remarkably, MALMEN is
+capable of editing hundreds of times more facts than strong baselines with the
+identical hyper-network architecture and outperforms editor specifically
+designed for GPT. Our code is available at
+https://github.com/ChenmienTan/malmen.
+</p></li>
+</ul>
+<h3>Title: Using large language models to study human memory for meaningful narratives. (arXiv:2311.04742v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04742">http://arxiv.org/abs/2311.04742</a></li>
+<li>Code URL: <a href="https://github.com/mkatkov/llm-narrative-analysis">https://github.com/mkatkov/llm-narrative-analysis</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04742] Using large language models to study human memory for meaningful narratives](http://arxiv.org/abs/2311.04742) #memory</code></li>
+<li>Summary: <p>One of the most impressive achievements of the AI revolution is the
+development of large language models that can generate meaningful text and
+respond to instructions in plain English with no additional training necessary.
+Here we show that language models can be used as a scientific instrument for
+studying human memory for meaningful material. We developed a pipeline for
+designing large scale memory experiments and analyzing the obtained results. We
+performed online memory experiments with a large number of participants and
+collected recognition and recall data for narratives of different lengths. We
+found that both recall and recognition performance scale linearly with
+narrative length. Furthermore, in order to investigate the role of narrative
+comprehension in memory, we repeated these experiments using scrambled versions
+of the presented stories. We found that even though recall performance declined
+significantly, recognition remained largely unaffected. Interestingly, recalls
+in this condition seem to follow the original narrative order rather than the
+scrambled presentation, pointing to a contextual reconstruction of the story in
+memory.
+</p></li>
+</ul>
+<h3>Title: DAG-Sword: A Simulator of Large-Scale Network Topologies for DAG-Oriented Proof-of-Work Blockchains. (arXiv:2311.04638v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04638">http://arxiv.org/abs/2311.04638</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04638] DAG-Sword: A Simulator of Large-Scale Network Topologies for DAG-Oriented Proof-of-Work Blockchains](http://arxiv.org/abs/2311.04638) #memory</code></li>
+<li>Summary: <p>The blockchain brought interesting properties for many practical
+applications. However, some properties, such as the transaction processing
+throughput remained limited, especially in Proof-of-Work blockchains.
+Therefore, several promising directions, such as sharding designs and DAG-based
+protocols emerged. In this paper, we focus on DAG-based consensus protocols and
+present a discrete-event simulator for them. Our simulator can simulate
+realistic blockchain networks created from data of a Bitcoin network, while its
+network configuration and topology can be customized. The simulated network
+consists of honest and malicious miners. Malicious miners do not make any
+attack on consensus itself. Instead, they use a different transaction selection
+strategy than honest miners (who select transactions randomly) with the
+intention to earn unfairly more profits than honest miners at the cost of
+downgrading the protocol performance by duplicate transactions. As a
+consequence, this harms the performance of some DAG-based protocols (e.g.,
+PHANTOM and GHOSTDAG) in terms of transaction processing throughput, which we
+demonstrate in our experiments and extend the results of the related work that
+contains a small-scale network of 10 nodes by the results obtained on a
+large-scale network with 7000 nodes. Next, we empirically compare different
+algorithms for the mempool structure, and we propose a composite mempool
+structure that is memory-efficient and thus convenient for simulations of
+resource-demanding large-scale networks.
+</p></li>
+</ul>
+<h3>Title: A Hierarchical Spatial Transformer for Massive Point Samples in Continuous Space. (arXiv:2311.04434v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04434">http://arxiv.org/abs/2311.04434</a></li>
+<li>Code URL: <a href="https://github.com/spatialdatasciencegroup/hst">https://github.com/spatialdatasciencegroup/hst</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04434] A Hierarchical Spatial Transformer for Massive Point Samples in Continuous Space](http://arxiv.org/abs/2311.04434) #memory</code></li>
+<li>Summary: <p>Transformers are widely used deep learning architectures. Existing
+transformers are mostly designed for sequences (texts or time series), images
+or videos, and graphs. This paper proposes a novel transformer model for
+massive (up to a million) point samples in continuous space. Such data are
+ubiquitous in environment sciences (e.g., sensor observations), numerical
+simulations (e.g., particle-laden flow, astrophysics), and location-based
+services (e.g., POIs and trajectories). However, designing a transformer for
+massive spatial points is non-trivial due to several challenges, including
+implicit long-range and multi-scale dependency on irregular points in
+continuous space, a non-uniform point distribution, the potential high
+computational costs of calculating all-pair attention across massive points,
+and the risks of over-confident predictions due to varying point density. To
+address these challenges, we propose a new hierarchical spatial transformer
+model, which includes multi-resolution representation learning within a
+quad-tree hierarchy and efficient spatial attention via coarse approximation.
+We also design an uncertainty quantification branch to estimate prediction
+confidence related to input feature noise and point sparsity. We provide a
+theoretical analysis of computational time complexity and memory costs.
+Extensive experiments on both real-world and synthetic datasets show that our
+method outperforms multiple baselines in prediction accuracy and our model can
+scale up to one million points on one NVIDIA A100 GPU. The code is available at
+\url{https://github.com/spatialdatasciencegroup/HST}.
+</p></li>
+</ul>
+<h2>few-shot</h2>
+<h3>Title: Enhancing Few-shot CLIP with Semantic-Aware Fine-Tuning. (arXiv:2311.04464v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04464">http://arxiv.org/abs/2311.04464</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04464] Enhancing Few-shot CLIP with Semantic-Aware Fine-Tuning](http://arxiv.org/abs/2311.04464) #few-shot</code></li>
+<li>Summary: <p>Learning generalized representations from limited training samples is crucial
+for applying deep neural networks in low-resource scenarios. Recently, methods
+based on Contrastive Language-Image Pre-training (CLIP) have exhibited
+promising performance in few-shot adaptation tasks. To avoid catastrophic
+forgetting and overfitting caused by few-shot fine-tuning, existing works
+usually freeze the parameters of CLIP pre-trained on large-scale datasets,
+overlooking the possibility that some parameters might not be suitable for
+downstream tasks. To this end, we revisit CLIP's visual encoder with a specific
+focus on its distinctive attention pooling layer, which performs a spatial
+weighted-sum of the dense feature maps. Given that dense feature maps contain
+meaningful semantic information, and different semantics hold varying
+importance for diverse downstream tasks (such as prioritizing semantics like
+ears and eyes in pet classification tasks rather than side mirrors), using the
+same weighted-sum operation for dense features across different few-shot tasks
+might not be appropriate. Hence, we propose fine-tuning the parameters of the
+attention pooling layer during the training process to encourage the model to
+focus on task-specific semantics. In the inference process, we perform residual
+blending between the features pooled by the fine-tuned and the original
+attention pooling layers to incorporate both the few-shot knowledge and the
+pre-trained CLIP's prior knowledge. We term this method as Semantic-Aware
+FinE-tuning (SAFE). SAFE is effective in enhancing the conventional few-shot
+CLIP and is compatible with the existing adapter approach (termed SAFE-A).
+</p></li>
+</ul>
+<h3>Title: Towards Few-Annotation Learning in Computer Vision: Application to Image Classification and Object Detection tasks. (arXiv:2311.04888v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04888">http://arxiv.org/abs/2311.04888</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04888] Towards Few-Annotation Learning in Computer Vision: Application to Image Classification and Object Detection tasks](http://arxiv.org/abs/2311.04888) #few-shot</code></li>
+<li>Summary: <p>In this thesis, we develop theoretical, algorithmic and experimental
+contributions for Machine Learning with limited labels, and more specifically
+for the tasks of Image Classification and Object Detection in Computer Vision.
+In a first contribution, we are interested in bridging the gap between theory
+and practice for popular Meta-Learning algorithms used in Few-Shot
+Classification. We make connections to Multi-Task Representation Learning,
+which benefits from solid theoretical foundations, to verify the best
+conditions for a more efficient meta-learning. Then, to leverage unlabeled data
+when training object detectors based on the Transformer architecture, we
+propose both an unsupervised pretraining and a semi-supervised learning method
+in two other separate contributions. For pretraining, we improve Contrastive
+Learning for object detectors by introducing the localization information.
+Finally, our semi-supervised method is the first tailored to transformer-based
+detectors.
+</p></li>
+</ul>
+<h3>Title: Analysis and Applications of Deep Learning with Finite Samples in Full Life-Cycle Intelligence of Nuclear Power Generation. (arXiv:2311.04247v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2311.04247">http://arxiv.org/abs/2311.04247</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2311.04247] Analysis and Applications of Deep Learning with Finite Samples in Full Life-Cycle Intelligence of Nuclear Power Generation](http://arxiv.org/abs/2311.04247) #few-shot</code></li>
+<li>Summary: <p>The advent of Industry 4.0 has precipitated the incorporation of Artificial
+Intelligence (AI) methods within industrial contexts, aiming to realize
+intelligent manufacturing, operation as well as maintenance, also known as
+industrial intelligence. However, intricate industrial milieus, particularly
+those relating to energy exploration and production, frequently encompass data
+characterized by long-tailed class distribution, sample imbalance, and domain
+shift. These attributes pose noteworthy challenges to data-centric Deep
+Learning (DL) techniques, crucial for the realization of industrial
+intelligence. The present study centers on the intricate and distinctive
+industrial scenarios of Nuclear Power Generation (NPG), meticulously
+scrutinizing the application of DL techniques under the constraints of finite
+data samples. Initially, the paper expounds on potential employment scenarios
+for AI across the full life-cycle of NPG. Subsequently, we delve into an
+evaluative exposition of DL's advancement, grounded in the finite sample
+perspective. This encompasses aspects such as small-sample learning, few-shot
+learning, zero-shot learning, and open-set recognition, also referring to the
+unique data characteristics of NPG. The paper then proceeds to present two
+specific case studies. The first revolves around the automatic recognition of
+zirconium alloy metallography, while the second pertains to open-set
+recognition for signal diagnosis of machinery sensors. These cases, spanning
+the entirety of NPG's life-cycle, are accompanied by constructive outcomes and
+insightful deliberations. By exploring and applying DL methodologies within the
+constraints of finite sample availability, this paper not only furnishes a
+robust technical foundation but also introduces a fresh perspective toward the
+secure and efficient advancement and exploitation of this advanced energy
+source.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2023-11-09]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
