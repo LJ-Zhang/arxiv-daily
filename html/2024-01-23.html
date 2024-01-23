@@ -1,0 +1,471 @@
+<h2>diffusion</h2>
+<h3>Title: Make-A-Shape: a Ten-Million-scale 3D Shape Model. (arXiv:2401.11067v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11067">http://arxiv.org/abs/2401.11067</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11067] Make-A-Shape: a Ten-Million-scale 3D Shape Model](http://arxiv.org/abs/2401.11067) #diffusion</code></li>
+<li>Summary: <p>Significant progress has been made in training large generative models for
+natural language and images. Yet, the advancement of 3D generative models is
+hindered by their substantial resource demands for training, along with
+inefficient, non-compact, and less expressive representations. This paper
+introduces Make-A-Shape, a new 3D generative model designed for efficient
+training on a vast scale, capable of utilizing 10 millions publicly-available
+shapes. Technical-wise, we first innovate a wavelet-tree representation to
+compactly encode shapes by formulating the subband coefficient filtering scheme
+to efficiently exploit coefficient relations. We then make the representation
+generatable by a diffusion model by devising the subband coefficients packing
+scheme to layout the representation in a low-resolution grid. Further, we
+derive the subband adaptive training strategy to train our model to effectively
+learn to generate coarse and detail wavelet coefficients. Last, we extend our
+framework to be controlled by additional input conditions to enable it to
+generate shapes from assorted modalities, e.g., single/multi-view images, point
+clouds, and low-resolution voxels. In our extensive set of experiments, we
+demonstrate various applications, such as unconditional generation, shape
+completion, and conditional generation on a wide range of modalities. Our
+approach not only surpasses the state of the art in delivering high-quality
+results but also efficiently generates shapes within a few seconds, often
+achieving this in just 2 seconds for most conditions.
+</p></li>
+</ul>
+<h3>Title: UltrAvatar: A Realistic Animatable 3D Avatar Diffusion Model with Authenticity Guided Textures. (arXiv:2401.11078v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11078">http://arxiv.org/abs/2401.11078</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11078] UltrAvatar: A Realistic Animatable 3D Avatar Diffusion Model with Authenticity Guided Textures](http://arxiv.org/abs/2401.11078) #diffusion</code></li>
+<li>Summary: <p>Recent advances in 3D avatar generation have gained significant attentions.
+These breakthroughs aim to produce more realistic animatable avatars, narrowing
+the gap between virtual and real-world experiences. Most of existing works
+employ Score Distillation Sampling (SDS) loss, combined with a differentiable
+renderer and text condition, to guide a diffusion model in generating 3D
+avatars. However, SDS often generates oversmoothed results with few facial
+details, thereby lacking the diversity compared with ancestral sampling. On the
+other hand, other works generate 3D avatar from a single image, where the
+challenges of unwanted lighting effects, perspective views, and inferior image
+quality make them difficult to reliably reconstruct the 3D face meshes with the
+aligned complete textures. In this paper, we propose a novel 3D avatar
+generation approach termed UltrAvatar with enhanced fidelity of geometry, and
+superior quality of physically based rendering (PBR) textures without unwanted
+lighting. To this end, the proposed approach presents a diffuse color
+extraction model and an authenticity guided texture diffusion model. The former
+removes the unwanted lighting effects to reveal true diffuse colors so that the
+generated avatars can be rendered under various lighting conditions. The latter
+follows two gradient-based guidances for generating PBR textures to render
+diverse face-identity features and details better aligning with 3D mesh
+geometry. We demonstrate the effectiveness and robustness of the proposed
+method, outperforming the state-of-the-art methods by a large margin in the
+experiments.
+</p></li>
+</ul>
+<h3>Title: MotionMix: Weakly-Supervised Diffusion for Controllable Motion Generation. (arXiv:2401.11115v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11115">http://arxiv.org/abs/2401.11115</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11115] MotionMix: Weakly-Supervised Diffusion for Controllable Motion Generation](http://arxiv.org/abs/2401.11115) #diffusion</code></li>
+<li>Summary: <p>Controllable generation of 3D human motions becomes an important topic as the
+world embraces digital transformation. Existing works, though making promising
+progress with the advent of diffusion models, heavily rely on meticulously
+captured and annotated (e.g., text) high-quality motion corpus, a
+resource-intensive endeavor in the real world. This motivates our proposed
+MotionMix, a simple yet effective weakly-supervised diffusion model that
+leverages both noisy and unannotated motion sequences. Specifically, we
+separate the denoising objectives of a diffusion model into two stages:
+obtaining conditional rough motion approximations in the initial $T-T^<em>$ steps
+by learning the noisy annotated motions, followed by the unconditional
+refinement of these preliminary motions during the last $T^</em>$ steps using
+unannotated motions. Notably, though learning from two sources of imperfect
+data, our model does not compromise motion generation quality compared to fully
+supervised approaches that access gold data. Extensive experiments on several
+benchmarks demonstrate that our MotionMix, as a versatile framework,
+consistently achieves state-of-the-art performances on text-to-motion,
+action-to-motion, and music-to-dance tasks.
+</p></li>
+</ul>
+<h3>Title: Spatial Structure Constraints for Weakly Supervised Semantic Segmentation. (arXiv:2401.11122v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11122">http://arxiv.org/abs/2401.11122</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11122] Spatial Structure Constraints for Weakly Supervised Semantic Segmentation](http://arxiv.org/abs/2401.11122) #diffusion</code></li>
+<li>Summary: <p>The image-level label has prevailed in weakly supervised semantic
+segmentation tasks due to its easy availability. Since image-level labels can
+only indicate the existence or absence of specific categories of objects,
+visualization-based techniques have been widely adopted to provide object
+location clues. Considering class activation maps (CAMs) can only locate the
+most discriminative part of objects, recent approaches usually adopt an
+expansion strategy to enlarge the activation area for more integral object
+localization. However, without proper constraints, the expanded activation will
+easily intrude into the background region. In this paper, we propose spatial
+structure constraints (SSC) for weakly supervised semantic segmentation to
+alleviate the unwanted object over-activation of attention expansion.
+Specifically, we propose a CAM-driven reconstruction module to directly
+reconstruct the input image from deep CAM features, which constrains the
+diffusion of last-layer object attention by preserving the coarse spatial
+structure of the image content. Moreover, we propose an activation
+self-modulation module to refine CAMs with finer spatial structure details by
+enhancing regional consistency. Without external saliency models to provide
+background clues, our approach achieves 72.7\% and 47.0\% mIoU on the PASCAL
+VOC 2012 and COCO datasets, respectively, demonstrating the superiority of our
+proposed approach.
+</p></li>
+</ul>
+<h3>Title: Product-Level Try-on: Characteristics-preserving Try-on with Realistic Clothes Shading and Wrinkles. (arXiv:2401.11239v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11239">http://arxiv.org/abs/2401.11239</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11239] Product-Level Try-on: Characteristics-preserving Try-on with Realistic Clothes Shading and Wrinkles](http://arxiv.org/abs/2401.11239) #diffusion</code></li>
+<li>Summary: <p>Image-based virtual try-on systems,which fit new garments onto human
+portraits,are gaining research attention.An ideal pipeline should preserve the
+static features of clothes(like textures and logos)while also generating
+dynamic elements(e.g.shadows,folds)that adapt to the model's pose and
+environment.Previous works fail specifically in generating dynamic features,as
+they preserve the warped in-shop clothes trivially with predicted an alpha mask
+by composition.To break the dilemma of over-preserving and textures losses,we
+propose a novel diffusion-based Product-level virtual try-on pipeline,\ie
+PLTON, which can preserve the fine details of logos and embroideries while
+producing realistic clothes shading and wrinkles.The main insights are in three
+folds:1)Adaptive Dynamic Rendering:We take a pre-trained diffusion model as a
+generative prior and tame it with image features,training a dynamic extractor
+from scratch to generate dynamic tokens that preserve high-fidelity semantic
+information. Due to the strong generative power of the diffusion prior,we can
+generate realistic clothes shadows and wrinkles.2)Static Characteristics
+Transformation: High-frequency Map(HF-Map)is our fundamental insight for static
+representation.PLTON first warps in-shop clothes to the target model pose by a
+traditional warping network,and uses a high-pass filter to extract an HF-Map
+for preserving static cloth features.The HF-Map is used to generate modulation
+maps through our static extractor,which are injected into a fixed U-net to
+synthesize the final result.To enhance retention,a Two-stage Blended Denoising
+method is proposed to guide the diffusion process for correct spatial layout
+and color.PLTON is finetuned only with our collected small-size try-on
+dataset.Extensive quantitative and qualitative experiments on 1024 768 datasets
+demonstrate the superiority of our framework in mimicking real clothes
+dynamics.
+</p></li>
+</ul>
+<h3>Title: Diffusion Model Conditioning on Gaussian Mixture Model and Negative Gaussian Mixture Gradient. (arXiv:2401.11261v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11261">http://arxiv.org/abs/2401.11261</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11261] Diffusion Model Conditioning on Gaussian Mixture Model and Negative Gaussian Mixture Gradient](http://arxiv.org/abs/2401.11261) #diffusion</code></li>
+<li>Summary: <p>Diffusion models (DMs) are a type of generative model that has a huge impact
+on image synthesis and beyond. They achieve state-of-the-art generation results
+in various generative tasks. A great diversity of conditioning inputs, such as
+text or bounding boxes, are accessible to control the generation. In this work,
+we propose a conditioning mechanism utilizing Gaussian mixture models (GMMs) as
+feature conditioning to guide the denoising process. Based on set theory, we
+provide a comprehensive theoretical analysis that shows that conditional latent
+distribution based on features and classes is significantly different, so that
+conditional latent distribution on features produces fewer defect generations
+than conditioning on classes. Two diffusion models conditioned on the Gaussian
+mixture model are trained separately for comparison. Experiments support our
+findings. A novel gradient function called the negative Gaussian mixture
+gradient (NGMG) is proposed and applied in diffusion model training with an
+additional classifier. Training stability has improved. We also theoretically
+prove that NGMG shares the same benefit as the Earth Mover distance
+(Wasserstein) as a more sensible cost function when learning distributions
+supported by low-dimensional manifolds.
+</p></li>
+</ul>
+<h2>self-supervised</h2>
+<h2>foundation model</h2>
+<h2>generative</h2>
+<h3>Title: Exploiting Duality in Open Information Extraction with Predicate Prompt. (arXiv:2401.11107v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11107">http://arxiv.org/abs/2401.11107</a></li>
+<li>Code URL: <a href="https://github.com/ccczhen/dualoie">https://github.com/ccczhen/dualoie</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11107] Exploiting Duality in Open Information Extraction with Predicate Prompt](http://arxiv.org/abs/2401.11107) #generative</code></li>
+<li>Summary: <p>Open information extraction (OpenIE) aims to extract the schema-free triplets
+in the form of (\emph{subject}, \emph{predicate}, \emph{object}) from a given
+sentence. Compared with general information extraction (IE), OpenIE poses more
+challenges for the IE models, {especially when multiple complicated triplets
+exist in a sentence. To extract these complicated triplets more effectively, in
+this paper we propose a novel generative OpenIE model, namely \emph{DualOIE},
+which achieves a dual task at the same time as extracting some triplets from
+the sentence, i.e., converting the triplets into the sentence.} Such dual task
+encourages the model to correctly recognize the structure of the given sentence
+and thus is helpful to extract all potential triplets from the sentence.
+Specifically, DualOIE extracts the triplets in two steps: 1) first extracting a
+sequence of all potential predicates, 2) then using the predicate sequence as a
+prompt to induce the generation of triplets. Our experiments on two benchmarks
+and our dataset constructed from Meituan demonstrate that DualOIE achieves the
+best performance among the state-of-the-art baselines. Furthermore, the online
+A/B test on Meituan platform shows that 0.93\% improvement of QV-CTR and 0.56\%
+improvement of UV-CTR have been obtained when the triplets extracted by DualOIE
+were leveraged in Meituan's search system.
+</p></li>
+</ul>
+<h3>Title: Prompt-RAG: Pioneering Vector Embedding-Free Retrieval-Augmented Generation in Niche Domains, Exemplified by Korean Medicine. (arXiv:2401.11246v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11246">http://arxiv.org/abs/2401.11246</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11246] Prompt-RAG: Pioneering Vector Embedding-Free Retrieval-Augmented Generation in Niche Domains, Exemplified by Korean Medicine](http://arxiv.org/abs/2401.11246) #generative</code></li>
+<li>Summary: <p>We propose a natural language prompt-based retrieval augmented generation
+(Prompt-RAG), a novel approach to enhance the performance of generative large
+language models (LLMs) in niche domains. Conventional RAG methods mostly
+require vector embeddings, yet the suitability of generic LLM-based embedding
+representations for specialized domains remains uncertain. To explore and
+exemplify this point, we compared vector embeddings from Korean Medicine (KM)
+and Conventional Medicine (CM) documents, finding that KM document embeddings
+correlated more with token overlaps and less with human-assessed document
+relatedness, in contrast to CM embeddings. Prompt-RAG, distinct from
+conventional RAG models, operates without the need for embedding vectors. Its
+performance was assessed through a Question-Answering (QA) chatbot application,
+where responses were evaluated for relevance, readability, and informativeness.
+The results showed that Prompt-RAG outperformed existing models, including
+ChatGPT and conventional vector embedding-based RAGs, in terms of relevance and
+informativeness. Despite challenges like content structuring and response
+latency, the advancements in LLMs are expected to encourage the use of
+Prompt-RAG, making it a promising tool for other domains in need of RAG
+methods.
+</p></li>
+</ul>
+<h3>Title: Projected Belief Networks With Discriminative Alignment for Acoustic Event Classification: Rivaling State of the Art CNNs. (arXiv:2401.11199v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11199">http://arxiv.org/abs/2401.11199</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11199] Projected Belief Networks With Discriminative Alignment for Acoustic Event Classification: Rivaling State of the Art CNNs](http://arxiv.org/abs/2401.11199) #generative</code></li>
+<li>Summary: <p>The projected belief network (PBN) is a generative stochastic network with
+tractable likelihood function based on a feed-forward neural network (FFNN).
+The generative function operates by "backing up" through the FFNN. The PBN is
+two networks in one, a FFNN that operates in the forward direction, and a
+generative network that operates in the backward direction. Both networks
+co-exist based on the same parameter set, have their own cost functions, and
+can be separately or jointly trained. The PBN therefore has the potential to
+possess the best qualities of both discriminative and generative classifiers.
+To realize this potential, a separate PBN is trained on each class, maximizing
+the generative likelihood function for the given class, while minimizing the
+discriminative cost for the FFNN against "all other classes". This technique,
+called discriminative alignment (PBN-DA), aligns the contours of the likelihood
+function to the decision boundaries and attains vastly improved classification
+performance, rivaling that of state of the art discriminative networks. The
+method may be further improved using a hidden Markov model (HMM) as a component
+of the PBN, called PBN-DA-HMM. This paper provides a comprehensive treatment of
+PBN, PBN-DA, and PBN-DA-HMM. In addition, the results of two new classification
+experiments are provided. The first experiment uses air-acoustic events, and
+the second uses underwater acoustic data consisting of marine mammal calls. In
+both experiments, PBN-DA-HMM attains comparable or better performance as a
+state of the art CNN, and attain a factor of two error reduction when combined
+with the CNN.
+</p></li>
+</ul>
+<h2>anomaly</h2>
+<h3>Title: TreeMIL: A Multi-instance Learning Framework for Time Series Anomaly Detection with Inexact Supervision. (arXiv:2401.11235v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11235">http://arxiv.org/abs/2401.11235</a></li>
+<li>Code URL: <a href="https://github.com/fly-orange/treemil">https://github.com/fly-orange/treemil</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11235] TreeMIL: A Multi-instance Learning Framework for Time Series Anomaly Detection with Inexact Supervision](http://arxiv.org/abs/2401.11235) #anomaly</code></li>
+<li>Summary: <p>Time series anomaly detection (TSAD) plays a vital role in various domains
+such as healthcare, networks, and industry. Considering labels are crucial for
+detection but difficult to obtain, we turn to TSAD with inexact supervision:
+only series-level labels are provided during the training phase, while
+point-level anomalies are predicted during the testing phase. Previous works
+follow a traditional multi-instance learning (MIL) approach, which focuses on
+encouraging high anomaly scores at individual time steps. However, time series
+anomalies are not only limited to individual point anomalies, they can also be
+collective anomalies, typically exhibiting abnormal patterns over subsequences.
+To address the challenge of collective anomalies, in this paper, we propose a
+tree-based MIL framework (TreeMIL). We first adopt an N-ary tree structure to
+divide the entire series into multiple nodes, where nodes at different levels
+represent subsequences with different lengths. Then, the subsequence features
+are extracted to determine the presence of collective anomalies. Finally, we
+calculate point-level anomaly scores by aggregating features from nodes at
+different levels. Experiments conducted on seven public datasets and eight
+baselines demonstrate that TreeMIL achieves an average 32.3% improvement in F1-
+score compared to previous state-of-the-art methods. The code is available at
+https://github.com/fly-orange/TreeMIL.
+</p></li>
+</ul>
+<h3>Title: DACR: Distribution-Augmented Contrastive Reconstruction for Time-Series Anomaly Detection. (arXiv:2401.11271v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11271">http://arxiv.org/abs/2401.11271</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11271] DACR: Distribution-Augmented Contrastive Reconstruction for Time-Series Anomaly Detection](http://arxiv.org/abs/2401.11271) #anomaly</code></li>
+<li>Summary: <p>Anomaly detection in time-series data is crucial for identifying faults,
+failures, threats, and outliers across a range of applications. Recently, deep
+learning techniques have been applied to this topic, but they often struggle in
+real-world scenarios that are complex and highly dynamic, e.g., the normal data
+may consist of multiple distributions, and various types of anomalies may
+differ from the normal data to different degrees. In this work, to tackle these
+challenges, we propose Distribution-Augmented Contrastive Reconstruction
+(DACR). DACR generates extra data disjoint from the normal data distribution to
+compress the normal data's representation space, and enhances the feature
+extractor through contrastive learning to better capture the intrinsic
+semantics from time-series data. Furthermore, DACR employs an attention
+mechanism to model the semantic dependencies among multivariate time-series
+features, thereby achieving more robust reconstruction for anomaly detection.
+Extensive experiments conducted on nine benchmark datasets in various anomaly
+detection scenarios demonstrate the effectiveness of DACR in achieving new
+state-of-the-art time-series anomaly detection.
+</p></li>
+</ul>
+<h2>in-context</h2>
+<h2>memory</h2>
+<h3>Title: Helmholtz-Decomposition and Optical Flow: A new method to characterize GCamP recordings. (arXiv:2401.11008v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11008">http://arxiv.org/abs/2401.11008</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11008] Helmholtz-Decomposition and Optical Flow: A new method to characterize GCamP recordings](http://arxiv.org/abs/2401.11008) #memory</code></li>
+<li>Summary: <p>During deep sleep and under anaesthesia spontaneous patterns of cortical
+activation frequently take the form of slow travelling waves. Slow wave sleep
+is an important cognitive state especially because of its relevance for memory
+consolidation. However, despite extensive research the exact mechanisms are
+still ill-understood. Novel methods such as high speed widefield imaging of
+GCamP activity offer new potentials. Here we show how data recorded from
+transgenic mice under anesthesia can be processed to analyze sources, sinks and
+patterns of flow. To make the best possible use of the data novel means of data
+processing are necessary. Therefore, we (1) give a an brief account on
+processes that play a role in generating slow waves and demonstrate (2) a novel
+approach to characterize its patterns in GCamP recordings. While slow waves are
+highly variable, it shows that some are surprisingly similar. To enable
+quantitative means of analysis and examine the structure of such prototypical
+events we propose a novel approach for the characterization of slow waves: The
+Helmholtz-Decomposition of gradient-based Dense Optical Flow of the pixeldense
+GCamP contrast (df/f). It allows to detect the sources and sinks of activation
+and discern them from global patterns of neural flow. Aggregated features can
+be analyzed with variational autoencoders. The results unravel regularities
+between slow waves and shows how they relate to the experimental conditions.
+The approach reveals a complex topology of different features in latent slow
+wave space and identifies prototypical examples for each stage.
+</p></li>
+</ul>
+<h3>Title: DengueNet: Dengue Prediction using Spatiotemporal Satellite Imagery for Resource-Limited Countries. (arXiv:2401.11114v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11114">http://arxiv.org/abs/2401.11114</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11114] DengueNet: Dengue Prediction using Spatiotemporal Satellite Imagery for Resource-Limited Countries](http://arxiv.org/abs/2401.11114) #memory</code></li>
+<li>Summary: <p>Dengue fever presents a substantial challenge in developing countries where
+sanitation infrastructure is inadequate. The absence of comprehensive
+healthcare systems exacerbates the severity of dengue infections, potentially
+leading to life-threatening circumstances. Rapid response to dengue outbreaks
+is also challenging due to limited information exchange and integration. While
+timely dengue outbreak forecasts have the potential to prevent such outbreaks,
+the majority of dengue prediction studies have predominantly relied on data
+that impose significant burdens on individual countries for collection. In this
+study, our aim is to improve health equity in resource-constrained countries by
+exploring the effectiveness of high-resolution satellite imagery as a
+nontraditional and readily accessible data source. By leveraging the wealth of
+publicly available and easily obtainable satellite imagery, we present a
+scalable satellite extraction framework based on Sentinel Hub, a cloud-based
+computing platform. Furthermore, we introduce DengueNet, an innovative
+architecture that combines Vision Transformer, Radiomics, and Long Short-term
+Memory to extract and integrate spatiotemporal features from satellite images.
+This enables dengue predictions on an epi-week basis. To evaluate the
+effectiveness of our proposed method, we conducted experiments on five
+municipalities in Colombia. We utilized a dataset comprising 780
+high-resolution Sentinel-2 satellite images for training and evaluation. The
+performance of DengueNet was assessed using the mean absolute error (MAE)
+metric. Across the five municipalities, DengueNet achieved an average MAE of
+43.92. Our findings strongly support the efficacy of satellite imagery as a
+valuable resource for dengue prediction, particularly in informing public
+health policies within countries where manually collected data is scarce and
+dengue virus prevalence is severe.
+</p></li>
+</ul>
+<h3>Title: LRP-QViT: Mixed-Precision Vision Transformer Quantization via Layer-wise Relevance Propagation. (arXiv:2401.11243v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11243">http://arxiv.org/abs/2401.11243</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11243] LRP-QViT: Mixed-Precision Vision Transformer Quantization via Layer-wise Relevance Propagation](http://arxiv.org/abs/2401.11243) #memory</code></li>
+<li>Summary: <p>Vision transformers (ViTs) have demonstrated remarkable performance across
+various visual tasks. However, ViT models suffer from substantial computational
+and memory requirements, making it challenging to deploy them on
+resource-constrained platforms. Quantization is a popular approach for reducing
+model size, but most studies mainly focus on equal bit-width quantization for
+the entire network, resulting in sub-optimal solutions. While there are few
+works on mixed precision quantization (MPQ) for ViTs, they typically rely on
+search space-based methods or employ mixed precision arbitrarily. In this
+paper, we introduce LRP-QViT, an explainability-based method for assigning
+mixed-precision bit allocations to different layers based on their importance
+during classification. Specifically, to measure the contribution score of each
+layer in predicting the target class, we employ the Layer-wise Relevance
+Propagation (LRP) method. LRP assigns local relevance at the output layer and
+propagates it through all layers, distributing the relevance until it reaches
+the input layers. These relevance scores serve as indicators for computing the
+layer contribution score. Additionally, we have introduced a clipped
+channel-wise quantization aimed at eliminating outliers from post-LayerNorm
+activations to alleviate severe inter-channel variations. To validate and
+assess our approach, we employ LRP-QViT across ViT, DeiT, and Swin transformer
+models on various datasets. Our experimental findings demonstrate that both our
+fixed-bit and mixed-bit post-training quantization methods surpass existing
+models in the context of 4-bit and 6-bit quantization.
+</p></li>
+</ul>
+<h2>few-shot</h2>
+<h3>Title: Stability Plasticity Decoupled Fine-tuning For Few-shot end-to-end Object Detection. (arXiv:2401.11140v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11140">http://arxiv.org/abs/2401.11140</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11140] Stability Plasticity Decoupled Fine-tuning For Few-shot end-to-end Object Detection](http://arxiv.org/abs/2401.11140) #few-shot</code></li>
+<li>Summary: <p>Few-shot object detection(FSOD) aims to design methods to adapt object
+detectors efficiently with only few annotated samples. Fine-tuning has been
+shown to be an effective and practical approach. However, previous works often
+take the classical base-novel two stage fine-tuning procedure but ignore the
+implicit stability-plasticity contradiction among different modules.
+Specifically, the random re-initialized classifiers need more plasticity to
+adapt to novel samples. The other modules inheriting pre-trained weights demand
+more stability to reserve their class-agnostic knowledge. Regular fine-tuning
+which couples the optimization of these two parts hurts the model
+generalization in FSOD scenarios. In this paper, we find that this problem is
+prominent in the end-to-end object detector Sparse R-CNN for its
+multi-classifier cascaded architecture. We propose to mitigate this
+contradiction by a new three-stage fine-tuning procedure by introducing an
+addtional plasticity classifier fine-tuning(PCF) stage. We further design the
+multi-source ensemble(ME) technique to enhance the generalization of the model
+in the final fine-tuning stage. Extensive experiments verify that our method is
+effective in regularizing Sparse R-CNN, outperforming previous methods in the
+FSOD benchmark.
+</p></li>
+</ul>
+<h3>Title: Mining experimental data from Materials Science literature with Large Language Models. (arXiv:2401.11052v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11052">http://arxiv.org/abs/2401.11052</a></li>
+<li>Code URL: <a href="https://github.com/lfoppiano/matsci-lumen">https://github.com/lfoppiano/matsci-lumen</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11052] Mining experimental data from Materials Science literature with Large Language Models](http://arxiv.org/abs/2401.11052) #few-shot</code></li>
+<li>Summary: <p>This study is dedicated to evaluating the capabilities of advanced large
+language models (LLMs) such as GPT-3.5-Turbo, GPT-4, and GPT-4-Turbo in the
+extraction of structured information from scientific documents within the field
+of materials science. We introduce a novel methodology for the comparative
+analysis of intricate material expressions, emphasising the standardisation of
+chemical formulas to tackle the complexities inherent in materials science
+information assessment. To this end, we primarily focus on two critical tasks
+of information extraction: (i) a named entity recognition (NER) of studied
+materials and physical properties and (ii) a relation extraction (RE) between
+these entities. The performance of LLMs in executing these tasks is benchmarked
+against traditional models based on the BERT architecture and rule-based
+approaches. For NER, LLMs fail to outperform the baseline with zero-shot
+prompting and exhibit only limited improvement with few-shot prompting.
+However, for RE, a GPT-3.5-Turbo fine-tuned with the appropriate strategy
+outperforms all models, including the baseline. Without any fine-tuning, GPT-4
+and GPT-4-Turbo display remarkable reasoning and relationship extraction
+capabilities after being provided with merely a couple of examples, surpassing
+the baseline. Overall, the results suggest that although LLMs demonstrate
+relevant reasoning skills in connecting concepts, for tasks requiring
+extracting complex domain-specific entities like materials, specialised models
+are currently a better choice.
+</p></li>
+</ul>
+<h3>Title: Enhancing Large Language Models for Clinical Decision Support by Incorporating Clinical Practice Guidelines. (arXiv:2401.11120v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.11120">http://arxiv.org/abs/2401.11120</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.11120] Enhancing Large Language Models for Clinical Decision Support by Incorporating Clinical Practice Guidelines](http://arxiv.org/abs/2401.11120) #few-shot</code></li>
+<li>Summary: <p>Background Large Language Models (LLMs), enhanced with Clinical Practice
+Guidelines (CPGs), can significantly improve Clinical Decision Support (CDS).
+However, methods for incorporating CPGs into LLMs are not well studied. Methods
+We develop three distinct methods for incorporating CPGs into LLMs: Binary
+Decision Tree (BDT), Program-Aided Graph Construction (PAGC), and
+Chain-of-Thought-Few-Shot Prompting (CoT-FSP). To evaluate the effectiveness of
+the proposed methods, we create a set of synthetic patient descriptions and
+conduct both automatic and human evaluation of the responses generated by four
+LLMs: GPT-4, GPT-3.5 Turbo, LLaMA, and PaLM 2. Zero-Shot Prompting (ZSP) was
+used as the baseline method. We focus on CDS for COVID-19 outpatient treatment
+as the case study. Results All four LLMs exhibit improved performance when
+enhanced with CPGs compared to the baseline ZSP. BDT outperformed both CoT-FSP
+and PAGC in automatic evaluation. All of the proposed methods demonstrated high
+performance in human evaluation. Conclusion LLMs enhanced with CPGs demonstrate
+superior performance, as compared to plain LLMs with ZSP, in providing accurate
+recommendations for COVID-19 outpatient treatment, which also highlights the
+potential for broader applications beyond the case study.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2024-01-23]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
