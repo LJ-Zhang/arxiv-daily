@@ -1,0 +1,837 @@
+<h2>diffusion</h2>
+<h3>Title: Large-scale Reinforcement Learning for Diffusion Models. (arXiv:2401.12244v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12244">http://arxiv.org/abs/2401.12244</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12244] Large-scale Reinforcement Learning for Diffusion Models](http://arxiv.org/abs/2401.12244) #diffusion</code></li>
+<li>Summary: <p>Text-to-image diffusion models are a class of deep generative models that
+have demonstrated an impressive capacity for high-quality image generation.
+However, these models are susceptible to implicit biases that arise from
+web-scale text-image training pairs and may inaccurately model aspects of
+images we care about. This can result in suboptimal samples, model bias, and
+images that do not align with human ethics and preferences. In this paper, we
+present an effective scalable algorithm to improve diffusion models using
+Reinforcement Learning (RL) across a diverse set of reward functions, such as
+human preference, compositionality, and fairness over millions of images. We
+illustrate how our approach substantially outperforms existing methods for
+aligning diffusion models with human preferences. We further illustrate how
+this substantially improves pretrained Stable Diffusion (SD) models, generating
+samples that are preferred by humans 80.3% of the time over those from the base
+SD model while simultaneously improving both the composition and diversity of
+generated samples.
+</p></li>
+</ul>
+<h3>Title: UniHDA: Towards Universal Hybrid Domain Adaptation of Image Generators. (arXiv:2401.12596v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12596">http://arxiv.org/abs/2401.12596</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12596] UniHDA: Towards Universal Hybrid Domain Adaptation of Image Generators](http://arxiv.org/abs/2401.12596) #diffusion</code></li>
+<li>Summary: <p>Generative domain adaptation has achieved remarkable progress, enabling us to
+adapt a pre-trained generator to a new target domain. However, existing methods
+simply adapt the generator to a single target domain and are limited to a
+single modality, either text-driven or image-driven. Moreover, they are prone
+to overfitting domain-specific attributes, which inevitably compromises
+cross-domain consistency. In this paper, we propose UniHDA, a unified and
+versatile framework for generative hybrid domain adaptation with multi-modal
+references from multiple domains. We use CLIP encoder to project multi-modal
+references into a unified embedding space and then linear interpolate the
+direction vectors from multiple target domains to achieve hybrid domain
+adaptation. To ensure the cross-domain consistency, we propose a novel
+cross-domain spatial structure (CSS) loss that maintains detailed spatial
+structure information between source and target generator. Experiments show
+that the adapted generator can synthesise realistic images with various
+attribute compositions. Additionally, our framework is versatile to multiple
+generators, \eg, StyleGAN2 and Diffusion Models.
+</p></li>
+</ul>
+<h3>Title: Lumiere: A Space-Time Diffusion Model for Video Generation. (arXiv:2401.12945v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12945">http://arxiv.org/abs/2401.12945</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12945] Lumiere: A Space-Time Diffusion Model for Video Generation](http://arxiv.org/abs/2401.12945) #diffusion</code></li>
+<li>Summary: <p>We introduce Lumiere -- a text-to-video diffusion model designed for
+synthesizing videos that portray realistic, diverse and coherent motion -- a
+pivotal challenge in video synthesis. To this end, we introduce a Space-Time
+U-Net architecture that generates the entire temporal duration of the video at
+once, through a single pass in the model. This is in contrast to existing video
+models which synthesize distant keyframes followed by temporal super-resolution
+-- an approach that inherently makes global temporal consistency difficult to
+achieve. By deploying both spatial and (importantly) temporal down- and
+up-sampling and leveraging a pre-trained text-to-image diffusion model, our
+model learns to directly generate a full-frame-rate, low-resolution video by
+processing it in multiple space-time scales. We demonstrate state-of-the-art
+text-to-video generation results, and show that our design easily facilitates a
+wide range of content creation tasks and video editing applications, including
+image-to-video, video inpainting, and stylized generation.
+</p></li>
+</ul>
+<h3>Title: A Comprehensive View of the Biases of Toxicity and Sentiment Analysis Methods Towards Utterances with African American English Expressions. (arXiv:2401.12720v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12720">http://arxiv.org/abs/2401.12720</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12720] A Comprehensive View of the Biases of Toxicity and Sentiment Analysis Methods Towards Utterances with African American English Expressions](http://arxiv.org/abs/2401.12720) #diffusion</code></li>
+<li>Summary: <p>Language is a dynamic aspect of our culture that changes when expressed in
+different technologies/communities. Online social networks have enabled the
+diffusion and evolution of different dialects, including African American
+English (AAE). However, this increased usage is not without barriers. One
+particular barrier is how sentiment (Vader, TextBlob, and Flair) and toxicity
+(Google's Perspective and the open-source Detoxify) methods present biases
+towards utterances with AAE expressions. Consider Google's Perspective to
+understand bias. Here, an utterance such as <code>All n*ggers deserve to die
+respectfully. The police murder us.'' it reaches a higher toxicity than</code>African-Americans deserve to die respectfully. The police murder us.''. This
+score difference likely arises because the tool cannot understand the
+re-appropriation of the term ``n*gger''. One explanation for this bias is that
+AI models are trained on limited datasets, and using such a term in training
+data is more likely to appear in a toxic utterance. While this may be
+plausible, the tool will make mistakes regardless. Here, we study bias on two
+Web-based (YouTube and Twitter) datasets and two spoken English datasets. Our
+analysis shows how most models present biases towards AAE in most settings. We
+isolate the impact of AAE expression usage via linguistic control features from
+the Linguistic Inquiry and Word Count (LIWC) software, grammatical control
+features extracted via Part-of-Speech (PoS) tagging from Natural Language
+Processing (NLP) models, and the semantic of utterances by comparing sentence
+embeddings from recent language models. We present consistent results on how a
+heavy usage of AAE expressions may cause the speaker to be considered
+substantially more toxic, even when speaking about nearly the same subject. Our
+study complements similar analyses focusing on small datasets and/or one method
+only.
+</p></li>
+</ul>
+<h3>Title: ToDA: Target-oriented Diffusion Attacker against Recommendation System. (arXiv:2401.12578v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12578">http://arxiv.org/abs/2401.12578</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12578] ToDA: Target-oriented Diffusion Attacker against Recommendation System](http://arxiv.org/abs/2401.12578) #diffusion</code></li>
+<li>Summary: <p>Recommendation systems (RS) have become indispensable tools for web services
+to address information overload, thus enhancing user experiences and bolstering
+platforms' revenues. However, with their increasing ubiquity, security concerns
+have also emerged. As the public accessibility of RS, they are susceptible to
+specific malicious attacks where adversaries can manipulate user profiles,
+leading to biased recommendations. Recent research often integrates additional
+modules using generative models to craft these deceptive user profiles,
+ensuring them are imperceptible while causing the intended harm. Albeit their
+efficacy, these models face challenges of unstable training and the
+exploration-exploitation dilemma, which can lead to suboptimal results. In this
+paper, we pioneer to investigate the potential of diffusion models (DMs), for
+shilling attacks. Specifically, we propose a novel Target-oriented Diffusion
+Attack model (ToDA). It incorporates a pre-trained autoencoder that transforms
+user profiles into a high dimensional space, paired with a Latent Diffusion
+Attacker (LDA)-the core component of ToDA. LDA introduces noise into the
+profiles within this latent space, adeptly steering the approximation towards
+targeted items through cross-attention mechanisms. The global horizon,
+implemented by a bipartite graph, is involved in LDA and derived from the
+encoded user profile feature. This makes LDA possible to extend the generation
+outwards the on-processing user feature itself, and bridges the gap between
+diffused user features and target item features. Extensive experiments compared
+to several SOTA baselines demonstrate ToDA's effectiveness. Specific studies
+exploit the elaborative design of ToDA and underscore the potency of advanced
+generative models in such contexts.
+</p></li>
+</ul>
+<h3>Title: Diffusion Representation for Asymmetric Kernels. (arXiv:2401.12251v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12251">http://arxiv.org/abs/2401.12251</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12251] Diffusion Representation for Asymmetric Kernels](http://arxiv.org/abs/2401.12251) #diffusion</code></li>
+<li>Summary: <p>We extend the diffusion-map formalism to data sets that are induced by
+asymmetric kernels. Analytical convergence results of the resulting expansion
+are proved, and an algorithm is proposed to perform the dimensional reduction.
+In this work we study data sets in which its geometry structure is induced by
+an asymmetric kernel. We use a priori coordinate system to represent this
+geometry and, thus, be able to improve the computational complexity of reducing
+the dimensionality of data sets. A coordinate system connected to the tensor
+product of Fourier basis is used to represent the underlying geometric
+structure obtained by the diffusion-map, thus reducing the dimensionality of
+the data set and making use of the speedup provided by the two-dimensional Fast
+Fourier Transform algorithm (2-D FFT). We compare our results with those
+obtained by other eigenvalue expansions, and verify the efficiency of the
+algorithms with synthetic data, as well as with real data from applications
+including climate change studies.
+</p></li>
+</ul>
+<h3>Title: DDMI: Domain-Agnostic Latent Diffusion Models for Synthesizing High-Quality Implicit Neural Representations. (arXiv:2401.12517v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12517">http://arxiv.org/abs/2401.12517</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12517] DDMI: Domain-Agnostic Latent Diffusion Models for Synthesizing High-Quality Implicit Neural Representations](http://arxiv.org/abs/2401.12517) #diffusion</code></li>
+<li>Summary: <p>Recent studies have introduced a new class of generative models for
+synthesizing implicit neural representations (INRs) that capture arbitrary
+continuous signals in various domains. These models opened the door for
+domain-agnostic generative models, but they often fail to achieve high-quality
+generation. We observed that the existing methods generate the weights of
+neural networks to parameterize INRs and evaluate the network with fixed
+positional embeddings (PEs). Arguably, this architecture limits the expressive
+power of generative models and results in low-quality INR generation. To
+address this limitation, we propose Domain-agnostic Latent Diffusion Model for
+INRs (DDMI) that generates adaptive positional embeddings instead of neural
+networks' weights. Specifically, we develop a Discrete-to-continuous space
+Variational AutoEncoder (D2C-VAE), which seamlessly connects discrete data and
+the continuous signal functions in the shared latent space. Additionally, we
+introduce a novel conditioning mechanism for evaluating INRs with the
+hierarchically decomposed PEs to further enhance expressive power. Extensive
+experiments across four modalities, e.g., 2D images, 3D shapes, Neural Radiance
+Fields, and videos, with seven benchmark datasets, demonstrate the versatility
+of DDMI and its superior performance compared to the existing INR generative
+models.
+</p></li>
+</ul>
+<h2>self-supervised</h2>
+<h3>Title: OCT-SelfNet: A Self-Supervised Framework with Multi-Modal Datasets for Generalized and Robust Retinal Disease Detection. (arXiv:2401.12344v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12344">http://arxiv.org/abs/2401.12344</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12344] OCT-SelfNet: A Self-Supervised Framework with Multi-Modal Datasets for Generalized and Robust Retinal Disease Detection](http://arxiv.org/abs/2401.12344) #self-supervised</code></li>
+<li>Summary: <p>Despite the revolutionary impact of AI and the development of locally trained
+algorithms, achieving widespread generalized learning from multi-modal data in
+medical AI remains a significant challenge. This gap hinders the practical
+deployment of scalable medical AI solutions. Addressing this challenge, our
+research contributes a self-supervised robust machine learning framework,
+OCT-SelfNet, for detecting eye diseases using optical coherence tomography
+(OCT) images. In this work, various data sets from various institutions are
+combined enabling a more comprehensive range of representation. Our method
+addresses the issue using a two-phase training approach that combines
+self-supervised pretraining and supervised fine-tuning with a mask autoencoder
+based on the SwinV2 backbone by providing a solution for real-world clinical
+deployment. Extensive experiments on three datasets with different encoder
+backbones, low data settings, unseen data settings, and the effect of
+augmentation show that our method outperforms the baseline model, Resnet-50 by
+consistently attaining AUC-ROC performance surpassing 77% across all tests,
+whereas the baseline model exceeds 54%. Moreover, in terms of the AUC-PR
+metric, our proposed method exceeded 42%, showcasing a substantial increase of
+at least 10% in performance compared to the baseline, which exceeded only 33%.
+This contributes to our understanding of our approach's potential and
+emphasizes its usefulness in clinical settings.
+</p></li>
+</ul>
+<h3>Title: A Novel Garment Transfer Method Supervised by Distilled Knowledge of Virtual Try-on Model. (arXiv:2401.12433v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12433">http://arxiv.org/abs/2401.12433</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12433] A Novel Garment Transfer Method Supervised by Distilled Knowledge of Virtual Try-on Model](http://arxiv.org/abs/2401.12433) #self-supervised</code></li>
+<li>Summary: <p>When a shopper chooses garments online, garment transfer technology wears the
+garment from the model image onto the shopper's image, allowing the shopper to
+decide whether the garment is suitable for them. As garment transfer leverages
+wild and cheap person image as garment condition, it has attracted tremendous
+community attention and holds vast commercial potential. However, since the
+ground truth of garment transfer is almost unavailable in reality, previous
+studies have treated garment transfer as either pose transfer or garment-pose
+disentanglement, and trained garment transfer in self-supervised learning, yet
+do not cover garment transfer intentions completely. Therefore, the training
+supervising the garment transfer is a rock-hard issue. Notably, virtual try-on
+technology has exhibited superior performance using self-supervised learning.
+We supervise the garment transfer training via knowledge distillation from
+virtual try-on. Specifically, we first train the transfer parsing reasoning
+model at multi-phases to provide shape guidance for downstream tasks. The
+transfer parsing reasoning model learns the response and feature knowledge from
+the try-on parsing reasoning model and absorbs the hard knowledge from the
+ground truth. By leveraging the warping knowledge from virtual try-on, we
+estimate a progressive flow to precisely warp the garment by learning the shape
+and content correspondence. To enhance transfer realism, we propose a
+well-designed arm regrowth task to infer exposed skin pixel content.
+Experiments demonstrate that our method has state-of-the-art performance in
+transferring garments between person compared with other virtual try-on and
+garment transfer methods.
+</p></li>
+</ul>
+<h3>Title: Self-supervised Learning of LiDAR 3D Point Clouds via 2D-3D Neural Calibration. (arXiv:2401.12452v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12452">http://arxiv.org/abs/2401.12452</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12452] Self-supervised Learning of LiDAR 3D Point Clouds via 2D-3D Neural Calibration](http://arxiv.org/abs/2401.12452) #self-supervised</code></li>
+<li>Summary: <p>This paper introduces a novel self-supervised learning framework for
+enhancing 3D perception in autonomous driving scenes. Specifically, our
+approach, named NCLR, focuses on 2D-3D neural calibration, a novel pretext task
+that estimates the rigid transformation aligning camera and LiDAR coordinate
+systems. First, we propose the learnable transformation alignment to bridge the
+domain gap between image and point cloud data, converting features into a
+unified representation space for effective comparison and matching. Second, we
+identify the overlapping area between the image and point cloud with the fused
+features. Third, we establish dense 2D-3D correspondences to estimate the rigid
+transformation. The framework not only learns fine-grained matching from points
+to pixels but also achieves alignment of the image and point cloud at a
+holistic level, understanding their relative pose. We demonstrate NCLR's
+efficacy by applying the pre-trained backbone to downstream tasks, such as
+LiDAR-based 3D semantic segmentation, object detection, and panoptic
+segmentation. Comprehensive experiments on various datasets illustrate the
+superiority of NCLR over existing self-supervised methods. The results confirm
+that joint learning from different modalities significantly enhances the
+network's understanding abilities and effectiveness of learned representation.
+Code will be available at \url{https://github.com/Eaphan/NCLR}.
+</p></li>
+</ul>
+<h3>Title: Detecting and recognizing characters in Greek papyri with YOLOv8, DeiT and SimCLR. (arXiv:2401.12513v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12513">http://arxiv.org/abs/2401.12513</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12513] Detecting and recognizing characters in Greek papyri with YOLOv8, DeiT and SimCLR](http://arxiv.org/abs/2401.12513) #self-supervised</code></li>
+<li>Summary: <p>The capacity to isolate and recognize individual characters from facsimile
+images of papyrus manuscripts yields rich opportunities for digital analysis.
+For this reason the `ICDAR 2023 Competition on Detection and Recognition of
+Greek Letters on Papyri' was held as part of the 17th International Conference
+on Document Analysis and Recognition. This paper discusses our submission to
+the competition. We used an ensemble of YOLOv8 models to detect and classify
+individual characters and employed two different approaches for refining the
+character predictions, including a transformer based DeiT approach and a
+ResNet-50 model trained on a large corpus of unlabelled data using SimCLR, a
+self-supervised learning method. Our submission won the recognition challenge
+with a mAP of 42.2%, and was runner-up in the detection challenge with a mean
+average precision (mAP) of 51.4%. At the more relaxed intersection over union
+threshold of 0.5, we achieved the highest mean average precision and mean
+average recall results for both detection and classification. We ran our
+prediction pipeline on more than 4,500 images from the Oxyrhynchus Papyri to
+illustrate the utility of our approach, and we release the results publicly in
+multiple formats.
+</p></li>
+</ul>
+<h3>Title: Self-Supervised Vision Transformers Are Efficient Segmentation Learners for Imperfect Labels. (arXiv:2401.12535v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12535">http://arxiv.org/abs/2401.12535</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12535] Self-Supervised Vision Transformers Are Efficient Segmentation Learners for Imperfect Labels](http://arxiv.org/abs/2401.12535) #self-supervised</code></li>
+<li>Summary: <p>This study demonstrates a cost-effective approach to semantic segmentation
+using self-supervised vision transformers (SSVT). By freezing the SSVT backbone
+and training a lightweight segmentation head, our approach effectively utilizes
+imperfect labels, thereby improving robustness to label imperfections.
+Empirical experiments show significant performance improvements over existing
+methods for various annotation types, including scribble, point-level, and
+image-level labels. The research highlights the effectiveness of
+self-supervised vision transformers in dealing with imperfect labels, providing
+a practical and efficient solution for semantic segmentation while reducing
+annotation costs. Through extensive experiments, we confirm that our method
+outperforms baseline models for all types of imperfect labels. Especially under
+the zero-shot vision-language-model-based label, our model exhibits 11.5\%p
+performance gain compared to the baseline.
+</p></li>
+</ul>
+<h3>Title: DatUS^2: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer. (arXiv:2401.12820v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12820">http://arxiv.org/abs/2401.12820</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12820] DatUS^2: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer](http://arxiv.org/abs/2401.12820) #self-supervised</code></li>
+<li>Summary: <p>Successive proposals of several self-supervised training schemes continue to
+emerge, taking one step closer to developing a universal foundation model. In
+this process, the unsupervised downstream tasks are recognized as one of the
+evaluation methods to validate the quality of visual features learned with a
+self-supervised training scheme. However, unsupervised dense semantic
+segmentation has not been explored as a downstream task, which can utilize and
+evaluate the quality of semantic information introduced in patch-level feature
+representations during self-supervised training of a vision transformer.
+Therefore, this paper proposes a novel data-driven approach for unsupervised
+semantic segmentation (DatUS^2) as a downstream task. DatUS^2 generates
+semantically consistent and dense pseudo annotate segmentation masks for the
+unlabeled image dataset without using any visual-prior or synchronized data. We
+compare these pseudo-annotated segmentation masks with ground truth masks for
+evaluating recent self-supervised training schemes to learn shared semantic
+properties at the patch level and discriminative semantic properties at the
+segment level. Finally, we evaluate existing state-of-the-art self-supervised
+training schemes with our proposed downstream task, i.e., DatUS^2. Also, the
+best version of DatUS^2 outperforms the existing state-of-the-art method for
+the unsupervised dense semantic segmentation task with 15.02% MiOU and 21.47%
+Pixel accuracy on the SUIM dataset. It also achieves a competitive level of
+accuracy for a large-scale and complex dataset, i.e., the COCO dataset.
+</p></li>
+</ul>
+<h3>Title: FedRSU: Federated Learning for Scene Flow Estimation on Roadside Units. (arXiv:2401.12862v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12862">http://arxiv.org/abs/2401.12862</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12862] FedRSU: Federated Learning for Scene Flow Estimation on Roadside Units](http://arxiv.org/abs/2401.12862) #self-supervised</code></li>
+<li>Summary: <p>Roadside unit (RSU) can significantly improve the safety and robustness of
+autonomous vehicles through Vehicle-to-Everything (V2X) communication.
+Currently, the usage of a single RSU mainly focuses on real-time inference and
+V2X collaboration, while neglecting the potential value of the high-quality
+data collected by RSU sensors. Integrating the vast amounts of data from
+numerous RSUs can provide a rich source of data for model training. However,
+the absence of ground truth annotations and the difficulty of transmitting
+enormous volumes of data are two inevitable barriers to fully exploiting this
+hidden value. In this paper, we introduce FedRSU, an innovative federated
+learning framework for self-supervised scene flow estimation. In FedRSU, we
+present a recurrent self-supervision training paradigm, where for each RSU, the
+scene flow prediction of points at every timestamp can be supervised by its
+subsequent future multi-modality observation. Another key component of FedRSU
+is federated learning, where multiple devices collaboratively train an ML model
+while keeping the training data local and private. With the power of the
+recurrent self-supervised learning paradigm, FL is able to leverage innumerable
+underutilized data from RSU. To verify the FedRSU framework, we construct a
+large-scale multi-modality dataset RSU-SF. The dataset consists of 17 RSU
+clients, covering various scenarios, modalities, and sensor settings. Based on
+RSU-SF, we show that FedRSU can greatly improve model performance in ITS and
+provide a comprehensive benchmark under diverse FL scenarios. To the best of
+our knowledge, we provide the first real-world LiDAR-camera multi-modal dataset
+and benchmark for the FL community.
+</p></li>
+</ul>
+<h3>Title: GRATH: Gradual Self-Truthifying for Large Language Models. (arXiv:2401.12292v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12292">http://arxiv.org/abs/2401.12292</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12292] GRATH: Gradual Self-Truthifying for Large Language Models](http://arxiv.org/abs/2401.12292) #self-supervised</code></li>
+<li>Summary: <p>Truthfulness is paramount for large language models (LLMs) as they are
+increasingly deployed in real-world applications. However, existing LLMs still
+struggle with generating truthful answers and content, as evidenced by their
+modest performance on benchmarks like TruthfulQA. To address this issue, we
+propose GRAdual self-truTHifying (GRATH), a novel post-processing method to
+enhance truthfulness of LLMs. GRATH utilizes out-of-domain question prompts to
+generate corresponding answers and adaptively optimizes the model via direct
+preference optimization (DPO). Note that during this process, GRATH learns
+truthfulness in a self-supervised manner without requiring annotated answers.
+In particular, GRATH first generates pairwise truthfulness training data by
+prompting the LLM itself, with each pair containing a question and its correct
+and incorrect answers. The model is then fine-tuned using DPO to learn from the
+difference between answer pairs. Subsequently, GRATH iteratively refines the
+truthfulness data and optimizes the model, leading to a gradual improvement in
+model truthfulness. Empirically, we evaluate GRATH using different 7B-LLMs and
+compare with LLMs with similar or even larger sizes on benchmark datasets. Our
+results show that GRATH effectively improves LLMs' truthfulness without
+compromising other core capabilities. Notably, GRATH achieves state-of-the-art
+performance on TruthfulQA, with MC1 accuracy as 54.71% and MC2 accuracy as
+69.10%, which even surpass those on larger-scale models, such as
+Llama2-Chat-70B, by 23.62% and 24.18%, respectively.
+</p></li>
+</ul>
+<h3>Title: Memorization in Self-Supervised Learning Improves Downstream Generalization. (arXiv:2401.12233v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12233">http://arxiv.org/abs/2401.12233</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12233] Memorization in Self-Supervised Learning Improves Downstream Generalization](http://arxiv.org/abs/2401.12233) #self-supervised</code></li>
+<li>Summary: <p>Self-supervised learning (SSL) has recently received significant attention
+due to its ability to train high-performance encoders purely on unlabeled
+data-often scraped from the internet. This data can still be sensitive and
+empirical evidence suggests that SSL encoders memorize private information of
+their training data and can disclose them at inference time. Since existing
+theoretical definitions of memorization from supervised learning rely on
+labels, they do not transfer to SSL. To address this gap, we propose SSLMem, a
+framework for defining memorization within SSL. Our definition compares the
+difference in alignment of representations for data points and their augmented
+views returned by both encoders that were trained on these data points and
+encoders that were not. Through comprehensive empirical analysis on diverse
+encoder architectures and datasets we highlight that even though SSL relies on
+large datasets and strong augmentations-both known in supervised learning as
+regularization techniques that reduce overfitting-still significant fractions
+of training data points experience high memorization. Through our empirical
+results, we show that this memorization is essential for encoders to achieve
+higher generalization performance on different downstream tasks.
+</p></li>
+</ul>
+<h3>Title: Graph Contrastive Invariant Learning from the Causal Perspective. (arXiv:2401.12564v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12564">http://arxiv.org/abs/2401.12564</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12564] Graph Contrastive Invariant Learning from the Causal Perspective](http://arxiv.org/abs/2401.12564) #self-supervised</code></li>
+<li>Summary: <p>Graph contrastive learning (GCL), learning the node representation by
+contrasting two augmented graphs in a self-supervised way, has attracted
+considerable attention. GCL is usually believed to learn the invariant
+representation. However, does this understanding always hold in practice? In
+this paper, we first study GCL from the perspective of causality. By analyzing
+GCL with the structural causal model (SCM), we discover that traditional GCL
+may not well learn the invariant representations due to the non-causal
+information contained in the graph. How can we fix it and encourage the current
+GCL to learn better invariant representations? The SCM offers two requirements
+and motives us to propose a novel GCL method. Particularly, we introduce the
+spectral graph augmentation to simulate the intervention upon non-causal
+factors. Then we design the invariance objective and independence objective to
+better capture the causal factors. Specifically, (i) the invariance objective
+encourages the encoder to capture the invariant information contained in causal
+variables, and (ii) the independence objective aims to reduce the influence of
+confounders on the causal variables. Experimental results demonstrate the
+effectiveness of our approach on node classification tasks.
+</p></li>
+</ul>
+<h3>Title: Non-Neighbors Also Matter to Kriging: A New Contrastive-Prototypical Learning. (arXiv:2401.12681v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12681">http://arxiv.org/abs/2401.12681</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12681] Non-Neighbors Also Matter to Kriging: A New Contrastive-Prototypical Learning](http://arxiv.org/abs/2401.12681) #self-supervised</code></li>
+<li>Summary: <p>Kriging aims at estimating the attributes of unsampled geo-locations from
+observations in the spatial vicinity or physical connections, which helps
+mitigate skewed monitoring caused by under-deployed sensors. Existing works
+assume that neighbors' information offers the basis for estimating the
+attributes of the unobserved target while ignoring non-neighbors. However,
+non-neighbors could also offer constructive information, and neighbors could
+also be misleading. To this end, we propose ``Contrastive-Prototypical''
+self-supervised learning for Kriging (KCP) to refine valuable information from
+neighbors and recycle the one from non-neighbors. As a pre-trained paradigm, we
+conduct the Kriging task from a new perspective of representation: we aim to
+first learn robust and general representations and then recover attributes from
+representations. A neighboring contrastive module is designed that coarsely
+learns the representations by narrowing the representation distance between the
+target and its neighbors while pushing away the non-neighbors. In parallel, a
+prototypical module is introduced to identify similar representations via
+exchanged prediction, thus refining the misleading neighbors and recycling the
+useful non-neighbors from the neighboring contrast component. As a result, not
+all the neighbors and some of the non-neighbors will be used to infer the
+target. To encourage the two modules above to learn general and robust
+representations, we design an adaptive augmentation module that incorporates
+data-driven attribute augmentation and centrality-based topology augmentation
+over the spatiotemporal Kriging graph data. Extensive experiments on real-world
+datasets demonstrate the superior performance of KCP compared to its peers with
+6% improvements and exceptional transferability and robustness. The code is
+available at https://github.com/bonaldli/KCP
+</p></li>
+</ul>
+<h3>Title: DeepRicci: Self-supervised Graph Structure-Feature Co-Refinement for Alleviating Over-squashing. (arXiv:2401.12780v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12780">http://arxiv.org/abs/2401.12780</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12780] DeepRicci: Self-supervised Graph Structure-Feature Co-Refinement for Alleviating Over-squashing](http://arxiv.org/abs/2401.12780) #self-supervised</code></li>
+<li>Summary: <p>Graph Neural Networks (GNNs) have shown great power for learning and mining
+on graphs, and Graph Structure Learning (GSL) plays an important role in
+boosting GNNs with a refined graph. In the literature, most GSL solutions
+either primarily focus on structure refinement with task-specific supervision
+(i.e., node classification), or overlook the inherent weakness of GNNs
+themselves (e.g., over-squashing), resulting in suboptimal performance despite
+sophisticated designs. In light of these limitations, we propose to study
+self-supervised graph structure-feature co-refinement for effectively
+alleviating the issue of over-squashing in typical GNNs. In this paper, we take
+a fundamentally different perspective of the Ricci curvature in Riemannian
+geometry, in which we encounter the challenges of modeling, utilizing and
+computing Ricci curvature. To tackle these challenges, we present a
+self-supervised Riemannian model, DeepRicci. Specifically, we introduce a
+latent Riemannian space of heterogeneous curvatures to model various Ricci
+curvatures, and propose a gyrovector feature mapping to utilize Ricci curvature
+for typical GNNs. Thereafter, we refine node features by geometric contrastive
+learning among different geometric views, and simultaneously refine graph
+structure by backward Ricci flow based on a novel formulation of differentiable
+Ricci curvature. Finally, extensive experiments on public datasets show the
+superiority of DeepRicci, and the connection between backward Ricci flow and
+over-squashing. Codes of our work are given in https://github.com/RiemanGraph/.
+</p></li>
+</ul>
+<h2>foundation model</h2>
+<h3>Title: AdaEmbed: Semi-supervised Domain Adaptation in the Embedding Space. (arXiv:2401.12421v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12421">http://arxiv.org/abs/2401.12421</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12421] AdaEmbed: Semi-supervised Domain Adaptation in the Embedding Space](http://arxiv.org/abs/2401.12421) #foundation model</code></li>
+<li>Summary: <p>Semi-supervised domain adaptation (SSDA) presents a critical hurdle in
+computer vision, especially given the frequent scarcity of labeled data in
+real-world settings. This scarcity often causes foundation models, trained on
+extensive datasets, to underperform when applied to new domains. AdaEmbed, our
+newly proposed methodology for SSDA, offers a promising solution to these
+challenges. Leveraging the potential of unlabeled data, AdaEmbed facilitates
+the transfer of knowledge from a labeled source domain to an unlabeled target
+domain by learning a shared embedding space. By generating accurate and uniform
+pseudo-labels based on the established embedding space, the model overcomes the
+limitations of conventional SSDA, thus enhancing performance significantly. Our
+method's effectiveness is validated through extensive experiments on benchmark
+datasets such as DomainNet, Office-Home, and VisDA-C, where AdaEmbed
+consistently outperforms all the baselines, setting a new state of the art for
+SSDA. With its straightforward implementation and high data efficiency,
+AdaEmbed stands out as a robust and pragmatic solution for real-world
+scenarios, where labeled data is scarce. To foster further research and
+application in this area, we are sharing the codebase of our unified framework
+for semi-supervised domain adaptation.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: Prompt Smells: An Omen for Undesirable Generative AI Outputs. (arXiv:2401.12611v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12611">http://arxiv.org/abs/2401.12611</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12611] Prompt Smells: An Omen for Undesirable Generative AI Outputs](http://arxiv.org/abs/2401.12611) #generative</code></li>
+<li>Summary: <p>Recent Generative Artificial Intelligence (GenAI) trends focus on various
+applications, including creating stories, illustrations, poems, articles,
+computer code, music compositions, and videos. Extrinsic hallucinations are a
+critical limitation of such GenAI, which can lead to significant challenges in
+achieving and maintaining the trustworthiness of GenAI. In this paper, we
+propose two new concepts that we believe will aid the research community in
+addressing limitations associated with the application of GenAI models. First,
+we propose a definition for the "desirability" of GenAI outputs and three
+factors which are observed to influence it. Second, drawing inspiration from
+Martin Fowler's code smells, we propose the concept of "prompt smells" and the
+adverse effects they are observed to have on the desirability of GenAI outputs.
+We expect our work will contribute to the ongoing conversation about the
+desirability of GenAI outputs and help advance the field in a meaningful way.
+</p></li>
+</ul>
+<h2>anomaly</h2>
+<h3>Title: ClipSAM: CLIP and SAM Collaboration for Zero-Shot Anomaly Segmentation. (arXiv:2401.12665v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12665">http://arxiv.org/abs/2401.12665</a></li>
+<li>Code URL: <a href="https://github.com/lszcoding/clipsam">https://github.com/lszcoding/clipsam</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12665] ClipSAM: CLIP and SAM Collaboration for Zero-Shot Anomaly Segmentation](http://arxiv.org/abs/2401.12665) #anomaly</code></li>
+<li>Summary: <p>Recently, foundational models such as CLIP and SAM have shown promising
+performance for the task of Zero-Shot Anomaly Segmentation (ZSAS). However,
+either CLIP-based or SAM-based ZSAS methods still suffer from non-negligible
+key drawbacks: 1) CLIP primarily focuses on global feature alignment across
+different inputs, leading to imprecise segmentation of local anomalous parts;
+2) SAM tends to generate numerous redundant masks without proper prompt
+constraints, resulting in complex post-processing requirements. In this work,
+we innovatively propose a CLIP and SAM collaboration framework called ClipSAM
+for ZSAS. The insight behind ClipSAM is to employ CLIP's semantic understanding
+capability for anomaly localization and rough segmentation, which is further
+used as the prompt constraints for SAM to refine the anomaly segmentation
+results. In details, we introduce a crucial Unified Multi-scale Cross-modal
+Interaction (UMCI) module for interacting language with visual features at
+multiple scales of CLIP to reason anomaly positions. Then, we design a novel
+Multi-level Mask Refinement (MMR) module, which utilizes the positional
+information as multi-level prompts for SAM to acquire hierarchical levels of
+masks and merges them. Extensive experiments validate the effectiveness of our
+approach, achieving the optimal segmentation performance on the MVTec-AD and
+VisA datasets.
+</p></li>
+</ul>
+<h3>Title: Multi-Party Private Set Intersection: A Circuit-Based Protocol with Jaccard Similarity for Secure and Efficient Anomaly Detection in Network Traffic. (arXiv:2401.12542v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12542">http://arxiv.org/abs/2401.12542</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12542] Multi-Party Private Set Intersection: A Circuit-Based Protocol with Jaccard Similarity for Secure and Efficient Anomaly Detection in Network Traffic](http://arxiv.org/abs/2401.12542) #anomaly</code></li>
+<li>Summary: <p>We present a new circuit-based protocol for multi-party private set
+intersection (PSI) that allows m parties to compute the intersection of their
+datasets without revealing any additional information about the items outside
+the intersection. Building upon the two-party Sort-Compare-Shuffle (SCS)
+protocol, we seamlessly extend it to a multi-party setting. Demonstrating its
+practicality through implementation, our protocol exhibits acceptable
+performance. Specifically, with 7 parties, each possessing a set size of
+2^{12}, our protocol completes in just 19 seconds. Moreover, circuit-based
+protocols like ours have an advantage over using custom protocols to perform
+more complex computation. We substantiate this advantage by incorporating a
+module for calculating the Jaccard similarity metric of the private sets which
+can be used in the application domain of network traffic analysis for anomaly
+detection. This extension showcases the versatility of our protocol beyond set
+intersection computations, demonstrating its efficacy in preserving privacy
+while efficiently identifying abnormal patterns in network flow.
+</p></li>
+</ul>
+<h2>in-context</h2>
+<h3>Title: Enhancing In-context Learning via Linear Probe Calibration. (arXiv:2401.12406v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12406">http://arxiv.org/abs/2401.12406</a></li>
+<li>Code URL: <a href="https://github.com/mominabbass/linc">https://github.com/mominabbass/linc</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12406] Enhancing In-context Learning via Linear Probe Calibration](http://arxiv.org/abs/2401.12406) #in-context</code></li>
+<li>Summary: <p>In-context learning (ICL) is a new paradigm for natural language processing
+that utilizes Generative Pre-trained Transformer (GPT)-like models. This
+approach uses prompts that include in-context demonstrations to generate the
+corresponding output for a new query input. However, applying ICL in real cases
+does not scale with the number of samples, and lacks robustness to different
+prompt templates and demonstration permutations. In this paper, we first show
+that GPT-like models using ICL result in unreliable predictions based on a new
+metric based on Shannon entropy. Then, to solve this problem, we propose a new
+technique called the Linear Probe Calibration (LinC), a method that calibrates
+the model's output probabilities, resulting in reliable predictions and
+improved performance, while requiring only minimal additional samples (as few
+as five labeled data samples). LinC significantly enhances the ICL test
+performance of GPT models on various benchmark datasets, with an average
+improvement of up to 21%, and up to a 50% improvement in some cases, and
+significantly boosts the performance of PEFT methods, especially in the low
+resource regime. Moreover, LinC achieves lower expected calibration error, and
+is highly robust to varying label proportions, prompt templates, and
+demonstration permutations. Our code is available at
+\url{https://github.com/mominabbass/LinC}.
+</p></li>
+</ul>
+<h3>Title: Transformer-Based Models Are Not Yet Perfect At Learning to Emulate Structural Recursion. (arXiv:2401.12947v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12947">http://arxiv.org/abs/2401.12947</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12947] Transformer-Based Models Are Not Yet Perfect At Learning to Emulate Structural Recursion](http://arxiv.org/abs/2401.12947) #in-context</code></li>
+<li>Summary: <p>This paper investigates the ability of transformer-based models to learn
+structural recursion from examples. Recursion is a universal concept in both
+natural and formal languages. Structural recursion is central to the
+programming language and formal mathematics tasks where symbolic tools
+currently excel beyond neural models, such as inferring semantic relations
+between datatypes and emulating program behavior. We introduce a general
+framework that nicely connects the abstract concepts of structural recursion in
+the programming language domain to concrete sequence modeling problems and
+learned models' behavior. The framework includes a representation that captures
+the general \textit{syntax} of structural recursion, coupled with two different
+frameworks for understanding their \textit{semantics} -- one that is more
+natural from a programming languages perspective and one that helps bridge that
+perspective with a mechanistic understanding of the underlying transformer
+architecture.
+</p></li>
+</ul>
+<p>With our framework as a powerful conceptual tool, we identify different
+issues under various set-ups. The models trained to emulate recursive
+computations cannot fully capture the recursion yet instead fit short-cut
+algorithms and thus cannot solve certain edge cases that are under-represented
+in the training distribution. In addition, it is difficult for state-of-the-art
+large language models (LLMs) to mine recursive rules from in-context
+demonstrations. Meanwhile, these LLMs fail in interesting ways when emulating
+reduction (step-wise computation) of the recursive function.
+</p>
+
+<h2>memory</h2>
+<h3>Title: InverseMatrixVT3D: An Efficient Projection Matrix-Based Approach for 3D Occupancy Prediction. (arXiv:2401.12422v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12422">http://arxiv.org/abs/2401.12422</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12422] InverseMatrixVT3D: An Efficient Projection Matrix-Based Approach for 3D Occupancy Prediction](http://arxiv.org/abs/2401.12422) #memory</code></li>
+<li>Summary: <p>This paper introduces InverseMatrixVT3D, an efficient method for transforming
+multi-view image features into 3D feature volumes for 3D semantic occupancy
+prediction. Existing methods for constructing 3D volumes often rely on depth
+estimation, device-specific operators, or transformer queries, which hinders
+the widespread adoption of 3D occupancy models. In contrast, our approach
+leverages two projection matrices to store the static mapping relationships and
+matrix multiplications to efficiently generate global Bird's Eye View (BEV)
+features and local 3D feature volumes. Specifically, we achieve this by
+performing matrix multiplications between multi-view image feature maps and two
+sparse projection matrices. We introduce a sparse matrix handling technique for
+the projection matrices to optimise GPU memory usage. Moreover, a global-local
+attention fusion module is proposed to integrate the global BEV features with
+the local 3D feature volumes to obtain the final 3D volume. We also employ a
+multi-scale supervision mechanism to further enhance performance. Comprehensive
+experiments on the nuScenes dataset demonstrate the simplicity and
+effectiveness of our method. The code will be made available
+at:https://github.com/DanielMing123/InverseMatrixVT3D
+</p></li>
+</ul>
+<h3>Title: Explore Synergistic Interaction Across Frames for Interactive Video Object Segmentation. (arXiv:2401.12480v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12480">http://arxiv.org/abs/2401.12480</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12480] Explore Synergistic Interaction Across Frames for Interactive Video Object Segmentation](http://arxiv.org/abs/2401.12480) #memory</code></li>
+<li>Summary: <p>Interactive Video Object Segmentation (iVOS) is a challenging task that
+requires real-time human-computer interaction. To improve the user experience,
+it is important to consider the user's input habits, segmentation quality,
+running time and memory consumption.However, existing methods compromise user
+experience with single input mode and slow running speed. Specifically, these
+methods only allow the user to interact with one single frame, which limits the
+expression of the user's intent.To overcome these limitations and better align
+with people's usage habits, we propose a framework that can accept multiple
+frames simultaneously and explore synergistic interaction across frames (SIAF).
+Concretely, we designed the Across-Frame Interaction Module that enables users
+to annotate different objects freely on multiple frames. The AFI module will
+migrate scribble information among multiple interactive frames and generate
+multi-frame masks. Additionally, we employ the id-queried mechanism to process
+multiple objects in batches. Furthermore, for a more efficient propagation and
+lightweight model, we design a truncated re-propagation strategy to replace the
+previous multi-round fusion module, which employs an across-round memory that
+stores important interaction information. Our SwinB-SIAF achieves new
+state-of-the-art performance on DAVIS 2017 (89.6%, J&amp;F@60). Moreover, our
+R50-SIAF is more than 3 faster than the state-of-the-art competitor under
+challenging multi-object scenarios.
+</p></li>
+</ul>
+<h3>Title: BiTA: Bi-Directional Tuning for Lossless Acceleration in Large Language Models. (arXiv:2401.12522v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12522">http://arxiv.org/abs/2401.12522</a></li>
+<li>Code URL: <a href="https://github.com/linfeng93/bita">https://github.com/linfeng93/bita</a></li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12522] BiTA: Bi-Directional Tuning for Lossless Acceleration in Large Language Models](http://arxiv.org/abs/2401.12522) #memory</code></li>
+<li>Summary: <p>Large language models (LLMs) commonly employ autoregressive generation during
+inference, leading to high memory bandwidth demand and consequently extended
+latency. To mitigate this inefficiency, we present Bi-directional Tuning for
+lossless Acceleration (BiTA), an innovative method expediting LLMs via
+streamlined semi-autoregressive generation and draft verification. Inspired by
+the concept of prompt tuning, we enhance LLMs with a parameter-efficient design
+called bi-directional tuning for the capability in semi-autoregressive
+generation. Employing efficient tree-based decoding, the models perform draft
+candidate generation and verification in parallel, ensuring outputs identical
+to their autoregressive counterparts under greedy sampling. BiTA serves as a
+lightweight plug-in module, seamlessly boosting the inference efficiency of
+existing LLMs without requiring additional assistance models or incurring
+significant extra memory costs. Applying the proposed BiTA, LLaMA-2-70B-Chat
+achieves a 2.7$\times$ speedup on the MT-Bench benchmark. Extensive experiments
+confirm our method surpasses state-of-the-art acceleration techniques.
+</p></li>
+</ul>
+<h3>Title: Enhancing Reliability of Neural Networks at the Edge: Inverted Normalization with Stochastic Affine Transformations. (arXiv:2401.12416v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12416">http://arxiv.org/abs/2401.12416</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12416] Enhancing Reliability of Neural Networks at the Edge: Inverted Normalization with Stochastic Affine Transformations](http://arxiv.org/abs/2401.12416) #memory</code></li>
+<li>Summary: <p>Bayesian Neural Networks (BayNNs) naturally provide uncertainty in their
+predictions, making them a suitable choice in safety-critical applications.
+Additionally, their realization using memristor-based in-memory computing (IMC)
+architectures enables them for resource-constrained edge applications. In
+addition to predictive uncertainty, however, the ability to be inherently
+robust to noise in computation is also essential to ensure functional safety.
+In particular, memristor-based IMCs are susceptible to various sources of
+non-idealities such as manufacturing and runtime variations, drift, and
+failure, which can significantly reduce inference accuracy. In this paper, we
+propose a method to inherently enhance the robustness and inference accuracy of
+BayNNs deployed in IMC architectures. To achieve this, we introduce a novel
+normalization layer combined with stochastic affine transformations. Empirical
+results in various benchmark datasets show a graceful degradation in inference
+accuracy, with an improvement of up to $58.11\%$.
+</p></li>
+</ul>
+<h3>Title: Dynamic Layer Tying for Parameter-Efficient Transformers. (arXiv:2401.12819v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12819">http://arxiv.org/abs/2401.12819</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12819] Dynamic Layer Tying for Parameter-Efficient Transformers](http://arxiv.org/abs/2401.12819) #memory</code></li>
+<li>Summary: <p>In the pursuit of reducing the number of trainable parameters in deep
+transformer networks, we employ Reinforcement Learning to dynamically select
+layers during training and tie them together. Every few iterations, the RL
+agent is asked whether to train each layer $i$ independently or to copy the
+weights of a previous layer $j<i$. This facilitates weight sharing, reduces the
+number of trainable parameters, and also serves as an effective regularization
+technique. Experimental evaluations validate that our model modestly
+outperforms the baseline transformer model with regard to perplexity and
+drastically reduces the number of trainable parameters. In particular, the
+memory consumption during training is up to one order of magnitude less than
+the conventional training method.
+</p></li>
+</ul>
+<h3>Title: Enhancing Next Destination Prediction: A Novel LSTM Approach Using Real-World Airline Data. (arXiv:2401.12830v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12830">http://arxiv.org/abs/2401.12830</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12830] Enhancing Next Destination Prediction: A Novel LSTM Approach Using Real-World Airline Data](http://arxiv.org/abs/2401.12830) #memory</code></li>
+<li>Summary: <p>In the modern transportation industry, accurate prediction of travelers' next
+destinations brings multiple benefits to companies, such as customer
+satisfaction and targeted marketing. This study focuses on developing a precise
+model that captures the sequential patterns and dependencies in travel data,
+enabling accurate predictions of individual travelers' future destinations. To
+achieve this, a novel model architecture with a sliding window approach based
+on Long Short-Term Memory (LSTM) is proposed for destination prediction in the
+transportation industry. The experimental results highlight satisfactory
+performance and high scores achieved by the proposed model across different
+data sizes and performance metrics. This research contributes to advancing
+destination prediction methods, empowering companies to deliver personalized
+recommendations and optimize customer experiences in the dynamic travel
+landscape.
+</p></li>
+</ul>
+<h2>few-shot</h2>
+<h3>Title: Generating Unsupervised Abstractive Explanations for Rumour Verification. (arXiv:2401.12713v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12713">http://arxiv.org/abs/2401.12713</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12713] Generating Unsupervised Abstractive Explanations for Rumour Verification](http://arxiv.org/abs/2401.12713) #few-shot</code></li>
+<li>Summary: <p>The task of rumour verification in social media concerns assessing the
+veracity of a claim on the basis of conversation threads that result from it.
+While previous work has focused on predicting a veracity label, here we
+reformulate the task to generate model-centric, free-text explanations of a
+rumour's veracity. We follow an unsupervised approach by first utilising
+post-hoc explainability methods to score the most important posts within a
+thread and then we use these posts to generate informative explanatory
+summaries by employing template-guided summarisation. To evaluate the
+informativeness of the explanatory summaries, we exploit the few-shot learning
+capabilities of a large language model (LLM). Our experiments show that LLMs
+can have similar agreement to humans in evaluating summaries. Importantly, we
+show that explanatory abstractive summaries are more informative and better
+reflect the predicted rumour veracity than just using the highest ranking posts
+in the thread.
+</p></li>
+</ul>
+<h3>Title: Stochastic Dynamic Power Dispatch with High Generalization and Few-Shot Adaption via Contextual Meta Graph Reinforcement Learning. (arXiv:2401.12235v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.12235">http://arxiv.org/abs/2401.12235</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.12235] Stochastic Dynamic Power Dispatch with High Generalization and Few-Shot Adaption via Contextual Meta Graph Reinforcement Learning](http://arxiv.org/abs/2401.12235) #few-shot</code></li>
+<li>Summary: <p>Reinforcement learning is an emerging approaches to facilitate multi-stage
+sequential decision-making problems. This paper studies a real-time multi-stage
+stochastic power dispatch considering multivariate uncertainties. Current
+researches suffer from low generalization and practicality, that is, the
+learned dispatch policy can only handle a specific dispatch scenario, its
+performance degrades significantly if actual samples and training samples are
+inconsistent. To fill these gaps, a novel contextual meta graph reinforcement
+learning (Meta-GRL) for a highly generalized multi-stage optimal dispatch
+policy is proposed. Specifically, a more general contextual Markov decision
+process (MDP) and scalable graph representation are introduced to achieve a
+more generalized multi-stage stochastic power dispatch modeling. An upper
+meta-learner is proposed to encode context for different dispatch scenarios and
+learn how to achieve dispatch task identification while the lower policy
+learner learns context-specified dispatch policy. After sufficient offline
+learning, this approach can rapidly adapt to unseen and undefined scenarios
+with only a few updations of the hypothesis judgments generated by the
+meta-learner. Numerical comparisons with state-of-the-art policies and
+traditional reinforcement learning verify the optimality, efficiency,
+adaptability, and scalability of the proposed Meta-GRL.
+</p></li>
+</ul>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2024-01-24]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
