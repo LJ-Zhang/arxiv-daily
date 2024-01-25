@@ -1,12 +1,12 @@
 # arxiv-daily
-updated on 2024-01-24 22:13:54.263043
+updated on 2024-01-25 22:11:40.668162
 | keyword | count |
 | - | - |
-| diffusion | 7 |
-| self-supervised | 12 |
-| foundation model | 1 |
-| generative | 1 |
+| diffusion | 6 |
+| self-supervised | 5 |
+| foundation model | 0 |
+| generative | 8 |
 | anomaly | 2 |
 | in-context | 2 |
 | memory | 6 |
-| few-shot | 2 |
+| few-shot | 4 |
