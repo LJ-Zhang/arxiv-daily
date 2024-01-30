@@ -1,0 +1,394 @@
+<h2>diffusion</h2>
+<h3>Title: GEM: Boost Simple Network for Glass Surface Segmentation via Segment Anything Model and Data Synthesis. (arXiv:2401.15282v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15282">http://arxiv.org/abs/2401.15282</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15282] GEM: Boost Simple Network for Glass Surface Segmentation via Segment Anything Model and Data Synthesis](http://arxiv.org/abs/2401.15282) #diffusion</code></li>
+<li>Summary: <p>Detecting glass regions is a challenging task due to the ambiguity of their
+transparency and reflection properties. These transparent glasses share the
+visual appearance of both transmitted arbitrary background scenes and reflected
+objects, thus having no fixed patterns.Recent visual foundation models, which
+are trained on vast amounts of data, have manifested stunning performance in
+terms of image perception and image generation. To segment glass surfaces with
+higher accuracy, we make full use of two visual foundation models: Segment
+Anything (SAM) and Stable Diffusion.Specifically, we devise a simple glass
+surface segmentor named GEM, which only consists of a SAM backbone, a simple
+feature pyramid, a discerning query selection module, and a mask decoder. The
+discerning query selection can adaptively identify glass surface features,
+assigning them as initialized queries in the mask decoder. We also propose a
+Synthetic but photorealistic large-scale Glass Surface Detection dataset dubbed
+S-GSD via diffusion model with four different scales, which contain 1x, 5x,
+10x, and 20x of the original real data size. This dataset is a feasible source
+for transfer learning. The scale of synthetic data has positive impacts on
+transfer learning, while the improvement will gradually saturate as the amount
+of data increases. Extensive experiments demonstrate that GEM achieves a new
+state-of-the-art on the GSD-S validation set (IoU +2.1%). Codes and datasets
+are available at: https://github.com/isbrycee/GEM-Glass-Segmentor.
+</p></li>
+</ul>
+<h3>Title: A Survey on Data Augmentation in Large Model Era. (arXiv:2401.15422v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15422">http://arxiv.org/abs/2401.15422</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15422] A Survey on Data Augmentation in Large Model Era](http://arxiv.org/abs/2401.15422) #diffusion</code></li>
+<li>Summary: <p>Large models, encompassing large language and diffusion models, have shown
+exceptional promise in approximating human-level intelligence, garnering
+significant interest from both academic and industrial spheres. However, the
+training of these large models necessitates vast quantities of high-quality
+data, and with continuous updates to these models, the existing reservoir of
+high-quality data may soon be depleted. This challenge has catalyzed a surge in
+research focused on data augmentation methods. Leveraging large models, these
+data augmentation techniques have outperformed traditional approaches. This
+paper offers an exhaustive review of large model-driven data augmentation
+methods, adopting a comprehensive perspective. We begin by establishing a
+classification of relevant studies into three main categories: image
+augmentation, text augmentation, and paired data augmentation. Following this,
+we delve into various data post-processing techniques pertinent to large
+model-based data augmentation. Our discussion then expands to encompass the
+array of applications for these data augmentation methods within natural
+language processing, computer vision, and audio signal processing. We proceed
+to evaluate the successes and limitations of large model-based data
+augmentation across different scenarios. Concluding our review, we highlight
+prospective challenges and avenues for future exploration in the field of data
+augmentation. Our objective is to furnish researchers with critical insights,
+ultimately contributing to the advancement of more sophisticated large models.
+We consistently maintain the related open-source materials at:
+https://github.com/MLGroup-JLU/LLM-data-aug-survey.
+</p></li>
+</ul>
+<h2>self-supervised</h2>
+<h3>Title: Context-driven self-supervised visual learning: Harnessing the environment as a data source. (arXiv:2401.15120v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15120">http://arxiv.org/abs/2401.15120</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15120] Context-driven self-supervised visual learning: Harnessing the environment as a data source](http://arxiv.org/abs/2401.15120) #self-supervised</code></li>
+<li>Summary: <p>Visual learning often occurs in a specific context, where an agent acquires
+skills through exploration and tracking of its location in a consistent
+environment. The historical spatial context of the agent provides a similarity
+signal for self-supervised contrastive learning. We present a unique approach,
+termed Environmental Spatial Similarity (ESS), that complements existing
+contrastive learning methods. Using images from simulated, photorealistic
+environments as an experimental setting, we demonstrate that ESS outperforms
+traditional instance discrimination approaches. Moreover, sampling additional
+data from the same environment substantially improves accuracy and provides new
+augmentations. ESS allows remarkable proficiency in room classification and
+spatial prediction tasks, especially in unfamiliar environments. This learning
+paradigm has the potential to enable rapid visual learning in agents operating
+in new environments with unique visual characteristics. Potentially
+transformative applications span from robotics to space exploration. Our proof
+of concept demonstrates improved efficiency over methods that rely on
+extensive, disconnected datasets.
+</p></li>
+</ul>
+<h3>Title: Transformer-based Clipped Contrastive Quantization Learning for Unsupervised Image Retrieval. (arXiv:2401.15362v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15362">http://arxiv.org/abs/2401.15362</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15362] Transformer-based Clipped Contrastive Quantization Learning for Unsupervised Image Retrieval](http://arxiv.org/abs/2401.15362) #self-supervised</code></li>
+<li>Summary: <p>Unsupervised image retrieval aims to learn the important visual
+characteristics without any given level to retrieve the similar images for a
+given query image. The Convolutional Neural Network (CNN)-based approaches have
+been extensively exploited with self-supervised contrastive learning for image
+hashing. However, the existing approaches suffer due to lack of effective
+utilization of global features by CNNs and biased-ness created by false
+negative pairs in the contrastive learning. In this paper, we propose a
+TransClippedCLR model by encoding the global context of an image using
+Transformer having local context through patch based processing, by generating
+the hash codes through product quantization and by avoiding the potential false
+negative pairs through clipped contrastive learning. The proposed model is
+tested with superior performance for unsupervised image retrieval on benchmark
+datasets, including CIFAR10, NUS-Wide and Flickr25K, as compared to the recent
+state-of-the-art deep models. The results using the proposed clipped
+contrastive learning are greatly improved on all datasets as compared to same
+backbone network with vanilla contrastive learning.
+</p></li>
+</ul>
+<h3>Title: MEA-Defender: A Robust Watermark against Model Extraction Attack. (arXiv:2401.15239v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15239">http://arxiv.org/abs/2401.15239</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15239] MEA-Defender: A Robust Watermark against Model Extraction Attack](http://arxiv.org/abs/2401.15239) #self-supervised</code></li>
+<li>Summary: <p>Recently, numerous highly-valuable Deep Neural Networks (DNNs) have been
+trained using deep learning algorithms. To protect the Intellectual Property
+(IP) of the original owners over such DNN models, backdoor-based watermarks
+have been extensively studied. However, most of such watermarks fail upon model
+extraction attack, which utilizes input samples to query the target model and
+obtains the corresponding outputs, thus training a substitute model using such
+input-output pairs. In this paper, we propose a novel watermark to protect IP
+of DNN models against model extraction, named MEA-Defender. In particular, we
+obtain the watermark by combining two samples from two source classes in the
+input domain and design a watermark loss function that makes the output domain
+of the watermark within that of the main task samples. Since both the input
+domain and the output domain of our watermark are indispensable parts of those
+of the main task samples, the watermark will be extracted into the stolen model
+along with the main task during model extraction. We conduct extensive
+experiments on four model extraction attacks, using five datasets and six
+models trained based on supervised learning and self-supervised learning
+algorithms. The experimental results demonstrate that MEA-Defender is highly
+robust against different model extraction attacks, and various watermark
+removal/detection approaches.
+</p></li>
+</ul>
+<h3>Title: Deep Learning with Tabular Data: A Self-supervised Approach. (arXiv:2401.15238v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15238">http://arxiv.org/abs/2401.15238</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15238] Deep Learning with Tabular Data: A Self-supervised Approach](http://arxiv.org/abs/2401.15238) #self-supervised</code></li>
+<li>Summary: <p>We have described a novel approach for training tabular data using the
+TabTransformer model with self-supervised learning. Traditional machine
+learning models for tabular data, such as GBDT are being widely used though our
+paper examines the effectiveness of the TabTransformer which is a Transformer
+based model optimised specifically for tabular data. The TabTransformer
+captures intricate relationships and dependencies among features in tabular
+data by leveraging the self-attention mechanism of Transformers. We have used a
+self-supervised learning approach in this study, where the TabTransformer
+learns from unlabelled data by creating surrogate supervised tasks, eliminating
+the need for the labelled data. The aim is to find the most effective
+TabTransformer model representation of categorical and numerical features. To
+address the challenges faced during the construction of various input settings
+into the Transformers. Furthermore, a comparative analysis is also been
+conducted to examine performance of the TabTransformer model against baseline
+models such as MLP and supervised TabTransformer.
+</p></li>
+</ul>
+<p>The research has presented with a novel approach by creating various variants
+of TabTransformer model namely, Binned-TT, Vanilla-MLP-TT, MLP- based-TT which
+has helped to increase the effective capturing of the underlying relationship
+between various features of the tabular dataset by constructing optimal inputs.
+And further we have employed a self-supervised learning approach in the form of
+a masking-based unsupervised setting for tabular data. The findings shed light
+on the best way to represent categorical and numerical features, emphasizing
+the TabTransormer performance when compared to established machine learning
+models and other self-supervised learning methods.
+</p>
+
+<h2>foundation model</h2>
+<h3>Title: Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models. (arXiv:2401.15269v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15269">http://arxiv.org/abs/2401.15269</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15269] Improving Medical Reasoning through Retrieval and Self-Reflection with Retrieval-Augmented Large Language Models](http://arxiv.org/abs/2401.15269) #foundation model</code></li>
+<li>Summary: <p>Recent proprietary large language models (LLMs), such as GPT-4, have achieved
+a milestone in tackling diverse challenges in the biomedical domain, ranging
+from multiple-choice questions to long-form generations. To address challenges
+that still cannot be handled with the encoded knowledge of LLMs, various
+retrieval-augmented generation (RAG) methods have been developed by searching
+documents from the knowledge corpus and appending them unconditionally or
+selectively to the input of LLMs for generation. However, when applying
+existing methods to different domain-specific problems, poor generalization
+becomes apparent, leading to fetching incorrect documents or making inaccurate
+judgments. In this paper, we introduce Self-BioRAG, a framework reliable for
+biomedical text that specializes in generating explanations, retrieving
+domain-specific documents, and self-reflecting generated responses. We utilize
+84k filtered biomedical instruction sets to train Self-BioRAG that can assess
+its generated explanations with customized reflective tokens. Our work proves
+that domain-specific components, such as a retriever, domain-related document
+corpus, and instruction sets are necessary for adhering to domain-related
+instructions. Using three major medical question-answering benchmark datasets,
+experimental results of Self-BioRAG demonstrate significant performance gains
+by achieving a 7.2% absolute improvement on average over the state-of-the-art
+open-foundation model with a parameter size of 7B or less. Overall, we analyze
+that Self-BioRAG finds the clues in the question, retrieves relevant documents
+if needed, and understands how to answer with information from retrieved
+documents and encoded knowledge as a medical expert does. We release our data
+and code for training our framework components and model weights (7B and 13B)
+to enhance capabilities in biomedical and clinical domains.
+</p></li>
+</ul>
+<h2>generative</h2>
+<h3>Title: L-AutoDA: Leveraging Large Language Models for Automated Decision-based Adversarial Attacks. (arXiv:2401.15335v1 [cs.CR])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15335">http://arxiv.org/abs/2401.15335</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15335] L-AutoDA: Leveraging Large Language Models for Automated Decision-based Adversarial Attacks](http://arxiv.org/abs/2401.15335) #generative</code></li>
+<li>Summary: <p>In the rapidly evolving field of machine learning, adversarial attacks
+present a significant challenge to model robustness and security.
+Decision-based attacks, which only require feedback on the decision of a model
+rather than detailed probabilities or scores, are particularly insidious and
+difficult to defend against. This work introduces L-AutoDA (Large Language
+Model-based Automated Decision-based Adversarial Attacks), a novel approach
+leveraging the generative capabilities of Large Language Models (LLMs) to
+automate the design of these attacks. By iteratively interacting with LLMs in
+an evolutionary framework, L-AutoDA automatically designs competitive attack
+algorithms efficiently without much human effort. We demonstrate the efficacy
+of L-AutoDA on CIFAR-10 dataset, showing significant improvements over baseline
+methods in both success rate and computational efficiency. Our findings
+underscore the potential of language models as tools for adversarial attack
+generation and highlight new avenues for the development of robust AI systems.
+</p></li>
+</ul>
+<h3>Title: Face to Cartoon Incremental Super-Resolution using Knowledge Distillation. (arXiv:2401.15366v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15366">http://arxiv.org/abs/2401.15366</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15366] Face to Cartoon Incremental Super-Resolution using Knowledge Distillation](http://arxiv.org/abs/2401.15366) #generative</code></li>
+<li>Summary: <p>Facial super-resolution/hallucination is an important area of research that
+seeks to enhance low-resolution facial images for a variety of applications.
+While Generative Adversarial Networks (GANs) have shown promise in this area,
+their ability to adapt to new, unseen data remains a challenge. This paper
+addresses this problem by proposing an incremental super-resolution using GANs
+with knowledge distillation (ISR-KD) for face to cartoon. Previous research in
+this area has not investigated incremental learning, which is critical for
+real-world applications where new data is continually being generated. The
+proposed ISR-KD aims to develop a novel unified framework for facial
+super-resolution that can handle different settings, including different types
+of faces such as cartoon face and various levels of detail. To achieve this, a
+GAN-based super-resolution network was pre-trained on the CelebA dataset and
+then incrementally trained on the iCartoonFace dataset, using knowledge
+distillation to retain performance on the CelebA test set while improving the
+performance on iCartoonFace test set. Our experiments demonstrate the
+effectiveness of knowledge distillation in incrementally adding capability to
+the model for cartoon face super-resolution while retaining the learned
+knowledge for facial hallucination tasks in GANs.
+</p></li>
+</ul>
+<h2>anomaly</h2>
+<h3>Title: Large Language Model Guided Knowledge Distillation for Time Series Anomaly Detection. (arXiv:2401.15123v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15123">http://arxiv.org/abs/2401.15123</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15123] Large Language Model Guided Knowledge Distillation for Time Series Anomaly Detection](http://arxiv.org/abs/2401.15123) #anomaly</code></li>
+<li>Summary: <p>Self-supervised methods have gained prominence in time series anomaly
+detection due to the scarcity of available annotations. Nevertheless, they
+typically demand extensive training data to acquire a generalizable
+representation map, which conflicts with scenarios of a few available samples,
+thereby limiting their performance. To overcome the limitation, we propose
+\textbf{AnomalyLLM}, a knowledge distillation-based time series anomaly
+detection approach where the student network is trained to mimic the features
+of the large language model (LLM)-based teacher network that is pretrained on
+large-scale datasets. During the testing phase, anomalies are detected when the
+discrepancy between the features of the teacher and student networks is large.
+To circumvent the student network from learning the teacher network's feature
+of anomalous samples, we devise two key strategies. 1) Prototypical signals are
+incorporated into the student network to consolidate the normal feature
+extraction. 2) We use synthetic anomalies to enlarge the representation gap
+between the two networks. AnomalyLLM demonstrates state-of-the-art performance
+on 15 datasets, improving accuracy by at least 14.5\% in the UCR dataset.
+</p></li>
+</ul>
+<h3>Title: SCANIA Component X Dataset: A Real-World Multivariate Time Series Dataset for Predictive Maintenance. (arXiv:2401.15199v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15199">http://arxiv.org/abs/2401.15199</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15199] SCANIA Component X Dataset: A Real-World Multivariate Time Series Dataset for Predictive Maintenance](http://arxiv.org/abs/2401.15199) #anomaly</code></li>
+<li>Summary: <p>This paper presents a description of a real-world, multivariate time series
+dataset collected from an anonymized engine component (called Component X) of a
+fleet of trucks from SCANIA, Sweden. This dataset includes diverse variables
+capturing detailed operational data, repair records, and specifications of
+trucks while maintaining confidentiality by anonymization. It is well-suited
+for a range of machine learning applications, such as classification,
+regression, survival analysis, and anomaly detection, particularly when applied
+to predictive maintenance scenarios. The large population size and variety of
+features in the format of histograms and numerical counters, along with the
+inclusion of temporal information, make this real-world dataset unique in the
+field. The objective of releasing this dataset is to give a broad range of
+researchers the possibility of working with real-world data from an
+internationally well-known company and introduce a standard benchmark to the
+predictive maintenance field, fostering reproducible research.
+</p></li>
+</ul>
+<h2>in-context</h2>
+<h2>memory</h2>
+<h3>Title: Adaptive Deep Learning for Efficient Visual Pose Estimation aboard Ultra-low-power Nano-drones. (arXiv:2401.15236v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15236">http://arxiv.org/abs/2401.15236</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15236] Adaptive Deep Learning for Efficient Visual Pose Estimation aboard Ultra-low-power Nano-drones](http://arxiv.org/abs/2401.15236) #memory</code></li>
+<li>Summary: <p>Sub-10cm diameter nano-drones are gaining momentum thanks to their
+applicability in scenarios prevented to bigger flying drones, such as in narrow
+environments and close to humans. However, their tiny form factor also brings
+their major drawback: ultra-constrained memory and processors for the onboard
+execution of their perception pipelines. Therefore, lightweight deep
+learning-based approaches are becoming increasingly popular, stressing how
+computational efficiency and energy-saving are paramount as they can make the
+difference between a fully working closed-loop system and a failing one. In
+this work, to maximize the exploitation of the ultra-limited resources aboard
+nano-drones, we present a novel adaptive deep learning-based mechanism for the
+efficient execution of a vision-based human pose estimation task. We leverage
+two State-of-the-Art (SoA) convolutional neural networks (CNNs) with different
+regression performance vs. computational costs trade-offs. By combining these
+CNNs with three novel adaptation strategies based on the output's temporal
+consistency and on auxiliary tasks to swap the CNN being executed proactively,
+we present six different systems. On a real-world dataset and the actual
+nano-drone hardware, our best-performing system, compared to executing only the
+bigger and most accurate SoA model, shows 28% latency reduction while keeping
+the same mean absolute error (MAE), 3% MAE reduction while being iso-latency,
+and the absolute peak performance, i.e., 6% better than SoA model.
+</p></li>
+</ul>
+<h3>Title: Dynamic Transformer Architecture for Continual Learning of Multimodal Tasks. (arXiv:2401.15275v1 [cs.CV])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15275">http://arxiv.org/abs/2401.15275</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15275] Dynamic Transformer Architecture for Continual Learning of Multimodal Tasks](http://arxiv.org/abs/2401.15275) #memory</code></li>
+<li>Summary: <p>Transformer neural networks are increasingly replacing prior architectures in
+a wide range of applications in different data modalities. The increasing size
+and computational demands of fine-tuning large pre-trained transformer neural
+networks pose significant challenges for the widespread adoption of these
+models for applications that demand on-edge computing. To tackle this
+challenge, continual learning (CL) emerges as a solution by facilitating the
+transfer of knowledge across tasks that arrive sequentially for an autonomously
+learning agent. However, current CL methods mainly focus on learning tasks that
+are exclusively vision-based or language-based. We propose a transformer-based
+CL framework focusing on learning tasks that involve both vision and language,
+known as Vision-and-Language (VaL) tasks. Due to the success of transformers in
+other modalities, our architecture has the potential to be used in multimodal
+learning settings. In our framework, we benefit from introducing extra
+parameters to a base transformer to specialize the network for each task. As a
+result, we enable dynamic model expansion to learn several tasks in a sequence.
+We also use knowledge distillation to benefit from relevant past experiences to
+learn the current task more efficiently. Our proposed method, Task Attentive
+Multimodal Continual Learning (TAM-CL), allows for the exchange of information
+between tasks while mitigating the problem of catastrophic forgetting. Notably,
+our approach is scalable, incurring minimal memory and time overhead. TAM-CL
+achieves state-of-the-art (SOTA) performance on challenging multimodal tasks
+</p></li>
+</ul>
+<h3>Title: Unlearning Reveals the Influential Training Data of Language Models. (arXiv:2401.15241v1 [cs.CL])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15241">http://arxiv.org/abs/2401.15241</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15241] Unlearning Reveals the Influential Training Data of Language Models](http://arxiv.org/abs/2401.15241) #memory</code></li>
+<li>Summary: <p>In order to enhance the performance of language models while mitigating the
+risks of generating harmful content, it is crucial to identify which training
+dataset affects the model's outputs. Ideally, we can measure the influence of
+each dataset by removing it from training; however, it is prohibitively
+expensive to retrain a model multiple times. This paper presents UnTrac, which
+estimates the influence of a training dataset by unlearning it from the trained
+model. UnTrac is extremely simple; each training dataset is unlearned by
+gradient ascent, and we evaluate how much the model's predictions change after
+unlearning. We empirically examine if our methods can assess the influence of
+pretraining datasets on generating toxic, biased, and untruthful content.
+Experimental results demonstrate that our method estimates their influence much
+more accurately than existing methods while requiring neither excessive memory
+space nor multiple model checkpoints.
+</p></li>
+</ul>
+<h3>Title: HiFT: A Hierarchical Full Parameter Fine-Tuning Strategy. (arXiv:2401.15207v1 [cs.LG])</h3>
+<ul>
+<li>Paper URL: <a href="http://arxiv.org/abs/2401.15207">http://arxiv.org/abs/2401.15207</a></li>
+<li>Code URL: null</li>
+<li>Copy Paste: <code><input type="checkbox">[[2401.15207] HiFT: A Hierarchical Full Parameter Fine-Tuning Strategy](http://arxiv.org/abs/2401.15207) #memory</code></li>
+<li>Summary: <p>Full-parameter fine-tuning has become the go-to choice for adapting language
+models (LMs) to downstream tasks due to its excellent performance. As LMs grow
+in size, fine-tuning the full parameters of LMs requires a prohibitively large
+amount of GPU memory. Existing approaches utilize zeroth-order optimizer to
+conserve GPU memory, which can potentially compromise the performance of LMs as
+non-zero order optimizers tend to converge more readily on most downstream
+tasks. In this paper, we propose a novel optimizer-independent end-to-end
+hierarchical fine-tuning strategy, HiFT, which only updates a subset of
+parameters at each training step. HiFT can significantly reduce the amount of
+gradients and optimizer state parameters residing in GPU memory at the same
+time, thereby reducing GPU memory usage. Our results demonstrate that: (1) HiFT
+achieves comparable performance to parameter-efficient fine-tuning and standard
+full parameter fine-tuning. (2) HiFT supports various optimizers including
+AdamW, AdaGrad, SGD, etc. (3) HiFT can save more than 60\% GPU memory compared
+with standard full-parameter fine-tuning for 7B model. (4) HiFT enables
+full-parameter fine-tuning of a 7B model on single 48G A6000 with a precision
+of 32 using the AdamW optimizer, without using any memory saving techniques.
+</p></li>
+</ul>
+<h2>few-shot</h2>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>new ClipboardJS("#copy",{text:function(trigger){var res="[[2024-01-30]]\n\n";var input=document.querySelectorAll("input");for(var i=0;i<input.length;i++){if(input[i].type=="checkbox"&&input[i].checked){res+="- "+input[i].nextSibling.nodeValue+"\n"}}res+="\n";return res}}).on("success",function(e){e.clearSelection()});</script>
+<button id="copy">Copy All</button>
